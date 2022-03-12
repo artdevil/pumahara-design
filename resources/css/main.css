@@ -8,6 +8,9 @@
   --brownlite: #bb7d46;
   --lightbrown: #e4bfa0;
   --darkbrown: #b4a093;
+  --green-100: #abd8c0;
+  --green-300: #73bf95;
+  --green-600: #2d6245;
   --font: "Open Sans", sans-serif;
 }
 
@@ -21,8 +24,8 @@ body {
 }
 
 .container {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 p,
@@ -290,7 +293,7 @@ a:hover {
   border: 3px solid var(--brown);
   border-radius: 100%;
   margin-top: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-right: 30px;
 }
 
@@ -370,6 +373,20 @@ a:hover {
 
 .list-style > .active {
   border-bottom: 3px solid var(--brown);
+}
+
+.alert-success-style {
+  background-color: var(--green-100);
+  color: var(--green-600);
+  border-color: var(--green-300);
+  font-size: 14px;
+}
+.alert-detail > h4 {
+  font-size: 14px;
+}
+.alert-detail > p,
+.alert-detail > p > span {
+  font-size: 12px;
 }
 
 @media (min-width: 576px) {
@@ -484,10 +501,14 @@ a:hover {
   }
 
   .bd-links {
-    height: calc(100vh - 120px);
+    height: 100%;
   }
   .bd-links > ul {
     padding-top: 60px;
+  }
+
+  .image-preview {
+    margin-bottom: 30px;
   }
 }
 
