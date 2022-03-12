@@ -1,12 +1,12 @@
 :root {
-    --text: #3E332B;
+    --text: #3e332b;
     --title: #452669;
     --white: #fff;
-    --bg: #FFF9F1;
-    --red: #DC3545;
-    --brown: #9F6634;
+    --bg: #fff9f1;
+    --red: #dc3545;
+    --brown: #9f6634;
     --brownlite: #bb7d46;
-    --font: 'Open Sans', sans-serif;
+    --font: "Open Sans", sans-serif;
 }
 
 body {
@@ -42,11 +42,11 @@ h6 {
 a {
     color: var(--brown);
     text-decoration: none;
-    transition: ease all .5s;
-    -webkit-transition: ease all .5s;
-    -moz-transition: ease all .5s;
-    -ms-transition: ease all .5s;
-    -o-transition: ease all .5s;
+    transition: ease all 0.5s;
+    -webkit-transition: ease all 0.5s;
+    -moz-transition: ease all 0.5s;
+    -ms-transition: ease all 0.5s;
+    -o-transition: ease all 0.5s;
 }
 
 .container-fluid {
@@ -63,7 +63,7 @@ a:hover {
     margin: 1rem 0;
     display: block;
     height: 1px;
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
 }
 
 .btn-main {
@@ -124,19 +124,19 @@ a:hover {
 
 .cst-form .form-control,
 .cst-form .form-select {
-    border-color: #CED4DA;
+    border-color: #ced4da;
 }
 
 .cst-form ::-webkit-input-placeholder {
-    color: #E0E0E0;
+    color: #e0e0e0;
 }
 
 .cst-form :-ms-input-placeholder {
-    color: #E0E0E0;
+    color: #e0e0e0;
 }
 
 .cst-form ::placeholder {
-    color: #E0E0E0;
+    color: #e0e0e0;
 }
 
 .cst-form .form-check-input:checked {
