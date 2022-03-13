@@ -403,6 +403,16 @@ a:hover {
   color: var(--gray);
 }
 
+.collapse:not(.show) {
+  transform: translateX(-100%);
+  display: block;
+  transition: 0.7s;
+}
+.collapse.show {
+  transform: translateX(0);
+  transition: 0.7s;
+}
+
 @media (min-width: 576px) {
 }
 
@@ -533,6 +543,10 @@ a:hover {
 
   .image-preview {
     margin-bottom: 30px;
+  }
+
+  .collapse:not(.show) {
+    transform: translateX(0);
   }
 }
 
