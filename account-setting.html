@@ -307,8 +307,57 @@
               <p>
                 Don't see a confirmation email?
 
-                <a href="#" class="text-link">Resend email confirmation</a>
+                <a
+                  class="text-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Resend email confirmation
+                </a>
               </p>
+            </div>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="staticBackdropLabel">
+                      Resend Email Confirmation
+                    </h6>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Hi olivia emily, this will resend email confirmation to
+                      <span class="fw-bold"> oliviaamelia20@gmail.com</span>
+                    </p>
+                    <button type="button" class="btn btn-primary-style">
+                      Resend
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary-style"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div
               class="w-100 d-flex flex-column flex-md-row align-items-center"

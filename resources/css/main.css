@@ -413,6 +413,21 @@ a:hover {
   transition: 0.7s;
 }
 
+.btn-primary-style {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.btn-secondary-style {
+  background-color: var(--white);
+  color: var(--brown);
+  border: 1px solid var(--brown);
+}
+
+.modal-dialog {
+  top: calc(50% - 100px);
+}
+
 @media (min-width: 576px) {
 }
 
@@ -547,6 +562,18 @@ a:hover {
 
   .collapse:not(.show) {
     transform: translateX(0);
+  }
+
+  .btn {
+    padding: 7.5px 22px;
+  }
+
+  .btn-primary-style {
+    margin-right: 15px;
+  }
+  .model-header .modal-content {
+    width: 626px;
+    height: 183px;
   }
 }
 
