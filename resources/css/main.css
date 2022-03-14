@@ -226,6 +226,14 @@ a:hover {
 .icon-arrow {
   width: 24px;
   height: 24px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+}
+
+.nav-style > li > .active + a > .icon-arrow {
+  color: var(--brown);
 }
 
 .notification {
@@ -293,6 +301,10 @@ a:hover {
 
 .nav-style {
   margin: 0 15.4px 15px 17.6px;
+}
+
+.nav-style > li > .active {
+  color: var(--brown);
 }
 
 .nav-link {
