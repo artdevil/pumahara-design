@@ -346,7 +346,10 @@
                           to
                           <span class="fw-bold"> oliviaamelia20@gmail.com</span>
                         </p>
-                        <button type="button" class="btn btn-primary-style">
+                        <button
+                          type="button"
+                          class="btn btn-primary-style me-1"
+                        >
                           Resend
                         </button>
                         <button
@@ -545,6 +548,13 @@ Whitemore St, Boulevard 99 O
             $(".show_hide_password input").attr("type", "text");
             $(".show_hide_password i").removeClass("bi bi-eye-fill");
             $(".show_hide_password i").addClass("bi bi-eye-slash");
+          }
+        });
+
+        $(".bd-sidebar").on("click", function (event) {
+          $(".bd-sidebar").hasClass("show");
+          {
+            $(".bd-sidebar").removeClass("show");
           }
         });
       });
