@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Account Setting</title>
+    <title>Kaiako Menu</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
@@ -253,103 +253,384 @@
             aria-label="Close"
           ></button>
         </div>
-        <div>
-          <form class="d-flex">
+        <div class="mb-3 d-flex">
+          <form class="form-search col">
+            <i class="fa fa-magnifying-glass"></i>
             <input
               class="form-control me-2"
               type="search"
-              placeholder="Search"
+              placeholder="Search by name"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
           </form>
-        </div>
-        <div class="card card-name mb-5">
-          <div class="card-body">
-            <div class="name">Grace Isabella</div>
-            <div class="email">
-              <i class="fa-solid fa-envelope"></i>
-              <p>grace.isabella@gmail.com</p>
-            </div>
-            <div class="phone">
-              <i class="fa-solid fa-phone"></i>
-              <p>+64 1234 5678</p>
-            </div>
-          </div>
-          <div class="card-footer bg-white d-flex">
-            <button class="btn-success-style">Active</button>
-            <div class="ms-auto">
-              <a
-                class="menu-option"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-ellipsis-v"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    data-bs-toggle="modal"
-                    data-bs-target="#editModal"
-                  >
-                    <i class="fa-solid fa-edit"></i>
-                    Edit</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    data-bs-toggle="modal"
-                    data-bs-target="#deleteModal"
-                  >
-                    <i class="fa-solid fa-trash-alt"></i>
-                    Delete
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <button class="btn btn-download btn-secondary-style col-auto">
+            <i class="fa fa-download"></i>
+          </button>
+          <div class="btn-add col-auto">
+            <button
+              class="btn btn-primary-style d-none d-md-block me-0"
+              data-bs-toggle="modal"
+              data-bs-target="#sendInviteModal"
+            >
+              <i class="fa fa-circle-plus"></i>
+              Add Data
+            </button>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="deleteModal"
-            tabindex="-1"
-            aria-labelledby="deleteModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h6 class="modal-title" id="deleteModalLabel">
-                    Delete Confirmation
-                  </h6>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
+            <button
+              class="btn-circle btn-primary-style d-block d-sm-none"
+              data-bs-toggle="modal"
+              data-bs-target="#sendInviteModal"
+            >
+              <i class="fas fa-plus"></i>
+            </button>
+            <!-- Modal Email Invitation-->
+            <div
+              class="modal fade"
+              id="sendInviteModal"
+              tabindex="-1"
+              aria-labelledby="sendInviteModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="sendInviteModalLabel">
+                      Send Email Invitation
+                    </h6>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body text-start">
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Eg. jameswilliam@gmail.com"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        placeholder="Eg. +64 1234 5678"
+                      />
+                    </div>
+                    <button type="button" class="btn btn-primary-style">
+                      Send
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary-style"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                  </div>
                 </div>
-                <div class="modal-body text-start">
-                  <p>
-                    Are you sure you want to delete
-                    <span class="fw-bold">grace.isabella@gmail.com</span>
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-primary-style"
-                    data-bs-dismiss="modal"
-                  >
-                    Yes, Delete
-                  </button>
-                  <button type="button" class="btn btn-secondary-style">
-                    Cancel
-                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-list">
+          <div class="row gx-3 gy-5">
+            <div class="col-12 col-md-6">
+              <div class="card-name">
+                <div class="card-body">
+                  <div class="name">Grace Isabella</div>
+                  <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>grace.isabella@gmail.com</p>
+                  </div>
+                  <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+64 1234 5678</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="bg-success-style">Active</div>
+                  <div class="ms-auto">
+                    <a
+                      class="menu-option"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      href="#"
+                    >
+                      <i class="fa-solid fa-ellipsis-v"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#editModal"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-edit"></i>
+                          Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#deleteModal"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-trash-alt"></i>
+                          Delete
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Delete Modal -->
+              <div
+                class="modal fade"
+                id="deleteModal"
+                tabindex="-1"
+                aria-labelledby="deleteModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h6 class="modal-title" id="deleteModalLabel">
+                        Delete Confirmation
+                      </h6>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body text-start">
+                      <p>
+                        Are you sure you want to delete
+                        <span class="fw-bold">grace.isabella@gmail.com</span>
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-primary-style"
+                        data-bs-dismiss="modal"
+                      >
+                        Yes, Delete
+                      </button>
+                      <button type="button" class="btn btn-secondary-style">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card-name">
+                <div class="card-body">
+                  <div class="name">Grace Isabella</div>
+                  <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>grace.isabella@gmail.com</p>
+                  </div>
+                  <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+64 1234 5678</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="bg-success-style">Active</div>
+                  <div class="ms-auto">
+                    <a
+                      class="menu-option"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      href="#"
+                    >
+                      <i class="fa-solid fa-ellipsis-v"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#editModal"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-edit"></i>
+                          Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#deleteModal"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-trash-alt"></i>
+                          Delete
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Delete Modal -->
+              <div
+                class="modal fade"
+                id="deleteModal"
+                tabindex="-1"
+                aria-labelledby="deleteModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h6 class="modal-title" id="deleteModalLabel">
+                        Delete Confirmation
+                      </h6>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body text-start">
+                      <p>
+                        Are you sure you want to delete
+                        <span class="fw-bold">grace.isabella@gmail.com</span>
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-primary-style"
+                        data-bs-dismiss="modal"
+                      >
+                        Yes, Delete
+                      </button>
+                      <button type="button" class="btn btn-secondary-style">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card-name">
+                <div class="card-body">
+                  <div class="name">Grace Isabella</div>
+                  <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>grace.isabella@gmail.com</p>
+                  </div>
+                  <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+64 1234 5678</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="bg-success-style">Active</div>
+                  <div class="ms-auto">
+                    <a
+                      class="menu-option"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      href="#"
+                    >
+                      <i class="fa-solid fa-ellipsis-v"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#editModal"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-edit"></i>
+                          Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#deleteModal"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-trash-alt"></i>
+                          Delete
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Delete Modal -->
+              <div
+                class="modal fade"
+                id="deleteModal"
+                tabindex="-1"
+                aria-labelledby="deleteModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h6 class="modal-title" id="deleteModalLabel">
+                        Delete Confirmation
+                      </h6>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body text-start">
+                      <p>
+                        Are you sure you want to delete
+                        <span class="fw-bold">grace.isabella@gmail.com</span>
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-primary-style"
+                        data-bs-dismiss="modal"
+                      >
+                        Yes, Delete
+                      </button>
+                      <button type="button" class="btn btn-secondary-style">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
