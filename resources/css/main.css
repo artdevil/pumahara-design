@@ -4,16 +4,17 @@
   --white: #fff;
   --bg: #fff9f1;
   --red: #dc3545;
+  --blue-light: #ced4da;
   --brown: #9f6634;
-  --brownlite: #bb7d46;
-  --lightbrown: #e4bfa0;
-  --darkbrown: #b4a093;
+  --brown-lite: #bb7d46;
+  --brown-light: #e4bfa0;
+  --brown-dark: #b4a093;
   --green-100: #abd8c0;
   --green-300: #73bf95;
   --green-500: #46996b;
   --green-600: #2d6245;
   --gray: #7a7a7a;
-  --lightgray: var(--lightgray);
+  --gray-light: #e0e0e0;
   --font: "Open Sans", sans-serif;
 }
 
@@ -79,7 +80,7 @@ a:hover {
   margin: 1rem 0;
   display: block;
   height: 1px;
-  background-color: var(--lightgray);
+  background-color: var(--gray-light);
 }
 
 .sign-sect {
@@ -133,15 +134,15 @@ a:hover {
 }
 
 .cst-form ::-webkit-input-placeholder {
-  color: var(--lightgray);
+  color: var(--gray-light);
 }
 
 .cst-form :-ms-input-placeholder {
-  color: var(--lightgray);
+  color: var(--gray-light);
 }
 
 .cst-form ::placeholder {
-  color: var(--lightgray);
+  color: var(--gray-light);
 }
 
 .cst-form .form-check-input:checked {
@@ -238,9 +239,37 @@ a:hover {
   margin-left: -10px;
 }
 
+.bg-success-style {
+  background-color: var(--green-100);
+  color: var(--green-500);
+  border-radius: 24px;
+  width: 85px;
+  border: 0;
+  padding: 5px 19.5px;
+}
+
 .btn {
   padding: 7.5px 34px;
   min-width: 150px;
+}
+
+.btn-circle {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+
+.btn-download {
+  padding: 3.5px 7.5px;
+  min-width: 50px;
+  margin-left: 15px;
 }
 
 .btn-main {
@@ -249,7 +278,7 @@ a:hover {
 }
 
 .btn-main:hover {
-  background-color: var(--brownlite);
+  background-color: var(--brown-lite);
   color: var(--white);
   text-decoration: none;
 }
@@ -266,14 +295,6 @@ a:hover {
   border: 1px solid var(--brown);
 }
 
-.btn-success-style {
-  background-color: var(--green-100);
-  color: var(--green-500);
-  border-radius: 24px;
-  width: 85px;
-  border: 0;
-  padding: 5px 19.5px;
-}
 .btn-submit {
   margin-top: 50px;
   margin-left: -15px;
@@ -293,6 +314,17 @@ a:hover {
   margin-bottom: -8px;
 }
 
+.card-list > .row {
+  --bs-gutter-y: 30px;
+  --bs-gutter-x: 15px;
+}
+
+.card-name {
+  background-color: var(--white);
+  border: 1px solid var(--gray-light);
+  border-radius: 6px;
+}
+
 .card-name > .card-body > div:not(div:last-child) {
   margin-bottom: 15px;
 }
@@ -300,6 +332,10 @@ a:hover {
 .card-name > .card-footer {
   margin: 0 15px;
   padding: 15px 0;
+  border-top: 1px solid var(--gray-light);
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
 }
 
 .card-name > .card-body > .name {
@@ -337,6 +373,26 @@ a:hover {
   display: block;
 }
 
+.form-search {
+  position: relative;
+}
+
+.form-search > i {
+  position: absolute;
+  left: 18px;
+  top: 10px;
+  font-size: 18px;
+  color: var(--blue-light);
+}
+
+.form-search > input {
+  padding: 5.5px 14px 5.5px 48px;
+  height: 41px;
+}
+
+.form-search > input::placeholder {
+  color: var(--gray-light);
+}
 .image-preview {
   width: 90px;
   height: 90px;
@@ -357,7 +413,7 @@ a:hover {
   width: 75px;
   height: 75px;
   border-radius: 100%;
-  border: 3px solid var(--lightbrown);
+  border: 3px solid var(--brown-light);
 }
 
 .icon-arrow {
@@ -426,7 +482,7 @@ a:hover {
 }
 
 .image-upload + p {
-  color: var(--darkbrown);
+  color: var(--brown-dark);
   font-size: 12px;
   line-height: 24px;
   text-align: center;
@@ -441,8 +497,9 @@ a:hover {
   color: var(--red);
 }
 
-.menu-option + ul > li > a > i {
+.menu-option > i {
   margin-right: 10px;
+  color: var(--text);
 }
 
 .modal-dialog {
@@ -557,6 +614,13 @@ a:hover {
     width: 280px;
   }
 
+  .btn-add {
+    margin-left: 15px;
+  }
+
+  .btn-download {
+    margin-left: 30px;
+  }
   .btn-submit {
     padding: 7px 35px;
     width: 175px;
