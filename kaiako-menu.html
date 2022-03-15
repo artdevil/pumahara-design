@@ -342,8 +342,8 @@
           </div>
         </div>
         <div class="card-list">
-          <div class="row gx-3 gy-5">
-            <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="card-name">
                 <div class="card-body">
                   <div class="name">Grace Isabella</div>
@@ -357,7 +357,7 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <div class="bg-success-style">Active</div>
+                  <div class="bg-active">Active</div>
                   <div class="ms-auto">
                     <a
                       class="menu-option"
@@ -440,13 +440,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="card-name">
                 <div class="card-body">
-                  <div class="name">Grace Isabella</div>
+                  <div class="name">Sienna Evelyn</div>
                   <div class="email">
                     <i class="fa-solid fa-envelope"></i>
-                    <p>grace.isabella@gmail.com</p>
+                    <p>sienna.evelyn@gmail.com</p>
                   </div>
                   <div class="phone">
                     <i class="fa-solid fa-phone"></i>
@@ -454,7 +454,7 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <div class="bg-success-style">Active</div>
+                  <div class="bg-active">Active</div>
                   <div class="ms-auto">
                     <a
                       class="menu-option"
@@ -537,13 +537,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="card-name">
                 <div class="card-body">
-                  <div class="name">Grace Isabella</div>
+                  <div class="name">Benjamin Jacob</div>
                   <div class="email">
                     <i class="fa-solid fa-envelope"></i>
-                    <p>grace.isabella@gmail.com</p>
+                    <p>benjamin.jacob@gmail.com</p>
                   </div>
                   <div class="phone">
                     <i class="fa-solid fa-phone"></i>
@@ -551,7 +551,104 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <div class="bg-success-style">Active</div>
+                  <div class="bg-active">Active</div>
+                  <div class="ms-auto">
+                    <a
+                      class="menu-option"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      href="#"
+                    >
+                      <i class="fa-solid fa-ellipsis-v"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#editModal"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-edit"></i>
+                          Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#deleteModal"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-trash-alt"></i>
+                          Delete
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Delete Modal -->
+              <div
+                class="modal fade"
+                id="deleteModal"
+                tabindex="-1"
+                aria-labelledby="deleteModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h6 class="modal-title" id="deleteModalLabel">
+                        Delete Confirmation
+                      </h6>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body text-start">
+                      <p>
+                        Are you sure you want to delete
+                        <span class="fw-bold">grace.isabella@gmail.com</span>
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-primary-style"
+                        data-bs-dismiss="modal"
+                      >
+                        Yes, Delete
+                      </button>
+                      <button type="button" class="btn btn-secondary-style">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-name">
+                <div class="card-body">
+                  <div class="name">-</div>
+                  <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>ethan.hunter@gmail.com</p>
+                  </div>
+                  <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>-</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="bg-inactive">Inactive</div>
                   <div class="ms-auto">
                     <a
                       class="menu-option"
@@ -636,6 +733,26 @@
             </div>
           </div>
         </div>
+        <nav
+          class="d-none d-lg-flex justify-content-center"
+          aria-label="Page navigation"
+        >
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </main>
     </div>
     <script
