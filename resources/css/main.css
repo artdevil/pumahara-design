@@ -320,6 +320,27 @@ a:hover {
   margin-bottom: -8px;
 }
 
+.card-body > .name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card-body > .email,
+.card-body > .phone {
+  display: flex;
+  word-break: break-all;
+}
+
+.card-body > .phone > p,
+.card-body > .email > p {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.card-header > .nav > .nav-style-list {
+  width: 150px;
+}
+
 .card-list > .row {
   --bs-gutter-y: 30px;
   --bs-gutter-x: 15px;
@@ -345,25 +366,34 @@ a:hover {
   align-items: center;
 }
 
-.card-name > .card-body > .name {
+.card-title,
+.card-text {
   font-size: 14px;
-  font-weight: 700;
 }
 
-.card-body > .email,
-.card-body > .phone {
-  display: flex;
-  word-break: break-all;
+.card-subtitle {
+  font-size: 12px;
+  line-height: 24px;
 }
 
-.card-name > .card-body > .phone > p,
-.card-name > .card-body > .email > p {
-  margin-bottom: 0;
-  margin-left: 5px;
+#detailModal > .modal-dialog {
+  top: 0;
 }
 
-.card-header > .nav > .nav-style-list {
-  width: 150px;
+#deleteModal > .modal-dialog {
+  top: calc(50% - 100px);
+}
+
+.dropdown-menu > li {
+  margin-bottom: 15px;
+}
+
+.dropdown-menu > li:last-child {
+  margin-bottom: 0px;
+}
+
+.dropdown-item > i {
+  margin-right: 6px;
 }
 
 .navbar-collapse:not(.show) {
@@ -527,17 +557,13 @@ a:hover {
   color: var(--brown-500);
 }
 
-.logout {
+.text-danger {
   color: var(--red);
 }
 
 .menu-option > i {
   margin-right: 10px;
   color: var(--text);
-}
-
-.modal-dialog {
-  top: calc(50% - 100px);
 }
 
 .modal-header > .modal-title,
@@ -742,6 +768,10 @@ a:hover {
     margin-right: 15px;
   }
 
+  .card-header > .nav > .nav-style-list {
+    width: 120px;
+  }
+
   .card-list {
     margin-bottom: 30px;
   }
@@ -749,10 +779,6 @@ a:hover {
   .card-list > .row {
     --bs-gutter-y: 30px;
     --bs-gutter-x: 30px;
-  }
-
-  .card-header > .nav > .nav-style-list {
-    width: 120px;
   }
 
   .navbar-collapse:not(.show) {
