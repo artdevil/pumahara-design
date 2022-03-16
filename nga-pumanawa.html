@@ -225,7 +225,7 @@
                   class="nav-item d-flex justify-content-between"
                   style="margin-top: 10px"
                 >
-                  <div class="logout">
+                  <div class="text-danger">
                     <i class="icon-font">&#xe805;</i>
                     <span>Logout</span>
                   </div>
@@ -237,13 +237,14 @@
       </div>
       <!-- Main Section-->
       <main class="bd-main">
-        <div class="collapse main-toggle" id="update-form">
+        <!-- add form -->
+        <div class="collapse addForm" id="addForm">
           <div class="nav-back d-flex align-items-center">
             <a
               class="icon-back"
               href="#"
               data-bs-toggle="collapse"
-              data-bs-target=".main-toggle"
+              data-bs-target=".addForm"
             >
               <svg
                 width="16"
@@ -258,56 +259,115 @@
                 />
               </svg>
             </a>
-            <h5 class="mb-0">Update Kaiako</h5>
+            <h5 class="mb-0">Add Ngā Pūmanawa</h5>
           </div>
           <form action="" class="form-update">
             <div class="row">
               <div class="mb-4 col-12 col-md-6">
-                <label for="firstName" class="form-label">First Name</label>
+                <label for="Kounga" class="form-label">Kounga</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="firstName"
-                  placeholder="Type your name"
-                  value="grace"
+                  id="Kounga"
+                  placeholder="Eg. Tuakiri"
                 />
               </div>
               <div class="mb-4 col-12 col-md-6">
-                <label for="lastName" class="form-label">Last Name</label>
+                <label for="Tupuna" class="form-label">Tupuna</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="lastName"
-                  placeholder="Type your name"
-                  value="isabella"
+                  id="Tupuna"
+                  placeholder="Eg. Tamatekapua"
                 />
               </div>
               <div class="mb-4 col-12 col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
+                <label for="Āhuatanga" class="form-label">Āhuatanga</label>
+                <textarea
                   class="form-control"
-                  id="email"
-                  placeholder="Type your name"
-                  value="grace.isabella@gmail.com"
-                />
+                  id="Āhuatanga"
+                  rows="3"
+                  placeholder="Fill in the description"
+                ></textarea>
               </div>
               <div class="mb-4 col-12 col-md-6">
-                <label for="phone" class="form-label">Phone Number</label>
-                <input
-                  type="tel"
+                <label for="Whakaritenga" class="form-label"
+                  >Whakaritenga</label
+                >
+                <textarea
                   class="form-control"
-                  id="phone"
-                  placeholder="Type your name"
-                  value="+64 1234 5678"
+                  id="Whakaritenga"
+                  rows="3"
+                  placeholder="Fill in the description"
+                ></textarea>
+              </div>
+            </div>
+            <button class="btn btn-primary-style col-12 col-md-auto">
+              Save
+            </button>
+          </form>
+        </div>
+
+        <!-- update form -->
+        <div class="collapse updateForm" id="updateForm">
+          <div class="nav-back d-flex align-items-center">
+            <a
+              class="icon-back"
+              href="#"
+              data-bs-toggle="collapse"
+              data-bs-target=".updateForm"
+            >
+              <svg
+                width="16"
+                height="21"
+                viewBox="0 0 16 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.15371 15.3453C9.50564 14.9941 9.47105 14.4667 9.15503 14.1148L4.90546 10.0673L15.0305 10.0781C15.4875 10.0786 15.8746 9.72748 15.8751 9.23529L15.8763 8.11029C15.8768 7.65326 15.4905 7.26612 15.0335 7.26563L4.90848 7.25477L9.16668 3.25152C9.48346 2.9003 9.51919 2.373 9.168 2.02106L8.39539 1.24679C8.07933 0.930044 7.51683 0.929441 7.20008 1.24551L0.372418 8.09365C0.0205166 8.40968 0.0199508 8.93703 0.371174 9.25381L7.18413 16.1166C7.50019 16.4333 8.02754 16.4339 8.37944 16.1179L9.15371 15.3453Z"
+                  fill="#3E332B"
+                />
+              </svg>
+            </a>
+            <h5 class="mb-0">Update Ngā Pūmanawa</h5>
+          </div>
+          <form action="" class="form-update">
+            <div class="row">
+              <div class="mb-4 col-12 col-md-6">
+                <label for="Kounga" class="form-label">Kounga</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Kounga"
+                  placeholder="Type"
+                  value="Tuakiri"
                 />
               </div>
               <div class="mb-4 col-12 col-md-6">
-                <label for="status" class="form-label">Status</label>
-                <select class="form-select" id="inputGroupSelect01">
-                  <option selected>Aktive</option>
-                  <option value="Inactive">Inactive</option>
-                </select>
+                <label for="Tupuna" class="form-label">Tupuna</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Tupuna"
+                  placeholder="Type"
+                  value="Tamatekapua"
+                />
+              </div>
+              <div class="mb-4 col-12 col-md-6">
+                <label for="Āhuatanga" class="form-label">Āhuatanga</label>
+                <textarea class="form-control" id="Āhuatanga" rows="5">
+He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna āheinga, ā, kāore e paku horokukū ana ki te mahi i ētehi mea e kīīā ai te kōrero he manawa kai roke ia.
+</textarea
+                >
+              </div>
+              <div class="mb-4 col-12 col-md-6">
+                <label for="Whakaritenga" class="form-label"
+                  >Whakaritenga</label
+                >
+                <textarea class="form-control" id="Whakaritenga" rows="3">
+- Te Ao Māori &#13;- Te reo me ōna tikanga&#13;- Whenua</textarea
+                >
               </div>
             </div>
             <button class="btn btn-primary-style col-12 col-md-auto">
@@ -316,7 +376,104 @@
           </form>
         </div>
 
-        <div class="collapse show main-toggle" id="main">
+        <!-- Delete Modal -->
+        <div
+          class="modal fade"
+          id="deleteModal"
+          tabindex="-1"
+          aria-labelledby="deleteModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="deleteModalLabel">
+                  Delete Confirmation
+                </h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body text-start">
+                <p>
+                  Are you sure you want to delete
+                  <span class="fw-bold">Taukiri</span>?
+                </p>
+                <button type="button" class="btn btn-primary-style">
+                  Yes, Delete
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary-style"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Detail-->
+        <div class="modal fade" id="detailModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="sendInviteModalLabel">
+                  Detail Ngā Pūmanawa
+                </h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body text-start">
+                <div class="row">
+                  <div class="mb-4 col-12">
+                    <label for="Kounga" class="form-label">Kounga</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Kounga"
+                      value="Tuakiri"
+                    />
+                  </div>
+                  <div class="mb-4 col-12">
+                    <label for="Tupuna" class="form-label">Tupuna</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Tupuna"
+                      value="Tamatekapua"
+                    />
+                  </div>
+                  <div class="mb-4 col-12">
+                    <label for="Āhuatanga" class="form-label">Āhuatanga</label>
+                    <textarea class="form-control" id="Āhuatanga" rows="5">
+He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna āheinga, ā, kāore e paku horokukū ana ki te mahi i ētehi mea e kīīā ai te kōrero he manawa kai roke ia.</textarea
+                    >
+                  </div>
+                  <div class="col-12">
+                    <label for="Whakaritenga" class="form-label"
+                      >Whakaritenga</label
+                    >
+                    <textarea class="form-control" id="Whakaritenga" rows="3">
+- Te Ao Māori &#13;- Te reo me ōna tikanga&#13;- Whenua</textarea
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nga pumanawa menu -->
+        <div class="collapse show addForm updateForm" id="main">
           <div class="header d-flex align-items-center mb-4">
             <i class="icon-font">&#xe808;</i>
             <h4 class="page-title">Ngā Pūmanawa</h4>
@@ -346,8 +503,8 @@
             <div class="btn-add col-auto">
               <button
                 class="btn btn-primary-style d-none d-md-block me-0"
-                data-bs-toggle="modal"
-                data-bs-target="#sendInviteModal"
+                data-bs-toggle="collapse"
+                data-bs-target=".addForm"
               >
                 <i class="fa fa-circle-plus"></i>
                 Add Data
@@ -355,652 +512,473 @@
 
               <button
                 class="btn-circle btn-primary-style d-block d-sm-none"
-                data-bs-toggle="modal"
-                data-bs-target="#sendInviteModal"
+                data-bs-toggle="collapse"
+                data-bs-target=".addForm"
               >
                 <i class="fas fa-plus"></i>
               </button>
-              <!-- Modal Email Invitation-->
-              <div
-                class="modal fade"
-                id="sendInviteModal"
-                tabindex="-1"
-                aria-labelledby="sendInviteModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h6 class="modal-title" id="sendInviteModalLabel">
-                        Send Email Invitation
-                      </h6>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body text-start">
-                      <div class="mb-3">
-                        <label for="email" class="form-label"
-                          >Email address</label
-                        >
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          placeholder="Eg. jameswilliam@gmail.com"
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="phone" class="form-label"
-                          >Phone Number</label
-                        >
-                        <input
-                          type="tel"
-                          class="form-control"
-                          id="phone"
-                          placeholder="Eg. +64 1234 5678"
-                        />
-                      </div>
-                      <button type="button" class="btn btn-primary-style">
-                        Send
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-secondary-style"
-                        data-bs-dismiss="modal"
-                      >
-                        Cancel
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div class="card-list">
             <div class="row">
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="card-name">
+                <div class="card">
                   <div class="card-body">
-                    <div class="name">Grace Isabella</div>
-                    <div class="email">
-                      <i class="fa-solid fa-envelope"></i>
-                      <p>grace.isabella@gmail.com</p>
-                    </div>
-                    <div class="phone">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>+64 1234 5678</p>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="bg-active">Active</div>
-                    <div class="ms-auto">
-                      <a
-                        class="menu-option"
-                        id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        href="#"
-                      >
-                        <i class="fa-solid fa-ellipsis-v"></i>
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="collapse"
-                            data-bs-target=".main-toggle"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-edit"></i>
-                            Edit</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#deleteModal"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-trash-alt"></i>
-                            Delete
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Delete Modal -->
-                <div
-                  class="modal fade"
-                  id="deleteModal"
-                  tabindex="-1"
-                  aria-labelledby="deleteModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h6 class="modal-title" id="deleteModalLabel">
-                          Delete Confirmation
-                        </h6>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
+                    <div class="row align-items-center mb-3">
+                      <div class="col">
+                        <h6 class="card-title">Tuakiri</h6>
+                        <p class="card-subtitle">Tamatekapua</p>
                       </div>
-                      <div class="modal-body text-start">
-                        <p>
-                          Are you sure you want to delete
-                          <span class="fw-bold">grace.isabella@gmail.com</span>
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-primary-style"
-                          data-bs-dismiss="modal"
+                      <div class="col-auto ms-auto">
+                        <a
+                          class="menu-option"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          href="#"
                         >
-                          Yes, Delete
-                        </button>
-                        <button type="button" class="btn btn-secondary-style">
-                          Cancel
-                        </button>
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".updateForm"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-edit"></i>
+                              Edit</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#detailModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-info-circle"></i>
+                              Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-danger"
+                              data-bs-toggle="modal"
+                              data-bs-target="#deleteModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-trash-alt"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
+                    <p class="card-text">
+                      He tangata e whakapono ana ki a ia anō, ki tōna whanonga,
+                      ki tōna āhua, ki ōna āhei...
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="card-name">
+                <div class="card">
                   <div class="card-body">
-                    <div class="name">Sienna Evelyn</div>
-                    <div class="email">
-                      <i class="fa-solid fa-envelope"></i>
-                      <p>sienna.evelyn@gmail.com</p>
+                    <div class="row align-items-center mb-3">
+                      <div class="col">
+                        <h6 class="card-title">Pukumahi</h6>
+                        <p class="card-subtitle">Pererika Pēneti</p>
+                      </div>
+                      <div class="col-auto ms-auto">
+                        <a
+                          class="menu-option"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".updateForm"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-edit"></i>
+                              Edit</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#detailModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-info-circle"></i>
+                              Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-danger"
+                              data-bs-toggle="modal"
+                              data-bs-target="#deleteModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-trash-alt"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="phone">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>+64 1234 5678</p>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="bg-active">Active</div>
-                    <div class="ms-auto">
-                      <a
-                        class="menu-option"
-                        id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        href="#"
-                      >
-                        <i class="fa-solid fa-ellipsis-v"></i>
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="collapse"
-                            data-bs-target=".main-toggle"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-edit"></i>
-                            Edit</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#deleteModal"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-trash-alt"></i>
-                            Delete
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                    <p class="card-text">
+                      Ka manawanui mai, ka ū ki ngā kaupapa ahakoa ngā
+                      taumahatanga o te wā, ka mā...
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <!-- Delete Modal -->
-                <div
-                  class="modal fade"
-                  id="deleteModal"
-                  tabindex="-1"
-                  aria-labelledby="deleteModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h6 class="modal-title" id="deleteModalLabel">
-                          Delete Confirmation
-                        </h6>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-center mb-3">
+                      <div class="col">
+                        <h6 class="card-title">Whanaungatanga</h6>
+                        <p class="card-subtitle">Te Ao Kapurangi</p>
                       </div>
-                      <div class="modal-body text-start">
-                        <p>
-                          Are you sure you want to delete
-                          <span class="fw-bold">grace.isabella@gmail.com</span>
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-primary-style"
-                          data-bs-dismiss="modal"
+                      <div class="col-auto ms-auto">
+                        <a
+                          class="menu-option"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          href="#"
                         >
-                          Yes, Delete
-                        </button>
-                        <button type="button" class="btn btn-secondary-style">
-                          Cancel
-                        </button>
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".updateForm"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-edit"></i>
+                              Edit</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#detailModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-info-circle"></i>
+                              Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-danger"
+                              data-bs-toggle="modal"
+                              data-bs-target="#deleteModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-trash-alt"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
+                    <p class="card-text">
+                      Te āheinga kia mau tonu ngā hononga e kitea tonuhia ai te
+                      mana o te tangata me...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-center mb-3">
+                      <div class="col">
+                        <h6 class="card-title">Auahatanga</h6>
+                        <p class="card-subtitle">Ihenga</p>
+                      </div>
+                      <div class="col-auto ms-auto">
+                        <a
+                          class="menu-option"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".updateForm"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-edit"></i>
+                              Edit</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#detailModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-info-circle"></i>
+                              Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-danger"
+                              data-bs-toggle="modal"
+                              data-bs-target="#deleteModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-trash-alt"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      He tangata e whakapono ana ki a ia anō, ki tōna whanonga,
+                      ki tōna āhua, ki ōna āhei...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-center mb-3">
+                      <div class="col">
+                        <h6 class="card-title">Oranga</h6>
+                        <p class="card-subtitle">
+                          Dorothy Huhana (Bubles) Mihinui
+                        </p>
+                      </div>
+                      <div class="col-auto ms-auto">
+                        <a
+                          class="menu-option"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".updateForm"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-edit"></i>
+                              Edit</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#detailModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-info-circle"></i>
+                              Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-danger"
+                              data-bs-toggle="modal"
+                              data-bs-target="#deleteModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-trash-alt"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      He tangata e whakapono ana ki a ia anō, ki tōna whanonga,
+                      ki tōna āhua, ki ōna āhei...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-center mb-3">
+                      <div class="col">
+                        <h6 class="card-title">Karahipi</h6>
+                        <p class="card-subtitle">Makareti Papakura</p>
+                      </div>
+                      <div class="col-auto ms-auto">
+                        <a
+                          class="menu-option"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          href="#"
+                        >
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".updateForm"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-edit"></i>
+                              Edit</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#detailModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-info-circle"></i>
+                              Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-danger"
+                              data-bs-toggle="modal"
+                              data-bs-target="#deleteModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-trash-alt"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      He tangata e whakapono ana ki a ia anō, ki tōna whanonga,
+                      ki tōna āhua, ki ōna āhei...
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="card-name">
+                <div class="card">
                   <div class="card-body">
-                    <div class="name">Benjamin Jacob</div>
-                    <div class="email">
-                      <i class="fa-solid fa-envelope"></i>
-                      <p>benjamin.jacob@gmail.com</p>
-                    </div>
-                    <div class="phone">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>+64 1234 5678</p>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="bg-active">Active</div>
-                    <div class="ms-auto">
-                      <a
-                        class="menu-option"
-                        id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        href="#"
-                      >
-                        <i class="fa-solid fa-ellipsis-v"></i>
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="collapse"
-                            data-bs-target=".main-toggle"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-edit"></i>
-                            Edit</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#deleteModal"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-trash-alt"></i>
-                            Delete
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Delete Modal -->
-                <div
-                  class="modal fade"
-                  id="deleteModal"
-                  tabindex="-1"
-                  aria-labelledby="deleteModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h6 class="modal-title" id="deleteModalLabel">
-                          Delete Confirmation
-                        </h6>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
+                    <div class="row align-items-center mb-3">
+                      <div class="col">
+                        <h6 class="card-title">Karahipi</h6>
+                        <p class="card-subtitle">Makareti Papakura</p>
                       </div>
-                      <div class="modal-body text-start">
-                        <p>
-                          Are you sure you want to delete
-                          <span class="fw-bold">grace.isabella@gmail.com</span>
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-primary-style"
-                          data-bs-dismiss="modal"
+                      <div class="col-auto ms-auto">
+                        <a
+                          class="menu-option"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          href="#"
                         >
-                          Yes, Delete
-                        </button>
-                        <button type="button" class="btn btn-secondary-style">
-                          Cancel
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card-name">
-                  <div class="card-body">
-                    <div class="name">-</div>
-                    <div class="email">
-                      <i class="fa-solid fa-envelope"></i>
-                      <p>ethan.hunter@gmail.com</p>
-                    </div>
-                    <div class="phone">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>-</p>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="bg-inactive">Inactive</div>
-                    <div class="ms-auto">
-                      <a
-                        class="menu-option"
-                        id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        href="#"
-                      >
-                        <i class="fa-solid fa-ellipsis-v"></i>
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="collapse"
-                            data-bs-target=".main-toggle"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-edit"></i>
-                            Edit</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#deleteModal"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-trash-alt"></i>
-                            Delete
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Delete Modal -->
-                <div
-                  class="modal fade"
-                  id="deleteModal"
-                  tabindex="-1"
-                  aria-labelledby="deleteModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h6 class="modal-title" id="deleteModalLabel">
-                          Delete Confirmation
-                        </h6>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body text-start">
-                        <p>
-                          Are you sure you want to delete
-                          <span class="fw-bold">grace.isabella@gmail.com</span>
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-primary-style"
-                          data-bs-dismiss="modal"
+                          <i class="fa-solid fa-ellipsis-v"></i>
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
                         >
-                          Yes, Delete
-                        </button>
-                        <button type="button" class="btn btn-secondary-style">
-                          Cancel
-                        </button>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="collapse"
+                              data-bs-target=".updateForm"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-edit"></i>
+                              Edit</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              data-bs-toggle="modal"
+                              data-bs-target="#detailModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-info-circle"></i>
+                              Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-danger"
+                              data-bs-toggle="modal"
+                              data-bs-target="#deleteModal"
+                              href="#"
+                            >
+                              <i class="fa-solid fa-trash-alt"></i>
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card-name">
-                  <div class="card-body">
-                    <div class="name">-</div>
-                    <div class="email">
-                      <i class="fa-solid fa-envelope"></i>
-                      <p>ethan.hunter@gmail.com</p>
-                    </div>
-                    <div class="phone">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>-</p>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="bg-inactive">Inactive</div>
-                    <div class="ms-auto">
-                      <a
-                        class="menu-option"
-                        id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        href="#"
-                      >
-                        <i class="fa-solid fa-ellipsis-v"></i>
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="collapse"
-                            data-bs-target=".main-toggle"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-edit"></i>
-                            Edit</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#deleteModal"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-trash-alt"></i>
-                            Delete
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Delete Modal -->
-                <div
-                  class="modal fade"
-                  id="deleteModal"
-                  tabindex="-1"
-                  aria-labelledby="deleteModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h6 class="modal-title" id="deleteModalLabel">
-                          Delete Confirmation
-                        </h6>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body text-start">
-                        <p>
-                          Are you sure you want to delete
-                          <span class="fw-bold">grace.isabella@gmail.com</span>
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-primary-style"
-                          data-bs-dismiss="modal"
-                        >
-                          Yes, Delete
-                        </button>
-                        <button type="button" class="btn btn-secondary-style">
-                          Cancel
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card-name">
-                  <div class="card-body">
-                    <div class="name">-</div>
-                    <div class="email">
-                      <i class="fa-solid fa-envelope"></i>
-                      <p>ethan.hunter@gmail.com</p>
-                    </div>
-                    <div class="phone">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>-</p>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="bg-inactive">Inactive</div>
-                    <div class="ms-auto">
-                      <a
-                        class="menu-option"
-                        id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        href="#"
-                      >
-                        <i class="fa-solid fa-ellipsis-v"></i>
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="collapse"
-                            data-bs-target=".main-toggle"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-edit"></i>
-                            Edit</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#deleteModal"
-                            href="#"
-                          >
-                            <i class="fa-solid fa-trash-alt"></i>
-                            Delete
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Delete Modal -->
-                <div
-                  class="modal fade"
-                  id="deleteModal"
-                  tabindex="-1"
-                  aria-labelledby="deleteModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h6 class="modal-title" id="deleteModalLabel">
-                          Delete Confirmation
-                        </h6>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body text-start">
-                        <p>
-                          Are you sure you want to delete
-                          <span class="fw-bold">grace.isabella@gmail.com</span>
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-primary-style"
-                          data-bs-dismiss="modal"
-                        >
-                          Yes, Delete
-                        </button>
-                        <button type="button" class="btn btn-secondary-style">
-                          Cancel
-                        </button>
-                      </div>
-                    </div>
+                    <p class="card-text">
+                      He tangata e whakapono ana ki a ia anō, ki tōna whanonga,
+                      ki tōna āhua, ki ōna āhei...
+                    </p>
                   </div>
                 </div>
               </div>
