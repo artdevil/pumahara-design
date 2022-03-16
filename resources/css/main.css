@@ -311,7 +311,10 @@ a:hover {
   width: 100%;
 }
 
-/* card style */
+.card {
+  height: 100%;
+}
+
 .card > .card-header > ul {
   width: 300px;
 }
