@@ -233,11 +233,13 @@ a:hover {
 .bd-links > ul > li .active::before {
   content: ":";
   height: 40px;
-  width: 40px;
+  width: 4px;
   border-radius: 2px;
   background-color: var(--brown-500);
   color: var(--brown-500);
-  margin-left: -10px;
+  left: 0px;
+  margin-top: -5px;
+  position: absolute;
 }
 
 .bg-active {
@@ -584,6 +586,11 @@ a:hover {
 
 .nav-style {
   margin: 0 15.4px 15px 17.6px;
+}
+
+.nav-style > li {
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 
 .nav-style > li > .active {
