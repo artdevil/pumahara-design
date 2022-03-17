@@ -1,8 +1,10 @@
 :root {
   --text: #3e332b;
   --title: #452669;
+  --border: #d5d5d5;
   --white: #fff;
   --bg: #fff9f1;
+  --bg-admin: #f5f6f8;
   --red: #dc3545;
   --blue-light: #ced4da;
   --brown-100: #e1c0a3;
@@ -19,16 +21,9 @@
   --font: "Open Sans", sans-serif;
 }
 
-@font-face {
-  font-family: "fontello";
-  src: url("../font/fontello.woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   font-family: var(--font);
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--text);
   font-weight: 400;
   font-size: 16px;
@@ -58,7 +53,7 @@ h6 {
 }
 
 a {
-  color: var(--brown-500);
+  color: var(--text);
   text-decoration: none;
   transition: ease all 0.5s;
   -webkit-transition: ease all 0.5s;
@@ -74,7 +69,6 @@ a {
 
 a:hover {
   color: var(--brown-500);
-  text-decoration: underline;
 }
 
 .line-div {
@@ -189,6 +183,7 @@ a:hover {
   font-size: 2.25rem;
   color: var(--brown-500);
   margin-right: 10px;
+  line-height: 1em;
 }
 
 .brand {
@@ -226,20 +221,19 @@ a:hover {
 }
 
 .bd-links > ul > li {
-  height: 40px;
   align-items: center;
+  padding: 10px 0;
 }
 
 .bd-links > ul > li .active::before {
   content: ":";
-  height: 40px;
   width: 4px;
   border-radius: 2px;
   background-color: var(--brown-500);
   color: var(--brown-500);
-  left: 0px;
-  margin-top: -5px;
-  position: absolute;
+  left: -18px;
+  margin: -6px -4px -6px 0;
+  position: relative;
 }
 
 .bg-active {
@@ -308,9 +302,18 @@ a:hover {
   margin-left: -15px;
   position: absolute;
   background-color: var(--brown-500);
-  color: white;
+  color: var(--white);
   padding: 7.5px 36px;
   width: 100%;
+}
+
+.card,
+.card > .card-header {
+  padding-bottom: 7px;
+}
+
+.card > .card-header {
+  background-color: var(--white);
 }
 
 .card > .card-header > ul {
@@ -336,6 +339,11 @@ a:hover {
 .card-body > .email > p {
   margin-bottom: 0;
   margin-left: 5px;
+}
+
+.card-header {
+  margin: 15px;
+  padding: 0;
 }
 
 .card-header > .nav > .nav-style-list {
@@ -376,6 +384,9 @@ a:hover {
   font-size: 12px;
   line-height: 24px;
 }
+.container-box {
+  background-color: var(--bg-admin);
+}
 
 #detailModal > .modal-dialog {
   top: 0;
@@ -397,17 +408,6 @@ a:hover {
   margin-right: 6px;
 }
 
-.navbar-collapse:not(.show) {
-  transition-property: transform;
-  transform: translate3d(-100%, 0, 0);
-  display: block;
-  transition-duration: 200ms;
-}
-.navbar-collapse.show {
-  transform: translate3d(0, 0, 0);
-  transition-duration: 200ms;
-}
-
 .fa-solid {
   padding: 4px 4px 4px 0;
 }
@@ -418,6 +418,10 @@ a:hover {
 
 .fade.show {
   display: block;
+}
+
+.form-label {
+  padding-bottom: 15px;
 }
 
 .form-search {
@@ -475,7 +479,6 @@ a:hover {
   display: flex !important;
   justify-content: center;
   align-items: center;
-  color: var(--text);
 }
 
 .icon-back {
@@ -494,16 +497,10 @@ a:hover {
   font-family: "fontello";
   width: 24px;
   height: 24px;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: normal;
   display: inline-block;
-  text-decoration: inherit;
-  margin-right: 0.2em;
   text-align: center;
-  line-height: 1em;
-  font-variant: normal;
-  text-transform: none;
+  font-size: 17px;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-right: 10px;
@@ -558,10 +555,6 @@ a:hover {
   color: var(--brown-500);
 }
 
-.text-danger {
-  color: var(--red);
-}
-
 .menu-option > i {
   margin-right: 10px;
   color: var(--text);
@@ -577,6 +570,17 @@ a:hover {
   margin-left: -16px;
 }
 
+.navbar-collapse:not(.show) {
+  transition-property: transform;
+  transform: translate3d(-100%, 0, 0);
+  display: block;
+  transition-duration: 200ms;
+}
+.navbar-collapse.show {
+  transform: translate3d(0, 0, 0);
+  transition-duration: 200ms;
+}
+
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0;
 }
@@ -586,11 +590,6 @@ a:hover {
 
 .nav-style {
   margin: 0 15.4px 15px 17.6px;
-}
-
-.nav-style > li {
-  margin-top: 10px;
-  padding-bottom: 10px;
 }
 
 .nav-style > li > .active {
@@ -603,6 +602,7 @@ a:hover {
 
 .nav-link {
   color: var(--text);
+  padding: 15px 20px 12px;
 }
 .nav-link:hover {
   color: var(--brown-500);
@@ -659,6 +659,10 @@ a:hover {
 
 .row-gap {
   --bs-gutter-x: 30px;
+}
+
+.text-danger {
+  color: var(--red);
 }
 
 .text-link {
@@ -787,10 +791,6 @@ a:hover {
     --bs-gutter-x: 30px;
   }
 
-  .navbar-collapse:not(.show) {
-    transform: translateX(0);
-  }
-
   .container-box {
     display: grid;
     grid-template-areas: "sidebar main";
@@ -814,6 +814,10 @@ a:hover {
   .model-header .modal-content {
     width: 626px;
     height: 183px;
+  }
+
+  .navbar-collapse:not(.show) {
+    transform: translateX(0);
   }
 
   .notification {
