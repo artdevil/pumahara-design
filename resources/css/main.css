@@ -156,15 +156,20 @@ a:hover {
 /* ---------------------
   Account Setting Style 
 ----------------------*/
+.alert {
+  font-size: 14px;
+}
+
 .alert-success-style {
   background-color: var(--green-100);
   color: var(--green-600);
   border-color: var(--green-300);
-  font-size: 14px;
 }
+
 .alert-detail > h4 {
   font-size: 14px;
 }
+
 .alert-detail > p,
 .alert-detail > p > span {
   font-size: 12px;
@@ -172,7 +177,7 @@ a:hover {
 
 .bd-main {
   grid-area: main;
-  padding: 15px 15px 100px;
+  padding: 30px 15px 100px;
   overflow: auto;
   height: 100vh;
 }
@@ -251,8 +256,7 @@ a:hover {
 }
 
 .btn {
-  padding: 7.5px 34px;
-  min-width: 150px;
+  padding: 7.5px;
 }
 
 .btn-circle {
@@ -288,7 +292,6 @@ a:hover {
 .btn-primary-style {
   background-color: var(--brown-500);
   color: var(--white);
-  margin-right: 3px;
 }
 
 .btn-secondary-style {
@@ -676,6 +679,10 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .alert {
+    font-size: 16px;
+  }
+
   .alert-detail > h4 {
     margin-bottom: 10px;
   }
