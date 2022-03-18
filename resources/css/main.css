@@ -827,7 +827,7 @@ a:hover {
   .profile {
     position: absolute;
     top: -123px;
-    left: 85px;
+    width: 100%;
   }
 
   .sign-sect-form {
