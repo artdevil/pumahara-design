@@ -6,6 +6,9 @@
   --bg: #fff9f1;
   --bg-admin: #f5f6f8;
   --red: #dc3545;
+  --red-100: #edabaf;
+  --red-300: #e6898f;
+  --red-600: #871d24;
   --blue-light: #ced4da;
   --brown-100: #e1c0a3;
   --brown-500: #9f6634;
@@ -164,6 +167,12 @@ a:hover {
   background-color: var(--green-100);
   color: var(--green-600);
   border-color: var(--green-300);
+}
+
+.alert-danger-style {
+  background-color: var(--red-100);
+  color: var(--red-600);
+  border-color: var(--red-300);
 }
 
 .alert-detail > h4 {
@@ -565,6 +574,8 @@ a:hover {
 }
 
 .modal-header > .modal-title,
+.form-label,
+.form-control,
 .modal-body > p,
 .modal-body > p > span {
   font-size: 14px;
@@ -699,6 +710,10 @@ a:hover {
     width: 280px;
   }
 
+  .btn {
+    min-width: 150px;
+  }
+
   .btn-add {
     margin-left: 15px;
   }
@@ -706,6 +721,7 @@ a:hover {
   .btn-download {
     margin-left: 30px;
   }
+
   .btn-submit {
     padding: 7px 35px;
     width: 175px;
@@ -723,6 +739,8 @@ a:hover {
   }
 
   .modal-header > .modal-title,
+  .form-label,
+  .form-control,
   .modal-body > p,
   .modal-body > p > span {
     font-size: 1rem;
