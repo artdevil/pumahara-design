@@ -720,6 +720,7 @@ a:hover {
 
   .btn-download {
     margin-left: 30px;
+    min-width: 50px;
   }
 
   .btn-submit {
