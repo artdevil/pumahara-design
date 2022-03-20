@@ -264,20 +264,27 @@ a:hover {
   margin-left: 15px;
 }
 
-.btn-main {
+.btn-main,
+.btn-primary-style,
+.btn-submit {
   background-color: var(--brown-500);
   color: var(--white);
 }
 
 .btn-main:hover {
   background-color: var(--brown-lite);
-  color: var(--white);
   text-decoration: none;
 }
 
-.btn-primary-style {
-  background-color: var(--brown-500);
-  color: var(--white);
+.btn-menu {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border: 0;
+}
+
+.btn-menu > p {
+  display: none;
 }
 
 .btn-secondary-style {
@@ -290,15 +297,8 @@ a:hover {
   margin-top: 50px;
   margin-left: -15px;
   position: absolute;
-  background-color: var(--brown-500);
-  color: var(--white);
   padding: 7.5px 36px;
   width: 100%;
-}
-
-.card,
-.card > .card-header {
-  padding-bottom: 7px;
 }
 
 .card > .card-header {
@@ -381,11 +381,6 @@ a:hover {
   background-color: var(--bg-admin);
 }
 
-.modal-dialog {
-  top: 50%;
-  transform: translateY(-50%) !important;
-}
-
 .dropdown-menu > li {
   margin-bottom: 15px;
 }
@@ -440,6 +435,16 @@ a:hover {
   background-color: var(--white);
   border-top: 6px solid var(--brown-500);
 }
+
+.header,
+.header > h4 {
+  font-size: 16px;
+  color: var(--brown-500);
+}
+
+.header > .demo-icon {
+  margin-right: 10px;
+}
 .image-preview {
   width: 90px;
   height: 90px;
@@ -475,6 +480,11 @@ a:hover {
   font-size: 14px;
 }
 
+.modal-dialog {
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+
 .nav-icon {
   font-family: "fontello";
   width: 24px;
@@ -492,55 +502,39 @@ a:hover {
   width: 100%;
 }
 
-.btn-menu {
-  display: flex;
-  align-items: center;
-  background-color: var(--white);
-  border: 0;
-}
-
-.btn-menu > p {
-  display: none;
-}
-
 .icon-upload {
   width: 24px;
   height: 24px;
   margin-right: 5px;
-  cursor: pointer;
 }
 
-.image-upload {
-  width: 238px;
+.btn-upload {
   height: 38px;
-  border: 2px solid var(--brown-500);
+  border: 1px solid var(--brown-500);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   color: var(--brown-500);
+  background-color: var(--white);
   margin-bottom: 10px;
-  cursor: pointer;
+  padding: 7.5px 30px;
 }
 
-.image-upload > input {
-  display: none;
-}
-
-.image-upload > label > span {
-  cursor: pointer;
-}
-
-.image-upload + p {
+.upload-desc {
   color: var(--brown-dark);
   font-size: 12px;
   line-height: 24px;
   text-align: center;
 }
 
-.list-style > .nav-item > .nav-link.active {
+.nav-tab > .nav-link.active {
   border-bottom: 4px solid var(--brown-500);
-  color: var(--brown-500);
+}
+
+.nav-tab > .nav-link {
+  justify-content: center;
+  padding: 15px;
 }
 
 .menu-option > i {
@@ -583,16 +577,17 @@ a:hover {
   margin: 0 15px;
 }
 
-.nav-link.active {
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
   color: var(--brown-500);
 }
 
-.nav-link.active::before {
+.nav-style > .nav-link.active::before {
   content: ":";
   width: 5px;
   border-radius: 2px;
   background-color: var(--brown-500);
-  color: var(--brown-500);
   left: -15px;
   margin: -6px -4px -6px 0;
   position: relative;
@@ -602,16 +597,14 @@ a:hover {
   display: flex;
   justify-content: space-between;
   color: var(--text);
-  padding: 18px 0px;
 }
 
-.nav-link:first-child {
+.nav-style > .nav-link:first-child {
   padding: 7px 0 18px;
 }
 
-.nav-link:focus,
-.nav-link:hover {
-  color: var(--brown-500);
+.nav-style > .nav-link {
+  padding: 18px 0px;
 }
 
 .notification {
@@ -644,12 +637,6 @@ a:hover {
   left: 15px;
   border-radius: 5px;
   padding: 0px 1px 0px 2px;
-}
-
-.page-title {
-  color: var(--brown-500);
-  margin: 0;
-  font-size: 16px;
 }
 
 .pagination > .page-item > .page-link {
@@ -720,14 +707,19 @@ a:hover {
     height: 38px;
   }
 
-  .icon-back + h5 {
-    font-size: 20px;
-  }
-
   .btn-menu > p {
     display: block;
     margin-left: 15px;
     margin-bottom: 0;
+  }
+
+  .header,
+  .header > h4 {
+    font-size: 24px;
+  }
+
+  .icon-back + h5 {
+    font-size: 20px;
   }
 
   .modal-header > .modal-title,
@@ -738,8 +730,8 @@ a:hover {
     font-size: 1rem;
   }
 
-  .page-title {
-    font-size: 24px;
+  .nav-tab > .nav-link {
+    min-width: 150px;
   }
 }
 
@@ -836,6 +828,7 @@ a:hover {
     height: 100vh;
     overflow-y: auto;
   }
+
   .navbar-small {
     padding: 0;
     box-shadow: none;
