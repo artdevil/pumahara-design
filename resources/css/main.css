@@ -564,7 +564,7 @@ a:hover {
 }
 
 .list-style > .nav-item > .nav-link.active {
-  border-bottom: 3px solid var(--brown-500);
+  border-bottom: 4px solid var(--brown-500);
   color: var(--brown-500);
 }
 
