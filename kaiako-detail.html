@@ -242,40 +242,40 @@
           <h5 class="mb-0">Detail Kaiako</h5>
         </div>
         <div class="card text-center mb-3">
-          <div class="card-header">
+          <div class="card-header mb-0">
             <nav class="nav nav-tab" id="myTab" role="tablist">
               <a
                 class="nav-link active col-4 col-md-auto"
-                id="profile-tab"
+                id="personal-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#profile"
+                data-bs-target="#personal"
                 type="button"
                 role="tab"
-                aria-controls="profile"
+                aria-controls="personal"
                 aria-selected="true"
               >
                 Personal
               </a>
               <a
                 class="nav-link col-4 col-md-auto"
-                id="password-tab"
+                id="roopu-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#password"
+                data-bs-target="#roopu"
                 type="button"
                 role="tab"
-                aria-controls="password"
+                aria-controls="roopu"
                 aria-selected="false"
               >
                 Roopu
               </a>
               <a
                 class="nav-link col-4 col-md-auto"
-                id="password-tab"
+                id="classes-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#password"
+                data-bs-target="#classes"
                 type="button"
                 role="tab"
-                aria-controls="password"
+                aria-controls="classes"
                 aria-selected="false"
               >
                 Classes
@@ -283,40 +283,99 @@
             </nav>
           </div>
         </div>
+        <!-- Tab Personal -->
         <div
           class="tab-pane fade show active"
-          id="profile"
+          id="personal"
           role="tabpanel"
-          aria-labelledby="profile-tab"
+          aria-labelledby="personal-tab"
         >
           <div class="card card-body d-flex">
-            <div class="row">
-              <div class="col-12 col-md-auto">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-auto mb-4 mb-md-0">
                 <img
                   src="resources/images/profile.jpg"
                   alt="image preview"
-                  class="image-preview"
+                  class="img-personal d-block mx-auto"
                 />
               </div>
               <div class="col-12 col-md-auto">
-                  <div class="list-group">
-                    <h6 class="list-group-item">Grace Isabella</h6>
-                    <p class="list-group-item">
-                      Account Status : <span class="text-success">Active</span>
-                    </p>
-                    <div class="list-group-item">
-                      <i class="fa-solid fa-envelope"></i>
-                      <p>grace.isabella@gmail.com</p>
-                    </div>
-                    <div class="list-group-item">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>+64 1234 5678</p>
-                    </div>
-                    <div class="list-group-item">
-                      <i class="fa-solid fa-map-marker-alt"></i>
-                      <p>Whitemore St, Boulevard 99 O</p>
-                    </div>
-                  </div>
+                <h6 class="mb-0">Grace Isabella</h6>
+                <p class="desc mb-3">
+                  Account Status : <span class="text-success">Active</span>
+                </p>
+                <div class="d-flex mb-3">
+                  <i class="fa-solid fa-envelope me-2"></i>
+                  <p>grace.isabella@gmail.com</p>
+                </div>
+                <div class="d-flex mb-3">
+                  <i class="fa-solid fa-phone me-2"></i>
+                  <p>+64 1234 5678</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-map-marker-alt me-2"></i>
+                  <p>Whitemore St, Boulevard 99 O</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tab Roopu -->
+        <div
+          class="tab-pane fade"
+          id="roopu"
+          role="tabpanel"
+          aria-labelledby="roopu-tab"
+        >
+          <div class="row gy-3">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100">
+                <div class="card-body ">
+                  <h6>Pà Whutupòro - Touch</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6>Flippa Ball/Water Polo</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6>Kapa Haka</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tab Classes -->
+        <div
+          class="tab-pane fade"
+          id="classes"
+          role="tabpanel"
+          aria-labelledby="classes-tab"
+        >
+          <div class="row gy-3">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <h6>Kahikatoa</h6>
+                  <p>Y7 - Y8</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <h6>Puriri</h6>
+                  <p>Y7 - Y8</p>
+                </div>
               </div>
             </div>
           </div>
