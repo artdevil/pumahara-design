@@ -353,6 +353,10 @@ a:hover {
   margin-bottom: 30px;
 }
 
+.col-md-6 > .card {
+  height: 100%;
+}
+
 .card-list > .row {
   --bs-gutter-y: 30px;
   --bs-gutter-x: 15px;
@@ -438,9 +442,10 @@ a:hover {
 }
 
 .header,
-.header > h4 {
+.header > .page-title {
   font-size: 16px;
   color: var(--brown-500);
+  margin: 0;
 }
 
 .header > .demo-icon {
@@ -716,7 +721,7 @@ a:hover {
   }
 
   .header,
-  .header > h4 {
+  .header > .page-title {
     font-size: 24px;
   }
 
