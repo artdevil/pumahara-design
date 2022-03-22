@@ -43,6 +43,7 @@ p,
 span,
 label {
   font-size: 1rem;
+  margin-bottom: 0;
 }
 
 h1,
@@ -159,7 +160,18 @@ a:hover {
 /* ---------------------
   Account Setting Style 
 ----------------------*/
-.alert {
+.alert,
+.alert-detail > h4,
+.card-body > .name,
+.icon-back + h5,
+.card-title,
+.card-text,
+.desc,
+.modal-header > .modal-title,
+.form-label,
+.form-control,
+.modal-body > p,
+.modal-body > p > span {
   font-size: 14px;
 }
 
@@ -175,13 +187,12 @@ a:hover {
   border-color: var(--red-300);
 }
 
-.alert-detail > h4 {
-  font-size: 14px;
-}
-
 .alert-detail > p,
-.alert-detail > p > span {
+.alert-detail > p > span,
+.card-subtitle,
+.upload-desc {
   font-size: 12px;
+  line-height: 24px;
 }
 
 .bd-main {
@@ -314,7 +325,6 @@ a:hover {
 }
 
 .card-body > .name {
-  font-size: 14px;
   font-weight: 700;
 }
 
@@ -368,15 +378,6 @@ a:hover {
   align-items: center;
 }
 
-.card-title,
-.card-text {
-  font-size: 14px;
-}
-
-.card-subtitle {
-  font-size: 12px;
-  line-height: 24px;
-}
 .container-box {
   background-color: var(--bg-admin);
 }
@@ -445,11 +446,21 @@ a:hover {
 .header > .demo-icon {
   margin-right: 10px;
 }
-.image-preview {
+
+.image-preview,
+.img-profile > img,
+.img-personal {
+  border: 3px solid var(--brown-light);
+  border-radius: 100%;
+}
+
+.image-preview,
+.img-personal {
   width: 90px;
   height: 90px;
-  border: 3px solid var(--brown-500);
-  border-radius: 100%;
+}
+
+.image-preview {
   margin-top: 14px;
   margin-bottom: 15px;
   margin-right: 30px;
@@ -464,8 +475,6 @@ a:hover {
 .img-profile > img {
   width: 75px;
   height: 75px;
-  border-radius: 100%;
-  border: 3px solid var(--brown-light);
 }
 
 .icon-back {
@@ -477,7 +486,6 @@ a:hover {
 .icon-back + h5 {
   margin-bottom: 0;
   margin-left: 15px;
-  font-size: 14px;
 }
 
 .modal-dialog {
@@ -523,8 +531,6 @@ a:hover {
 
 .upload-desc {
   color: var(--brown-dark);
-  font-size: 12px;
-  line-height: 24px;
   text-align: center;
 }
 
@@ -540,14 +546,6 @@ a:hover {
 .menu-option > i {
   margin-right: 10px;
   color: var(--text);
-}
-
-.modal-header > .modal-title,
-.form-label,
-.form-control,
-.modal-body > p,
-.modal-body > p > span {
-  font-size: 14px;
 }
 
 .navbar {
