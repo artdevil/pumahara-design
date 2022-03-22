@@ -660,6 +660,10 @@ a:hover {
   color: var(--red);
 }
 
+.text-success {
+  color: var(--green-500);
+}
+
 @media (min-width: 576px) {
 }
 
