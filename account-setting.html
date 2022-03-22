@@ -116,7 +116,7 @@
                 </div>
               </a>
               <a
-                href="/pumahara-design/kaiako-menu.html"
+                href="/pumahara-design/kaiako.html"
                 class="nav-link border-bottom"
               >
                 <div class="nav-icon">
@@ -164,7 +164,7 @@
                 </div>
               </a>
               <a
-                href="/pumahara-design/nga-pumanawa.html"
+                href="/pumahara-design/ngapumanawa.html"
                 class="border-bottom nav-link"
               >
                 <div class="nav-icon">
@@ -242,31 +242,30 @@
         <div class="card text-center mb-5">
           <div class="card-header">
             <nav class="nav nav-tab" id="myTab" role="tablist">
-                <a
-                  class="nav-link active col-6 col-md-auto"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="profile"
-                  aria-selected="true"
-                >
-                  Profile
-                </a>
-                <a
-                  class="nav-link col-6 col-md-auto"
-                  id="password-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#password"
-                  type="button"
-                  role="tab"
-                  aria-controls="password"
-                  aria-selected="false"
-                >
-                  Password
-                </a>
-              </li>
+              <a
+                class="nav-link active col-6 col-md-auto"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="true"
+              >
+                Profile
+              </a>
+              <a
+                class="nav-link col-6 col-md-auto"
+                id="password-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#password"
+                type="button"
+                role="tab"
+                aria-controls="password"
+                aria-selected="false"
+              >
+                Password
+              </a>
             </nav>
           </div>
           <div class="card-body text-start">
@@ -305,57 +304,12 @@
                     <a
                       class="text-link"
                       data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop"
+                      data-bs-target="#resendModal"
+                      href="#"
                     >
                       Resend email confirmation
                     </a>
                   </p>
-                </div>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="staticBackdrop"
-                  data-bs-keyboard="false"
-                  tabindex="-1"
-                  aria-labelledby="staticBackdropLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h6 class="modal-title" id="staticBackdropLabel">
-                          Resend Email Confirmation
-                        </h6>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <p>
-                          Hi olivia emily, this will resend email confirmation
-                          to
-                          <span class="fw-bold"> oliviaamelia20@gmail.com</span>
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-primary-style me-1"
-                        >
-                          Resend
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-secondary-style"
-                          data-bs-dismiss="modal"
-                        >
-                          Cancel
-                        </button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div
                   class="w-100 d-flex flex-column flex-md-row align-items-center"
@@ -367,11 +321,14 @@
                   />
                   <div class="col-12 col-md-auto">
                     <div class="col col-md-auto">
-                      <button type="button" class="btn-upload" style="width: 100%">
-                        <i class="bi bi-camera-fill me-2"
-                        ></i>
+                      <button
+                        type="button"
+                        class="btn-upload"
+                        style="width: 100%"
+                      >
+                        <i class="bi bi-camera-fill me-2"></i>
                         Upload New Picture
-                      </button>                      
+                      </button>
                     </div>
                     <p class="upload-desc">JPG or PNG Max Size of 800Kb</p>
                   </div>
@@ -486,9 +443,9 @@ Whitemore St, Boulevard 99 O</textarea
                         id="confirmPassword"
                         disabled
                       />
-                      <a href="#" class="input-group-text" id="formPassword"
-                        ><i class="bi bi-eye-fill"></i
-                      ></a>
+                      <a href="#" class="input-group-text" id="formPassword">
+                        <i class="bi bi-eye-fill"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -500,6 +457,47 @@ Whitemore St, Boulevard 99 O</textarea
           </div>
         </div>
       </main>
+      <!-- Resend Modal -->
+      <div
+        class="modal fade"
+        id="resendModal"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="resendModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title" id="resendModalLabel">
+                Resend Email Confirmation
+              </h6>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Hi olivia emily, this will resend email confirmation to
+                <span class="fw-bold"> oliviaamelia20@gmail.com</span>
+              </p>
+              <button type="button" class="btn btn-primary-style me-1">
+                Resend
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary-style"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -532,13 +530,6 @@ Whitemore St, Boulevard 99 O</textarea
             $(".show_hide_password input").attr("type", "text");
             $(".show_hide_password i").removeClass("bi bi-eye-fill");
             $(".show_hide_password i").addClass("bi bi-eye-slash");
-          }
-        });
-
-        $(".bd-sidebar").on("click", function (event) {
-          $(".bd-sidebar").hasClass("show");
-          {
-            $(".bd-sidebar").removeClass("show");
           }
         });
       });
