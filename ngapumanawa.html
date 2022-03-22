@@ -246,7 +246,7 @@
                 ></button>
               </div>
               <div class="modal-body text-start">
-                <p>
+                <p class="mb-3">
                   Are you sure you want to delete
                   <span class="fw-bold">Taukiri</span>?
                 </p>
@@ -275,7 +275,55 @@
           </div>
         </div>
 
-        <!-- nga pumanawa menu -->
+        <!-- Modal Detail-->
+        <div class="modal fade" id="detailModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="sendInviteModalLabel">
+                  Detail Ngā Pūmanawa
+                </h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body text-start">
+                <div class="row">
+                  <div class="mb-3 col-12">
+                    <p class="mb-1">Kounga</p>
+                    <h6>Tuakiri</h6>
+                  </div>
+                  <div class="mb-3 col-12">
+                    <p class="mb-1">Tupuna</p>
+                    <h6>Tamatekapua</h6>
+                  </div>
+                  <div class="mb-3 col-12">
+                    <p class="mb-1">Āhuatanga</p>
+                    <h6 class="lh-base">
+                      He tangata e whakapono ana ki a ia anō, ki tōna whanonga,
+                      ki tōna āhua, ki ōna āheinga, ā, kāore e paku horokukū ana
+                      ki te mahi i ētehi mea e kīīā ai te kōrero he manawa kai
+                      roke ia.
+                    </h6>
+                  </div>
+                  <div class="col-12">
+                    <p class="mb-1">Whakaritenga</p>
+                    <h6 class="lh-base">
+                      - Te Ao Māori <br />
+                      - Te reo me ōna tikanga <br />
+                      - Whenua
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- nga pumanawa section -->
         <div class="header d-flex align-items-center mb-4">
           <i class="demo-icon icon-pumanawa"></i>
           <h4 class="mb-0">Ngā Pūmanawa</h4>
@@ -318,14 +366,16 @@
             <a
               class="btn btn-primary-style d-none d-md-block me-0"
               href="/pumahara-design/ngapumanawa-add.html"
+              role="button"
             >
               <i class="fa fa-circle-plus"></i>
               Add Data
             </a>
 
             <a
-              class="btn-circle btn-primary-style d-block d-sm-none"
+              class="btn btn-circle btn-primary-style d-flex align-items-center justify-content-center d-md-none"
               href="/pumahara-design/ngapumanawa-add.html"
+              role="button"
             >
               <i class="fas fa-plus"></i>
             </a>
@@ -368,7 +418,9 @@
                         <li>
                           <a
                             class="dropdown-item"
-                            href="/pumahara-design/ngapumanawa-detail.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            href="#"
                           >
                             <i class="fa-solid fa-info-circle"></i>
                             Detail</a
