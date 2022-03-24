@@ -275,6 +275,12 @@ a:hover {
   margin-left: 15px;
 }
 
+.btn-file {
+  border: 1px dashed var(--text);
+  padding: 15px;
+  text-align: center;
+}
+
 .btn-main,
 .btn-primary-style,
 .btn-submit {
@@ -410,6 +416,24 @@ a:hover {
   display: block;
 }
 
+.form-check.btn-radio {
+  border: 1px solid var(--text);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 10px;
+  padding-left: 34px;
+}
+
+.form-check-input:checked {
+  background-color: var(--brown-500);
+  color: var(--brown-500);
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+  border-color: var(--text);
+}
+
 .form-label {
   margin-bottom: 15px;
 }
@@ -450,6 +474,10 @@ a:hover {
 
 .header > .demo-icon {
   margin-right: 10px;
+}
+
+.invitation {
+  width: 95%;
 }
 
 .image-preview,
@@ -659,6 +687,10 @@ a:hover {
   --bs-gutter-x: 30px;
 }
 
+.text-primary {
+  color: var(--brown-500) !important;
+}
+
 .text-danger {
   color: var(--red);
 }
@@ -723,6 +755,10 @@ a:hover {
   .header,
   .header > .page-title {
     font-size: 24px;
+  }
+
+  .invitation {
+    max-width: 626px;
   }
 
   .icon-back + h5 {
