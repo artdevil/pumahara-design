@@ -232,7 +232,7 @@
           aria-labelledby="sendInvitationLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog invitation">
             <div class="modal-content">
               <div class="modal-header">
                 <h6 class="modal-title" id="sendInvitationLabel">
@@ -245,41 +245,106 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body text-start">
-                <div class="mb-4">
-                  <label for="email" class="form-label">
-                    Email <span class="text-danger">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Eg. jameswilliam@gmail.com"
-                  />
-                </div>
-                <div class="mb-4">
-                  <label for="phone" class="form-label"> Phone Number </label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phone"
-                    placeholder="Eg. +64 1234 5678"
-                  />
-                </div>
-                <div class="row gx-3">
-                  <div class="col-6 col-md-auto">
-                    <button type="button" class="btn btn-primary-style w-100">
-                      Send
-                    </button>
+              <div class="modal-body p-0">
+                <div class="card">
+                  <div class="card-header">
+                    <nav class="nav nav-tab" id="myTab" role="tablist">
+                      <a
+                        class="nav-link active col-6 col-md-auto"
+                        id="singleInvitation-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#singleInvitation"
+                        type="button"
+                        role="tab"
+                        aria-controls="singleInvitation"
+                        aria-selected="true"
+                      >
+                        Single Invitation
+                      </a>
+                      <a
+                        class="nav-link col-6 col-md-auto"
+                        id="bulkInvitation-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#bulkInvitation"
+                        type="button"
+                        role="tab"
+                        aria-controls="bulkInvitation"
+                        aria-selected="false"
+                      >
+                        Bulk Invitation
+                      </a>
+                    </nav>
                   </div>
-                  <div class="col-6 col-md-auto">
-                    <button
-                      type="button"
-                      class="btn btn-secondary-style w-100"
-                      data-bs-dismiss="modal"
+                  <div class="card-body">
+                    <div
+                      class="tab-pane fade show active"
+                      id="singleInvitation"
+                      role="tabpanel"
+                      aria-labelledby="singleInvitation-tab"
                     >
-                      Cancel
-                    </button>
+                      <div class="mb-4">
+                        <label for="email" class="form-label">
+                          Email <span class="text-danger">*</span>
+                        </label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Eg. jameswilliam@gmail.com"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="bulkInvitation"
+                      role="tabpanel"
+                      aria-labelledby="bulkInvitation-tab"
+                    >
+                      <div class="btn-file mb-3">
+                        <label for="email" class="form-label">
+                          <p>Drag File Here To Upload</p>
+                          <p>Or</p>
+                        </label>
+                        <input
+                          type="file"
+                          class="form-control mb-4"
+                          id="fileTemplate"
+                        />
+                        <p>Allowed Extension CSV, XLS</p>
+                      </div>
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col-12 col-md-auto">
+                          <h6 class="desc mb-md-0">
+                            Please download template before uploading data
+                          </h6>
+                        </div>
+                        <div class="col-12 col-md-auto">
+                          <a class="d-flex text-primary desc" href="#">
+                            <i class="fa-solid fa-download me-2"></i>
+                            <p>Invitation Template</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3 gx-3">
+                      <div class="col-6 col-md-auto">
+                        <button
+                          type="button"
+                          class="btn btn-primary-style w-100"
+                        >
+                          Send
+                        </button>
+                      </div>
+                      <div class="col-6 col-md-auto">
+                        <button
+                          type="button"
+                          class="btn btn-secondary-style w-100"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -309,7 +374,7 @@
                 ></button>
               </div>
               <div class="modal-body text-start">
-                <p>
+                <p class="mb-3">
                   Are you sure you want to delete
                   <span class="fw-bold">grace.isabella@gmail.com</span>?
                 </p>
@@ -389,7 +454,6 @@
           </div>
         </div>
 
-
         <div class="header d-flex align-items-center mb-4">
           <i class="demo-icon icon-kaiako"></i>
           <h4 class="mb-0">Kaiako</h4>
@@ -437,8 +501,8 @@
               data-bs-toggle="modal"
               data-bs-target="#sendInvitation"
             >
-              <i class="fa fa-circle-plus"></i>
-              Add Data
+              <i class="fa fa-circle-plus me-2"></i>
+              Add Kaiko
             </button>
 
             <button
@@ -690,7 +754,7 @@
                           data-bs-target="#resendModal"
                         >
                           <i class="fa-solid fa-sync"></i>
-                          Resed
+                          Resend
                         </a>
                       </li>
                       <li>
@@ -755,7 +819,7 @@
                           data-bs-target="#resendModal"
                         >
                           <i class="fa-solid fa-sync"></i>
-                          Resed
+                          Resend
                         </a>
                       </li>
                       <li>
@@ -820,7 +884,7 @@
                           data-bs-target="#resendModal"
                         >
                           <i class="fa-solid fa-sync"></i>
-                          Resed
+                          Resend
                         </a>
                       </li>
                       <li>
