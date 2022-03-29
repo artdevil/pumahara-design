@@ -722,6 +722,15 @@ a:hover {
   --bs-gutter-x: 30px;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  width: min-content;
+  background-color: white;
+  overflow-y: auto;
+}
+
 .text-primary {
   color: var(--brown-500) !important;
 }
@@ -733,6 +742,7 @@ a:hover {
 .text-success {
   color: var(--green-500);
 }
+
 
 @media (min-width: 576px) {
 }
@@ -930,6 +940,10 @@ a:hover {
     top: 104px;
     left: 215px;
     z-index: 2;
+  }
+
+  .sidebar {
+    height: 100vh;
   }
 
   .sign-sect-form {
