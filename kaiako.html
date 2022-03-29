@@ -43,7 +43,7 @@
   <body>
     <div class="container-box">
       <!-- Navbar Section-->
-      <div class="navbar">
+      <div class="d-flex flex-column h-100 bg-white overflow-auto">
         <div class="navbar-small">
           <button
             class="btn-menu"
@@ -247,86 +247,91 @@
               </div>
               <div class="modal-body p-0">
                 <div class="card">
-                  <div class="card-header">
-                    <nav class="nav nav-tab" id="myTab" role="tablist">
-                      <a
-                        class="nav-link active col-6 col-md-auto"
-                        id="singleInvitation-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#singleInvitation"
-                        type="button"
-                        role="tab"
-                        aria-controls="singleInvitation"
-                        aria-selected="true"
-                      >
-                        Single Invitation
-                      </a>
-                      <a
-                        class="nav-link col-6 col-md-auto"
-                        id="bulkInvitation-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#bulkInvitation"
-                        type="button"
-                        role="tab"
-                        aria-controls="bulkInvitation"
-                        aria-selected="false"
-                      >
-                        Bulk Invitation
-                      </a>
-                    </nav>
-                  </div>
                   <div class="card-body">
-                    <div
-                      class="tab-pane fade show active"
-                      id="singleInvitation"
-                      role="tabpanel"
-                      aria-labelledby="singleInvitation-tab"
-                    >
-                      <div class="mb-4">
-                        <label for="email" class="form-label">
-                          Email <span class="text-danger">*</span>
-                        </label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          placeholder="Eg. jameswilliam@gmail.com"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="bulkInvitation"
-                      role="tabpanel"
-                      aria-labelledby="bulkInvitation-tab"
-                    >
-                      <div class="btn-file mb-3">
-                        <label for="email" class="form-label">
-                          <p>Drag File Here To Upload</p>
-                          <p>Or</p>
-                        </label>
-                        <input
-                          type="file"
-                          class="form-control mb-4"
-                          id="fileTemplate"
-                        />
-                        <p>Allowed Extension CSV, XLS</p>
-                      </div>
-                      <div class="row justify-content-between align-items-center">
-                        <div class="col-12 col-md-auto">
-                          <h6 class="desc mb-md-0">
-                            Please download template before uploading data
-                          </h6>
+                    <div class="nav d-block mb-4" role="tablist">
+                      <div class="row gx-3">
+                        <div class="col-6">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              id="optSingle"
+                              checked
+                              name="invitetype"
+                              type="radio"
+                              data-bs-target="#singleInvite"
+                            />
+                            <label for="optSingle">Single Invitation</label>
+                          </div>
                         </div>
-                        <div class="col-12 col-md-auto">
-                          <a class="d-flex text-primary desc" href="#">
-                            <i class="fa-solid fa-download me-2"></i>
-                            <p>Invitation Template</p>
-                          </a>
+                        <div class="col-6">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              id="optBulk"
+                              name="invitetype"
+                              type="radio"
+                              data-bs-target="#bulkInvite"
+                            />
+                            <label for="optBulk">Bulk Invitation</label>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="row mt-3 gx-3">
+                    <div class="tab-content mb-4 border-bottom">
+                      <div id="singleInvite" class="tab-pane mb-4 active">
+                        <div class="mb-4">
+                          <label for="email" class="form-label">
+                            Email <span class="text-danger">*</span>
+                          </label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Eg. jameswilliam@gmail.com"
+                          />
+                        </div>
+                      </div>
+                      <div id="bulkInvite" class="tab-pane mb-4">
+                        <form class="btn-file mb-3">
+                          <p class="label-file lh-sm mb-3">
+                            Drag File Here To Upload
+                          </p>
+                          <p class="label-file lh-sm mb-3">Or</p>
+                          <label for="fileTemplate" class="form-label d-block mb-0">
+                            <a class="btn-file-input label-file">Browser File</a>
+                          </label>
+                          <input
+                            type="file"
+                            class="d-none"
+                            id="fileTemplate"
+                            accept=".csv, application/vnd.ms-excel"
+                          />
+                          <span class="file-name"></span>
+                          <span id="resetSelectedFile">
+                            <i class="fa fa-times-circle text-danger" aria-placeholder="cancel"></i>
+                          </span>
+                          <p class="label-file mt-3">
+                            Allowed Extension CSV, XLS
+                          </p>
+                        </form>
+                        <div
+                          class="row justify-content-between align-items-center"
+                        >
+                          <div class="col-12 col-md-auto">
+                            <h6 class="desc mb-md-0">
+                              Please download template before uploading data
+                            </h6>
+                          </div>
+                          <div class="col-12 col-md-auto">
+                            <a class="d-flex text-primary desc" href="#">
+                              <i class="fa-solid fa-download me-2"></i>
+                              <p>Invitation Template</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-4 gx-3">
                       <div class="col-6 col-md-auto">
                         <button
                           type="button"
@@ -458,6 +463,7 @@
           <i class="demo-icon icon-kaiako"></i>
           <h4 class="mb-0">Kaiako</h4>
         </div>
+
         <div
           class="alert alert-success-style alert-dismissible fade show mb-4"
           role="alert"
@@ -940,5 +946,37 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function () {
+        $("#optSingle").parent().css("border", "1px solid #9f6634");
+        $("#resetSelectedFile").css("display", "none");
+
+
+        $('input[name="invitetype"]').click(function () {
+          $(this).tab("show");
+          $(this).removeClass("active");
+          $(".form-check").css("border", "1px solid #3e332b");
+          $(this).parent().css("border", "1px solid #9f6634");
+        });
+
+        $("#fileTemplate").change(function () {
+          var fileName = $(this)[0].files[0].name;
+          console.log(fileName);
+          $(".file-name").html(fileName);
+          $(".file-name").css("margin-right", "13px");
+          $(this).css("display", "inline-block");
+          $(".label-file").css("display", "none");
+          $("#resetSelectedFile").css("display", "inline-block");
+        });
+
+        $("#resetSelectedFile").click(function () {
+          $(this).css("display", "none");
+          $("#fileTemplate").val("");
+          $(".label-file").css("display", "block");
+          $(".file-name").html('');
+          $(".file-name").css("margin-right", "0");
+        });
+      });
+    </script>
   </body>
 </html>
