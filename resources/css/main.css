@@ -244,6 +244,10 @@ a:hover {
   padding: 5px 19.5px;
 }
 
+.border-active {
+  border: 1px solid var(--brown-500) !important;
+}
+
 .bg-inactive {
   background-color: var(--brown-100);
   color: var(--brown-500);
@@ -431,6 +435,10 @@ a:hover {
   background-color: var(--bg-admin);
 }
 
+.c-pointer {
+  cursor: pointer;
+}
+
 .dropdown-menu > li {
   margin-bottom: 15px;
 }
@@ -463,6 +471,7 @@ a:hover {
   padding-left: 35px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .form-check-input {
