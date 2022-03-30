@@ -227,7 +227,6 @@ a:hover {
 .bd-links {
   display: block;
   position: relative;
-  overflow-y: auto;
   width: 100%;
   background-color: var(--white);
   padding: 0;
@@ -275,6 +274,39 @@ a:hover {
   margin-left: 15px;
 }
 
+.btn-file {
+  border: 1px dashed var(--text);
+  padding: 15px;
+  text-align: center;
+}
+
+.btn-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.btn-file-input {
+  display: block;
+  background: var(--white);
+  border: 1px solid var(--brown-500);
+  color: var(--brown-500);
+  border-radius: 4px;
+  padding: 7.5px;
+  -webkit-user-select: none;
+  cursor: pointer;
+  line-height: 22.5px;
+  font-size: 16px;
+  margin: auto;
+  max-width: 178px;
+  text-align: center;
+}
+
+.btn-file-input:hover {
+  border-color: black;
+}
+.btn-file-input:active {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
 .btn-main,
 .btn-primary-style,
 .btn-submit {
@@ -310,6 +342,19 @@ a:hover {
   position: absolute;
   padding: 7.5px 36px;
   width: 100%;
+}
+
+.btn-upload {
+  height: 38px;
+  border: 1px solid var(--brown-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--brown-500);
+  background-color: var(--white);
+  margin-bottom: 10px;
+  padding: 7.5px 30px;
 }
 
 .card > .card-header {
@@ -410,6 +455,32 @@ a:hover {
   display: block;
 }
 
+.form-check {
+  border: 1px solid var(--text);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.form-check-input:checked {
+  background-color: var(--brown-500);
+  color: var(--brown-500);
+  border: 1px solid var(--brown-500);
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
 .form-label {
   margin-bottom: 15px;
 }
@@ -450,6 +521,16 @@ a:hover {
 
 .header > .demo-icon {
   margin-right: 10px;
+}
+
+.icon-upload {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.invitation {
+  width: 95%;
 }
 
 .image-preview,
@@ -515,25 +596,6 @@ a:hover {
   width: 100%;
 }
 
-.icon-upload {
-  width: 24px;
-  height: 24px;
-  margin-right: 5px;
-}
-
-.btn-upload {
-  height: 38px;
-  border: 1px solid var(--brown-500);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  color: var(--brown-500);
-  background-color: var(--white);
-  margin-bottom: 10px;
-  padding: 7.5px 30px;
-}
-
 .upload-desc {
   color: var(--brown-dark);
   text-align: center;
@@ -551,11 +613,6 @@ a:hover {
 .menu-option > i {
   margin-right: 10px;
   color: var(--text);
-}
-
-.navbar {
-  width: fit-content;
-  padding: 0;
 }
 
 .navbar-small {
@@ -659,6 +716,19 @@ a:hover {
   --bs-gutter-x: 30px;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  width: min-content;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.text-primary {
+  color: var(--brown-500) !important;
+}
+
 .text-danger {
   color: var(--red);
 }
@@ -666,6 +736,7 @@ a:hover {
 .text-success {
   color: var(--green-500);
 }
+
 
 @media (min-width: 576px) {
 }
@@ -723,6 +794,10 @@ a:hover {
   .header,
   .header > .page-title {
     font-size: 24px;
+  }
+
+  .invitation {
+    max-width: 626px;
   }
 
   .icon-back + h5 {
@@ -831,11 +906,6 @@ a:hover {
     height: 183px;
   }
 
-  .navbar {
-    height: 100vh;
-    overflow-y: auto;
-  }
-
   .navbar-small {
     padding: 0;
     box-shadow: none;
@@ -850,15 +920,15 @@ a:hover {
     top: calc(110px - 37.5px);
   }
 
-  .navbar-collapse:not(.show) {
-    transform: translateX(0);
-  }
-
   .notification {
     position: absolute;
     top: 104px;
     left: 215px;
     z-index: 2;
+  }
+
+  .sidebar {
+    height: 100vh;
   }
 
   .sign-sect-form {
