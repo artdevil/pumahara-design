@@ -344,6 +344,19 @@ a:hover {
   width: 100%;
 }
 
+.btn-upload {
+  height: 38px;
+  border: 1px solid var(--brown-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--brown-500);
+  background-color: var(--white);
+  margin-bottom: 10px;
+  padding: 7.5px 30px;
+}
+
 .card > .card-header {
   background-color: var(--white);
 }
@@ -466,7 +479,6 @@ a:hover {
 
 .form-check-input:focus {
   box-shadow: none;
-  border-color: var(--text);
 }
 
 .form-label {
@@ -509,6 +521,12 @@ a:hover {
 
 .header > .demo-icon {
   margin-right: 10px;
+}
+
+.icon-upload {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
 }
 
 .invitation {
@@ -578,25 +596,6 @@ a:hover {
   width: 100%;
 }
 
-.icon-upload {
-  width: 24px;
-  height: 24px;
-  margin-right: 5px;
-}
-
-.btn-upload {
-  height: 38px;
-  border: 1px solid var(--brown-500);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  color: var(--brown-500);
-  background-color: var(--white);
-  margin-bottom: 10px;
-  padding: 7.5px 30px;
-}
-
 .upload-desc {
   color: var(--brown-dark);
   text-align: center;
@@ -614,11 +613,6 @@ a:hover {
 .menu-option > i {
   margin-right: 10px;
   color: var(--text);
-}
-
-.navbar {
-  width: fit-content;
-  padding: 0;
 }
 
 .navbar-small {
@@ -912,11 +906,6 @@ a:hover {
     height: 183px;
   }
 
-  .navbar {
-    height: 100vh;
-    overflow-y: auto;
-  }
-
   .navbar-small {
     padding: 0;
     box-shadow: none;
@@ -929,10 +918,6 @@ a:hover {
     position: absolute;
     left: calc(50% - 37.5px);
     top: calc(110px - 37.5px);
-  }
-
-  .navbar-collapse:not(.show) {
-    transform: translateX(0);
   }
 
   .notification {
