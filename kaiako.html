@@ -248,9 +248,8 @@
               <div class="modal-body p-0">
                 <div class="card">
                   <div class="card-body">
-                    <div class="nav d-block mb-4" role="tablist">
-                      <div class="row gx-3">
-                        <div class="col-6">
+                    <div class="nav mb-4 row" role="tablist">
+                      <label class="col-6" for="optSingle" data-bs-toggle="tab" data-bs-target="#singleInvite">
                           <div class="form-check">
                             <input
                               class="form-check-input"
@@ -258,24 +257,21 @@
                               checked
                               name="invitetype"
                               type="radio"
-                              data-bs-target="#singleInvite"
                             />
-                            <label for="optSingle">Single Invitation</label>
+                            <span>Single Invitation</span>
                           </div>
-                        </div>
-                        <div class="col-6">
+                        </label>
+                        <label class="col-6" for="optBulk" data-bs-toggle="tab" data-bs-target="#bulkInvite">
                           <div class="form-check">
                             <input
                               class="form-check-input"
                               id="optBulk"
                               name="invitetype"
                               type="radio"
-                              data-bs-target="#bulkInvite"
                             />
-                            <label for="optBulk">Bulk Invitation</label>
-                          </div>
-                        </div>
-                      </div>
+                              <span>Bulk Invitation</span>
+                            </div>
+                          </label>
                     </div>
                     <div class="tab-content mb-4 border-bottom">
                       <div id="singleInvite" class="tab-pane mb-4 active">
@@ -307,7 +303,7 @@
                             accept=".csv, application/vnd.ms-excel"
                           />
                           <span class="file-name"></span>
-                          <span id="resetSelectedFile">
+                          <span id="resetSelectedFile" class="d-none c-pointer">
                             <i class="fa fa-times-circle text-danger" aria-placeholder="cancel"></i>
                           </span>
                           <p class="label-file mt-3">
@@ -948,33 +944,26 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $("#optSingle").parent().css("border", "1px solid #9f6634");
-        $("#resetSelectedFile").css("display", "none");
-
-
         $('input[name="invitetype"]').click(function () {
-          $(this).tab("show");
-          $(this).removeClass("active");
-          $(".form-check").css("border", "1px solid #3e332b");
-          $(this).parent().css("border", "1px solid #9f6634");
+          $(".form-check").removeClass("border-active");
+          $(this).parent().addClass("border-active");
         });
 
         $("#fileTemplate").change(function () {
           var fileName = $(this)[0].files[0].name;
-          console.log(fileName);
           $(".file-name").html(fileName);
-          $(".file-name").css("margin-right", "13px");
-          $(this).css("display", "inline-block");
-          $(".label-file").css("display", "none");
-          $("#resetSelectedFile").css("display", "inline-block");
+          $(".file-name").addClass("me-3");
+          $(this).addClass("d-inline-block");
+          $(".label-file").addClass("d-none");
+          $("#resetSelectedFile").removeClass("d-none");
         });
 
         $("#resetSelectedFile").click(function () {
-          $(this).css("display", "none");
+          $(this).addClass("d-none");
           $("#fileTemplate").val("");
-          $(".label-file").css("display", "block");
+          $(".label-file").removeClass("d-none");
           $(".file-name").html('');
-          $(".file-name").css("margin-right", "0");
+          $(".file-name").removeClass("me-3");
         });
       });
     </script>
