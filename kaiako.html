@@ -82,7 +82,7 @@
           </div>
         </div>
         <div
-          class="offcanvas bd-sidebar"
+          class="offcanvas offcanvas-start bd-sidebar"
           id="offcanvasSidebar"
           tabindex="-1"
         >
@@ -248,34 +248,40 @@
               <div class="modal-body p-0">
                 <div class="card">
                   <div class="card-body">
-                    <div class="nav d-block mb-4" role="tablist">
-                      <div class="row gx-3">
-                        <div class="col-6">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              id="optSingle"
-                              checked
-                              name="invitetype"
-                              type="radio"
-                              data-bs-target="#singleInvite"
-                            />
-                            <label for="optSingle">Single Invitation</label>
-                          </div>
+                    <div class="nav mb-4 row" role="tablist">
+                      <label
+                        class="col-6"
+                        for="optSingle"
+                        data-bs-toggle="tab"
+                        data-bs-target="#singleInvite"
+                      >
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            id="optSingle"
+                            checked
+                            name="invitetype"
+                            type="radio"
+                          />
+                          <span>Single Invitation</span>
                         </div>
-                        <div class="col-6">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              id="optBulk"
-                              name="invitetype"
-                              type="radio"
-                              data-bs-target="#bulkInvite"
-                            />
-                            <label for="optBulk">Bulk Invitation</label>
-                          </div>
+                      </label>
+                      <label
+                        class="col-6"
+                        for="optBulk"
+                        data-bs-toggle="tab"
+                        data-bs-target="#bulkInvite"
+                      >
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            id="optBulk"
+                            name="invitetype"
+                            type="radio"
+                          />
+                          <span>Bulk Invitation</span>
                         </div>
-                      </div>
+                      </label>
                     </div>
                     <div class="tab-content mb-4 border-bottom">
                       <div id="singleInvite" class="tab-pane mb-4 active">
@@ -297,8 +303,13 @@
                             Drag File Here To Upload
                           </p>
                           <p class="label-file lh-sm mb-3">Or</p>
-                          <label for="fileTemplate" class="form-label d-block mb-0">
-                            <a class="btn-file-input label-file">Browser File</a>
+                          <label
+                            for="fileTemplate"
+                            class="form-label d-block mb-0"
+                          >
+                            <a class="btn-file-input label-file">
+                              Browser File
+                            </a>
                           </label>
                           <input
                             type="file"
@@ -307,8 +318,11 @@
                             accept=".csv, application/vnd.ms-excel"
                           />
                           <span class="file-name"></span>
-                          <span id="resetSelectedFile">
-                            <i class="fa fa-times-circle text-danger" aria-placeholder="cancel"></i>
+                          <span id="resetSelectedFile" class="d-none c-pointer">
+                            <i
+                              class="fa fa-times-circle text-danger"
+                              aria-placeholder="cancel"
+                            ></i>
                           </span>
                           <p class="label-file mt-3">
                             Allowed Extension CSV, XLS
@@ -520,392 +534,390 @@
             </button>
           </div>
         </div>
-        <div class="card-list">
-          <div class="row">
-            <div class="col-12 col-md-6 col-xl-4">
-              <div class="card-name">
-                <div class="card-body">
-                  <div class="name">Grace Isabella</div>
-                  <div class="email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>grace.isabella@gmail.com</p>
-                  </div>
-                  <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+64 1234 5678</p>
-                  </div>
+        <div class="card-list row gy-3">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card-name">
+              <div class="card-body">
+                <div class="name">Grace Isabella</div>
+                <div class="email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>grace.isabella@gmail.com</p>
                 </div>
-                <div class="card-footer">
-                  <div class="bg-active">Active</div>
-                  <div class="ms-auto dropup">
-                    <a
-                      class="menu-option"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      href="#"
-                      data-bs-offset="0,-25"
-                    >
-                      <i class="fa-solid fa-ellipsis-v"></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu dropdown-menu-end"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="/pumahara-design/kaiako-update.html"
-                        >
-                          <i class="fa-solid fa-edit"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="/pumahara-design/kaiako-detail.html"
-                        >
-                          <i class="fa-solid fa-info-circle"></i>
-                          Detail
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item text-danger"
-                          data-bs-toggle="modal"
-                          data-bs-target="#deleteModal"
-                          href="#"
-                        >
-                          <i class="fa-solid fa-trash-alt"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="phone">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+64 1234 5678</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="bg-active">Active</div>
+                <div class="ms-auto dropup">
+                  <a
+                    class="menu-option"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    data-bs-offset="0,-25"
+                  >
+                    <i class="fa-solid fa-ellipsis-v"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pumahara-design/kaiako-update.html"
+                      >
+                        <i class="fa-solid fa-edit"></i>
+                        Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pumahara-design/kaiako-detail.html"
+                      >
+                        <i class="fa-solid fa-info-circle"></i>
+                        Detail
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-trash-alt"></i>
+                        Delete
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4">
-              <div class="card-name">
-                <div class="card-body">
-                  <div class="name">Sienna Evelyn</div>
-                  <div class="email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>sienna.evelyn@gmail.com</p>
-                  </div>
-                  <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+64 1234 5678</p>
-                  </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card-name">
+              <div class="card-body">
+                <div class="name">Sienna Evelyn</div>
+                <div class="email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>sienna.evelyn@gmail.com</p>
                 </div>
-                <div class="card-footer">
-                  <div class="bg-active">Active</div>
-                  <div class="ms-auto dropup">
-                    <a
-                      class="menu-option"
-                      id="dropdownMenuButton2"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      href="#"
-                      data-bs-offset="0,-25"
-                    >
-                      <i class="fa-solid fa-ellipsis-v"></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu dropdown-menu-end"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="/pumahara-design/kaiako-update.html"
-                        >
-                          <i class="fa-solid fa-edit"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="/pumahara-design/kaiako-detail.html"
-                        >
-                          <i class="fa-solid fa-info-circle"></i>
-                          Detail
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item text-danger"
-                          data-bs-toggle="modal"
-                          data-bs-target="#deleteModal"
-                          href="#"
-                        >
-                          <i class="fa-solid fa-trash-alt"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="phone">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+64 1234 5678</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="bg-active">Active</div>
+                <div class="ms-auto dropup">
+                  <a
+                    class="menu-option"
+                    id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    data-bs-offset="0,-25"
+                  >
+                    <i class="fa-solid fa-ellipsis-v"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pumahara-design/kaiako-update.html"
+                      >
+                        <i class="fa-solid fa-edit"></i>
+                        Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pumahara-design/kaiako-detail.html"
+                      >
+                        <i class="fa-solid fa-info-circle"></i>
+                        Detail
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-trash-alt"></i>
+                        Delete
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4">
-              <div class="card-name">
-                <div class="card-body">
-                  <div class="name">Benjamin Jacob</div>
-                  <div class="email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>benjamin.jacob@gmail.com</p>
-                  </div>
-                  <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+64 1234 5678</p>
-                  </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card-name">
+              <div class="card-body">
+                <div class="name">Benjamin Jacob</div>
+                <div class="email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>benjamin.jacob@gmail.com</p>
                 </div>
-                <div class="card-footer">
-                  <div class="bg-active">Active</div>
-                  <div class="ms-auto dropup">
-                    <a
-                      class="menu-option"
-                      id="dropdownMenuButton3"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      href="#"
-                      data-bs-offset="0,-25"
-                    >
-                      <i class="fa-solid fa-ellipsis-v"></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu dropdown-menu-end"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="/pumahara-design/kaiako-update.html"
-                        >
-                          <i class="fa-solid fa-edit"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="/pumahara-design/kaiako-detail.html"
-                        >
-                          <i class="fa-solid fa-info-circle"></i>
-                          Detail
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item text-danger"
-                          data-bs-toggle="modal"
-                          data-bs-target="#deleteModal"
-                          href="#"
-                        >
-                          <i class="fa-solid fa-trash-alt"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="phone">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+64 1234 5678</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="bg-active">Active</div>
+                <div class="ms-auto dropup">
+                  <a
+                    class="menu-option"
+                    id="dropdownMenuButton3"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    data-bs-offset="0,-25"
+                  >
+                    <i class="fa-solid fa-ellipsis-v"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pumahara-design/kaiako-update.html"
+                      >
+                        <i class="fa-solid fa-edit"></i>
+                        Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pumahara-design/kaiako-detail.html"
+                      >
+                        <i class="fa-solid fa-info-circle"></i>
+                        Detail
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-trash-alt"></i>
+                        Delete
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4">
-              <div class="card-name">
-                <div class="card-body">
-                  <div class="name">-</div>
-                  <div class="email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>ethan.hunter@gmail.com</p>
-                  </div>
-                  <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>-</p>
-                  </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card-name">
+              <div class="card-body">
+                <div class="name">-</div>
+                <div class="email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>ethan.hunter@gmail.com</p>
                 </div>
-                <div class="card-footer">
-                  <div class="bg-inactive">Inactive</div>
-                  <div class="ms-auto dropup">
-                    <a
-                      class="menu-option"
-                      id="dropdownMenuButton4"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      href="#"
-                      data-bs-offset="0,-25"
-                    >
-                      <i class="fa-solid fa-ellipsis-v"></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu dropdown-menu-end"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="/pumahara-design/kaiako-update.html"
-                        >
-                          <i class="fa-solid fa-edit"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          data-bs-toggle="modal"
-                          data-bs-target="#resendModal"
-                        >
-                          <i class="fa-solid fa-sync"></i>
-                          Resend
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item text-danger"
-                          data-bs-toggle="modal"
-                          data-bs-target="#deleteModal"
-                          href="#"
-                        >
-                          <i class="fa-solid fa-trash-alt"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="phone">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>-</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="bg-inactive">Inactive</div>
+                <div class="ms-auto dropup">
+                  <a
+                    class="menu-option"
+                    id="dropdownMenuButton4"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    data-bs-offset="0,-25"
+                  >
+                    <i class="fa-solid fa-ellipsis-v"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pumahara-design/kaiako-update.html"
+                      >
+                        <i class="fa-solid fa-edit"></i>
+                        Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        data-bs-toggle="modal"
+                        data-bs-target="#resendModal"
+                      >
+                        <i class="fa-solid fa-sync"></i>
+                        Resend
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-trash-alt"></i>
+                        Delete
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4">
-              <div class="card-name">
-                <div class="card-body">
-                  <div class="name">-</div>
-                  <div class="email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>ethan.hunter@gmail.com</p>
-                  </div>
-                  <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>-</p>
-                  </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card-name">
+              <div class="card-body">
+                <div class="name">-</div>
+                <div class="email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>ethan.hunter@gmail.com</p>
                 </div>
-                <div class="card-footer">
-                  <div class="bg-inactive">Inactive</div>
-                  <div class="ms-auto dropup">
-                    <a
-                      class="menu-option"
-                      id="dropdownMenuButton5"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      href="#"
-                      data-bs-offset="0,-25"
-                    >
-                      <i class="fa-solid fa-ellipsis-v"></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu dropdown-menu-end"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="/pumahara-design/kaiako-update.html"
-                        >
-                          <i class="fa-solid fa-edit"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          data-bs-toggle="modal"
-                          data-bs-target="#resendModal"
-                        >
-                          <i class="fa-solid fa-sync"></i>
-                          Resend
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item text-danger"
-                          data-bs-toggle="modal"
-                          data-bs-target="#deleteModal"
-                          href="#"
-                        >
-                          <i class="fa-solid fa-trash-alt"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="phone">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>-</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="bg-inactive">Inactive</div>
+                <div class="ms-auto dropup">
+                  <a
+                    class="menu-option"
+                    id="dropdownMenuButton5"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    data-bs-offset="0,-25"
+                  >
+                    <i class="fa-solid fa-ellipsis-v"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pumahara-design/kaiako-update.html"
+                      >
+                        <i class="fa-solid fa-edit"></i>
+                        Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        data-bs-toggle="modal"
+                        data-bs-target="#resendModal"
+                      >
+                        <i class="fa-solid fa-sync"></i>
+                        Resend
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-trash-alt"></i>
+                        Delete
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4">
-              <div class="card-name">
-                <div class="card-body">
-                  <div class="name">-</div>
-                  <div class="email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>ethan.hunter@gmail.com</p>
-                  </div>
-                  <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>-</p>
-                  </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card-name">
+              <div class="card-body">
+                <div class="name">-</div>
+                <div class="email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>ethan.hunter@gmail.com</p>
                 </div>
-                <div class="card-footer">
-                  <div class="bg-inactive">Inactive</div>
-                  <div class="ms-auto dropup">
-                    <a
-                      class="menu-option"
-                      id="dropdownMenuButton6"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      href="#"
-                      data-bs-offset="0,-25"
-                    >
-                      <i class="fa-solid fa-ellipsis-v"></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu dropdown-menu-end"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="/pumahara-design/kaiako-update.html"
-                        >
-                          <i class="fa-solid fa-edit"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          data-bs-toggle="modal"
-                          data-bs-target="#resendModal"
-                        >
-                          <i class="fa-solid fa-sync"></i>
-                          Resend
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item text-danger"
-                          data-bs-toggle="modal"
-                          data-bs-target="#deleteModal"
-                          href="#"
-                        >
-                          <i class="fa-solid fa-trash-alt"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="phone">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>-</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="bg-inactive">Inactive</div>
+                <div class="ms-auto dropup">
+                  <a
+                    class="menu-option"
+                    id="dropdownMenuButton6"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    data-bs-offset="0,-25"
+                  >
+                    <i class="fa-solid fa-ellipsis-v"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/pumahara-design/kaiako-update.html"
+                      >
+                        <i class="fa-solid fa-edit"></i>
+                        Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        data-bs-toggle="modal"
+                        data-bs-target="#resendModal"
+                      >
+                        <i class="fa-solid fa-sync"></i>
+                        Resend
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-trash-alt"></i>
+                        Delete
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -948,33 +960,26 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $("#optSingle").parent().css("border", "1px solid #9f6634");
-        $("#resetSelectedFile").css("display", "none");
-
-
         $('input[name="invitetype"]').click(function () {
-          $(this).tab("show");
-          $(this).removeClass("active");
-          $(".form-check").css("border", "1px solid #3e332b");
-          $(this).parent().css("border", "1px solid #9f6634");
+          $(".form-check").removeClass("border-active");
+          $(this).parent().addClass("border-active");
         });
 
         $("#fileTemplate").change(function () {
           var fileName = $(this)[0].files[0].name;
-          console.log(fileName);
           $(".file-name").html(fileName);
-          $(".file-name").css("margin-right", "13px");
-          $(this).css("display", "inline-block");
-          $(".label-file").css("display", "none");
-          $("#resetSelectedFile").css("display", "inline-block");
+          $(".file-name").addClass("me-3");
+          $(this).addClass("d-inline-block");
+          $(".label-file").addClass("d-none");
+          $("#resetSelectedFile").removeClass("d-none");
         });
 
         $("#resetSelectedFile").click(function () {
-          $(this).css("display", "none");
+          $(this).addClass("d-none");
           $("#fileTemplate").val("");
-          $(".label-file").css("display", "block");
-          $(".file-name").html('');
-          $(".file-name").css("margin-right", "0");
+          $(".label-file").removeClass("d-none");
+          $(".file-name").html("");
+          $(".file-name").removeClass("me-3");
         });
       });
     </script>

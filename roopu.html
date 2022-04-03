@@ -82,7 +82,7 @@
           </div>
         </div>
         <div
-          class="offcanvas bd-sidebar"
+          class="offcanvas offcanvas-start bd-sidebar"
           id="offcanvasSidebar"
           tabindex="-1"
         >
@@ -224,61 +224,6 @@
       </div>
       <!-- Main Section-->
       <main class="bd-main">
-        <!-- add form -->
-        <div class="collapse addForm" id="addForm">
-          <div class="nav-back d-flex align-items-center">
-            <a
-              class="icon-back"
-              href="#"
-              data-bs-toggle="collapse"
-              data-bs-target=".addForm"
-            >
-              <svg
-                width="16"
-                height="21"
-                viewBox="0 0 16 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.15371 15.3453C9.50564 14.9941 9.47105 14.4667 9.15503 14.1148L4.90546 10.0673L15.0305 10.0781C15.4875 10.0786 15.8746 9.72748 15.8751 9.23529L15.8763 8.11029C15.8768 7.65326 15.4905 7.26612 15.0335 7.26563L4.90848 7.25477L9.16668 3.25152C9.48346 2.9003 9.51919 2.373 9.168 2.02106L8.39539 1.24679C8.07933 0.930044 7.51683 0.929441 7.20008 1.24551L0.372418 8.09365C0.0205166 8.40968 0.0199508 8.93703 0.371174 9.25381L7.18413 16.1166C7.50019 16.4333 8.02754 16.4339 8.37944 16.1179L9.15371 15.3453Z"
-                  fill="#3E332B"
-                />
-              </svg>
-            </a>
-            <h5 class="mb-0">Add Roopu</h5>
-          </div>
-          <form action="" class="form-update">
-            <div class="row">
-              <div class="mb-4 col-12">
-                <label for="name" class="form-label"
-                  >Name <span class="text-danger">*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Eg. Pà Whutupòro - Touch"
-                  required
-                />
-              </div>
-              <div class="mb-4 col-12">
-                <label for="description" class="form-label">Description</label>
-                <textarea
-                  type="text"
-                  class="form-control"
-                  id="description"
-                  placeholder="Fill in the description"
-                  rows="3"
-                ></textarea>
-              </div>
-            </div>
-            <button class="btn btn-primary-style col-12 col-md-auto">
-              Save
-            </button>
-          </form>
-        </div>
-
         <!-- Delete Modal -->
         <div
           class="modal fade"
@@ -330,7 +275,7 @@
             class="alert alert-success-style alert-dismissible fade show mb-4"
             role="alert"
           >
-            Data added successfully
+            Roopu added successfully
             <button
               type="button"
               class="btn-close"
@@ -354,17 +299,17 @@
                 role="button"
                 href="/pumahara-design/roopu-add.html"
               >
-                <i class="fa fa-circle-plus"></i>
-                Add Data
+                <i class="fa fa-circle-plus me-2"></i>
+                <span>Add Roopu</span>
               </a>
 
-              <button
-                class="btn-circle btn-primary-style d-block d-sm-none"
-                data-bs-toggle="collapse"
-                data-bs-target=".addForm"
+              <a
+                class="btn-circle btn-primary-style d-flex align-items-center justify-content-center d-md-none"
+                href="/roopu-add.html"
+                type="button"
               >
                 <i class="fas fa-plus"></i>
-              </button>
+              </a>
             </div>
           </div>
           <div class="card-list">
@@ -390,13 +335,24 @@
                         <ul
                           class="dropdown-menu dropdown-menu-end"
                           aria-labelledby="dropdownMenuButton1"
-
                         >
                           <li>
-                            <a class="dropdown-item" href="/pumahara-design/roopu-update.html">
-                              <i class="fa-solid fa-edit"></i>
-                              Edit</a
+                            <a
+                              class="dropdown-item"
+                              href="/pumahara-design/roopu-update.html"
                             >
+                              <i class="fa-solid fa-edit"></i>
+                              <span>Edit</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="/pumahara-design/roopu-assign-user.html"
+                            >
+                              <i class="fa-solid fa-user-plus"></i>
+                              <span>Assign User</span>
+                            </a>
                           </li>
                           <li>
                             <a
@@ -441,7 +397,10 @@
                           aria-labelledby="dropdownMenuButton1"
                         >
                           <li>
-                            <a class="dropdown-item" href="/pumahara-design/roopu-update.html">
+                            <a
+                              class="dropdown-item"
+                              href="/pumahara-design/roopu-update.html"
+                            >
                               <i class="fa-solid fa-edit"></i>
                               Edit
                             </a>
@@ -490,7 +449,10 @@
                           aria-labelledby="dropdownMenuButton1"
                         >
                           <li>
-                            <a class="dropdown-item" href="/pumahara-design/roopu-update.html">
+                            <a
+                              class="dropdown-item"
+                              href="/pumahara-design/roopu-update.html"
+                            >
                               <i class="fa-solid fa-edit"></i>
                               Edit
                             </a>
@@ -539,7 +501,10 @@
                           aria-labelledby="dropdownMenuButton1"
                         >
                           <li>
-                            <a class="dropdown-item" href="/pumahara-design/roopu-update.html">
+                            <a
+                              class="dropdown-item"
+                              href="/pumahara-design/roopu-update.html"
+                            >
                               <i class="fa-solid fa-edit"></i>
                               Edit
                             </a>
