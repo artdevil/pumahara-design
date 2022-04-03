@@ -409,6 +409,11 @@ border: 1px dashed var(--brown-500) !important;
   margin-bottom: 30px;
 }
 
+.checkbox-style {
+  height: 20px;
+  width: 20px;
+}
+
 .col-md-6 > .card {
   height: 100%;
 }
@@ -597,9 +602,17 @@ border: 1px dashed var(--brown-500) !important;
   margin-left: 15px;
 }
 
+.list-checkbox {
+  max-height: 250px;
+}
+
 .modal-dialog {
   top: 50%;
   transform: translateY(-50%) !important;
+}
+
+.modal-md {
+  max-width: 626px;
 }
 
 .nav-icon {
