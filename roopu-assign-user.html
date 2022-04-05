@@ -171,7 +171,7 @@
                 <div class="nav-icon">
                   <i class="demo-icon icon-plan"></i>
                 </div>
-                <div class="nav-text">Plan</div>
+                <div class="nav-text">Term Plan</div>
                 <div class="nav-arrow">
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
@@ -226,7 +226,7 @@
       <main class="bd-main">
         <!-- Navigation Menu -->
         <div class="nav-back d-flex align-items-center">
-          <a class="icon-back" href="/pumahara-design/kaiako.html">
+          <a class="icon-back" href="/pumahara-design/roopu.html">
             <svg
               width="16"
               height="21"
@@ -400,7 +400,7 @@
                   <div class="row align-items-center">
                     <div class="col">
                       <h6>Sienna Evelyn</h6>
-                      <p>Kahikatoa</p>
+                      <p>Kahikatoa - Y10</p>
                     </div>
                     <div class="col-auto ms-auto">
                       <a
@@ -422,7 +422,7 @@
                   <div class="row align-items-center">
                     <div class="col">
                       <h6>Benjamin Jacob</h6>
-                      <p>Kahikatoa</p>
+                      <p>Kahikatoa - Y10</p>
                     </div>
                     <div class="col-auto ms-auto">
                       <a
@@ -444,7 +444,7 @@
                   <div class="row align-items-center">
                     <div class="col">
                       <h6>Ethan</h6>
-                      <p>Totara</p>
+                      <p>Totara - Y10</p>
                     </div>
                     <div class="col-auto ms-auto">
                       <a
@@ -486,8 +486,11 @@
               </div>
               <div class="modal-body text-start">
                 <p class="mb-3">
-                  Are you sure you want to delete - Grace Isabella from assigned
-                  kaiako list?
+                  Are you sure you want to delete -
+                  <span class="fw-bold">
+                    Grace Isabella from assigned kaiako list
+                  </span>
+                  ?
                 </p>
                 <button type="button" class="btn btn-primary-style">
                   Yes, Delete
@@ -527,8 +530,11 @@
               </div>
               <div class="modal-body text-start">
                 <p class="mb-3">
-                  Are you sure you want to delete - Sienna Evelyn from assigned
-                  tāuira list?
+                  Are you sure you want to delete -
+                  <span class="fw-bold">
+                    Sienna Evelyn from assigned tāuira list
+                  </span>
+                  ?
                 </p>
                 <button type="button" class="btn btn-primary-style">
                   Yes, Delete
@@ -550,7 +556,7 @@
           class="modal fade"
           id="assignKaiako"
           aria-labelledby="assignKaiakoLabel"
-          aria-hidden="false"
+          aria-hidden="true"
         >
           <div class="modal-dialog modal-md">
             <div class="modal-content">
@@ -575,18 +581,18 @@
                         data-bs-toggle="tab"
                         data-bs-target="#bySelectedKaiako"
                       >
-                        <div class="form-check">
+                        <div class="form-check border-active">
                           <input
                             class="form-check-input"
                             id="selectedKaiako"
-                            checked
-                            name="assigntype"
+                            name="assignkaiakotype"
                             type="radio"
+                            checked
                           />
-                          <span class="d-none d-md-block"
-                            >Assign by Selected</span
-                          >
-                          <span class="d-block d-md-none">By Selected</span>
+                          <span class="d-none d-md-block">
+                            Assign by Selected
+                          </span>
+                          <span class="d-block d-md-none">By Selected </span>
                         </div>
                       </label>
                       <label
@@ -599,7 +605,7 @@
                           <input
                             class="form-check-input"
                             id="bulkKaiako"
-                            name="assigntype"
+                            name="assignkaiakotype"
                             type="radio"
                           />
                           <span>Bulk Assign</span>
@@ -622,78 +628,78 @@
                         >
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox1"
+                              for="cbx1"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox1"
-                                class="checkbox-style me-2"
+                                id="cbx1"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Grace Isabella</span>
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox2"
+                              for="cbx2"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox2"
-                                class="checkbox-style me-2"
+                                id="cbx2"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Sienna Evelyn</span>
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox3"
+                              for="cbx3"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox3"
-                                class="checkbox-style me-2"
+                                id="cbx3"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Oliver Khan</span>
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox4"
+                              for="cbx4"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox4"
-                                class="checkbox-style me-2"
+                                id="cbx4"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Vincent Ray</span>
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox4"
+                              for="cbx5"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox4"
-                                class="checkbox-style me-2"
+                                id="cbx5"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Dianna Lynda</span>
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox4"
+                              for="cbx6"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox4"
-                                class="checkbox-style me-2"
+                                id="cbx6"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Jason Lim</span>
                             </label>
@@ -782,7 +788,7 @@
           class="modal fade"
           id="assignTauira"
           aria-labelledby="assignTauiraLabel"
-          aria-hidden="false"
+          aria-hidden="true"
         >
           <div class="modal-dialog modal-md">
             <div class="modal-content">
@@ -807,11 +813,11 @@
                         data-bs-toggle="tab"
                         data-bs-target="#bySelectedTauira"
                       >
-                        <div class="form-check">
+                        <div class="form-check border-active">
                           <input
                             class="form-check-input"
                             id="selectedTauira"
-                            name="assigntype"
+                            name="assigntauiratype"
                             type="radio"
                             checked
                           />
@@ -831,7 +837,7 @@
                           <input
                             class="form-check-input"
                             id="bulkTauira"
-                            name="assigntype"
+                            name="assigntauiratype"
                             type="radio"
                           />
                           <span>Bulk Assign</span>
@@ -866,78 +872,78 @@
                         >
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox1"
+                              for="cb1"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox1"
-                                class="checkbox-style me-2"
+                                id="cb1"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Grace Isabella</span>
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox2"
+                              for="cb2"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox2"
-                                class="checkbox-style me-2"
+                                id="cb2"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Sienna Evelyn</span>
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox3"
+                              for="cb3"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox3"
-                                class="checkbox-style me-2"
+                                id="cb3"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Oliver Khan</span>
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox4"
+                              for="cb4"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox4"
-                                class="checkbox-style me-2"
+                                id="cb4"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Vincent Ray</span>
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox4"
+                              for="cb5"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox4"
-                                class="checkbox-style me-2"
+                                id="cb5"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Dianna Lynda</span>
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
                             <label
-                              for="checkbox4"
+                              for="cb6"
                               class="d-flex p-3 align-items-center border rounded"
                             >
                               <input
                                 type="checkbox"
-                                id="checkbox4"
-                                class="checkbox-style me-2"
+                                id="cb6"
+                                class="form-check-input checkbox-style"
                               />
                               <span>Jason Lim</span>
                             </label>
@@ -1040,8 +1046,17 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $('input[name="assigntype"]').click(function () {
-          $(".form-check").removeClass("border-active");
+        $('input[name="assignkaiakotype"]').click(function () {
+          $('input[name="assignkaiakotype"]')
+            .parent()
+            .removeClass("border-active");
+          $(this).parent().addClass("border-active");
+        });
+
+        $('input[name="assigntauiratype"]').click(function () {
+          $('input[name="assigntauiratype"]')
+            .parent()
+            .removeClass("border-active");
           $(this).parent().addClass("border-active");
         });
 
