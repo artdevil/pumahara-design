@@ -860,10 +860,6 @@ border: 1px dashed var(--brown-500) !important;
     font-size: 20px;
   }
 
-  .list-checkbox {
-    height: auto;
-  }
-
   .modal-header > .modal-title,
   .form-label,
   .form-control,
