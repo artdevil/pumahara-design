@@ -75,6 +75,7 @@ a:hover {
   color: var(--brown-500);
 }
 
+
 .line-div {
   margin: 1rem 0;
   display: block;
@@ -262,16 +263,12 @@ a:hover {
 border: 1px dashed var(--brown-500) !important;
 }
 
-.btn {
-  padding: 7.5px;
-}
-
 .btn-circle {
   position: fixed;
   bottom: 15px;
   right: 15px;
   width: 56px;
-  height: 56px;
+  height: 56px !important;
   border-radius: 50px;
   border: 0;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12),
@@ -323,6 +320,12 @@ border: 1px dashed var(--brown-500) !important;
 .btn-submit {
   background-color: var(--brown-500);
   color: var(--white);
+}
+
+.btn-add {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .btn-main:hover {
@@ -446,6 +449,9 @@ border: 1px dashed var(--brown-500) !important;
   cursor: pointer;
 }
 
+.dropdown-toggle.no-icon::after {
+  display: none;
+}
 .dropdown-menu > li {
   margin-bottom: 15px;
 }
@@ -484,10 +490,11 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .form-check-input {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
   margin-top: 0px;
+  cursor: pointer;
 }
 
 .form-check-input.checkbox-style {
@@ -503,6 +510,14 @@ border: 1px dashed var(--brown-500) !important;
 
 .form-check-input:focus {
   box-shadow: none;
+  border-color: var(--brown-100);
+}
+
+.form-check-input.small {
+  width: 16px;
+  height: 16px;
+  margin-right: 0;
+  margin-top: 0.25em;
 }
 
 .form-label {
@@ -558,10 +573,6 @@ border: 1px dashed var(--brown-500) !important;
    margin-right: 5px;
 }
 
-.invitation {
-  width: 95%;
-}
-
 .image-preview,
 .img-profile > img,
 .img-personal {
@@ -605,11 +616,6 @@ border: 1px dashed var(--brown-500) !important;
 
 .list-checkbox {
   height: 40vh;
-}
-
-.modal-dialog {
-  top: 50%;
-  transform: translateY(-50%) !important;
 }
 
 .modal-md {
@@ -667,7 +673,7 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .nav-back {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .nav-style {
@@ -772,6 +778,11 @@ border: 1px dashed var(--brown-500) !important;
   overflow-y: auto;
 }
 
+.text-medium, .text-small {
+  font-size: 12px;
+  line-height: 24px;
+}
+
 .text-primary {
   color: var(--brown-500) !important;
 }
@@ -817,13 +828,10 @@ border: 1px dashed var(--brown-500) !important;
     min-width: 150px;
   }
 
-  .btn-add {
-    margin-left: 15px;
-  }
-
   .btn-download {
     margin-left: 30px;
     min-width: 50px;
+    height: initial;
   }
 
   .btn-submit {
@@ -838,13 +846,14 @@ border: 1px dashed var(--brown-500) !important;
     margin-bottom: 0;
   }
 
+  .form-check-input {
+    width: 25px;
+    height: 25px;
+  }
+
   .header,
   .header > .page-title {
     font-size: 24px;
-  }
-
-  .invitation {
-    max-width: 626px;
   }
 
   .icon-back + h5 {
@@ -863,9 +872,23 @@ border: 1px dashed var(--brown-500) !important;
     font-size: 1rem;
   }
 
+  .nav-back {
+    margin-bottom: 30px;
+  }
+  
   .nav-tab > .nav-link {
     min-width: 150px;
   }
+
+  .text-medium {
+    font-size: 16px;
+    line-height: 22.5px;
+  }
+
+  .text-small {
+    font-size: 14px;
+  }
+  
 }
 
 @media (min-width: 992px) {
@@ -917,10 +940,6 @@ border: 1px dashed var(--brown-500) !important;
 
   .btn-menu {
     display: none;
-  }
-
-  .btn-primary-style {
-    margin-right: 15px;
   }
 
   .card-header > .nav > .nav-style-list {
