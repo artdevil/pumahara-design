@@ -263,7 +263,7 @@ a:hover {
 border: 1px dashed var(--brown-500) !important;
 }
 
-.btn:focus {
+.btn:focus, .btn-close:focus {
   box-shadow: 0 0 0 0.25rem var(--brown-100);
 }
 
@@ -330,6 +330,20 @@ border: 1px dashed var(--brown-500) !important;
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.btn-close {
+  background: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+}
+.btn-close::after {
+  position: absolute;
+  font-family: 'FontAwesome';
+  content: "\f00d";
 }
 
 .btn-main:hover {
