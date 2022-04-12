@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Assign User</title>
+    <title>Classes Detail</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
@@ -130,7 +130,7 @@
               </a>
               <a
                 href="/pumahara-design/classes.html"
-                class="nav-link border-bottom"
+                class="nav-link border-bottom active"
               >
                 <div class="nav-icon">
                   <i class="demo-icon icon-classes"></i>
@@ -142,7 +142,7 @@
               </a>
               <a
                 href="/pumahara-design/roopu.html"
-                class="nav-link border-bottom active"
+                class="nav-link border-bottom"
               >
                 <div class="nav-icon">
                   <i class="demo-icon icon-ropu"></i>
@@ -224,27 +224,50 @@
       </div>
       <!-- Main Section-->
       <main class="bd-main">
-        <!-- Navigation Menu -->
-        <div class="nav-back d-flex align-items-center">
-          <a class="icon-back" href="/pumahara-design/roopu.html">
-            <svg
-              width="16"
-              height="21"
-              viewBox="0 0 16 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.15371 15.3453C9.50564 14.9941 9.47105 14.4667 9.15503 14.1148L4.90546 10.0673L15.0305 10.0781C15.4875 10.0786 15.8746 9.72748 15.8751 9.23529L15.8763 8.11029C15.8768 7.65326 15.4905 7.26612 15.0335 7.26563L4.90848 7.25477L9.16668 3.25152C9.48346 2.9003 9.51919 2.373 9.168 2.02106L8.39539 1.24679C8.07933 0.930044 7.51683 0.929441 7.20008 1.24551L0.372418 8.09365C0.0205166 8.40968 0.0199508 8.93703 0.371174 9.25381L7.18413 16.1166C7.50019 16.4333 8.02754 16.4339 8.37944 16.1179L9.15371 15.3453Z"
-                fill="#3E332B"
-              />
-            </svg>
-          </a>
-          <h5 class="mb-0">Assign User</h5>
+        <div class="nav-back">
+          <div class="row gy-3">
+            <div class="col-12 col-md d-flex align-items-center">
+              <a class="icon-back" href="/pumahara-design/classes.html">
+                <svg
+                  width="16"
+                  height="21"
+                  viewBox="0 0 16 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.15371 15.3453C9.50564 14.9941 9.47105 14.4667 9.15503 14.1148L4.90546 10.0673L15.0305 10.0781C15.4875 10.0786 15.8746 9.72748 15.8751 9.23529L15.8763 8.11029C15.8768 7.65326 15.4905 7.26612 15.0335 7.26563L4.90848 7.25477L9.16668 3.25152C9.48346 2.9003 9.51919 2.373 9.168 2.02106L8.39539 1.24679C8.07933 0.930044 7.51683 0.929441 7.20008 1.24551L0.372418 8.09365C0.0205166 8.40968 0.0199508 8.93703 0.371174 9.25381L7.18413 16.1166C7.50019 16.4333 8.02754 16.4339 8.37944 16.1179L9.15371 15.3453Z"
+                    fill="#3E332B"
+                  />
+                </svg>
+              </a>
+              <h5>Kahikatoa Class</h5>
+            </div>
+            <div class="col-12 col-md-auto">
+              <div class="row">
+                <div class="col-6 col-md">
+                  <select class="form-select" aria-label="Classes">
+                    <option selected>Y9</option>
+                    <option value="Y7">Y7</option>
+                    <option value="Y8">Y8</option>
+                    <option value="Y9">Y9</option>
+                  </select>
+                </div>
+                <div class="col-6 col-md-auto">
+                  <select class="form-select" aria-label="Year">
+                    <option selected>2022</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="d-none d-md-block my-4" />
         </div>
-
         <!-- Tab Navigation -->
-        <div class="card text-center mb-3">
+        <div class="card text-center mb-3 mb-md-4">
           <div class="card-header m-0">
             <nav class="nav nav-tab" id="myTab" role="tablist">
               <a
@@ -282,8 +305,19 @@
           role="tabpanel"
           aria-labelledby="kaiako-tab"
         >
-          <div class="row gy-3">
-            <div class="d-flex">
+          <!-- Utilities -->
+          <div class="mb-3 mb-md-4">
+            <div class="row gx-3 align-items-center">
+              <!-- Checkbox -->
+              <div class="col-auto">
+                <div class="bg-white rounded px-3 py-2 border">
+                  <input
+                    type="checkbox"
+                    class="form-check-input small"
+                    id="kaiakoSelectAll"
+                  />
+                </div>
+              </div>
               <!-- Form Search -->
               <form class="form-search col">
                 <i class="fa fa-magnifying-glass"></i>
@@ -294,15 +328,51 @@
                   aria-label="Search"
                 />
               </form>
+              <!-- Dropdown Menu -->
+              <div class="col-auto dropdown">
+                <button
+                  class="btn btn-secondary-style dropdown-toggle no-icon"
+                  type="button"
+                  id="dropdownAction"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-offset="0,5"
+                >
+                  <div class="d-block d-md-none">
+                    <i class="fa fa-ellipsis-v p-1"></i>
+                  </div>
+                  <div class="d-none d-md-block">
+                    <span class="ms-4">Action</span>
+                    <i class="dropdown-icon fa-solid fa-chevron-down ms-4"></i>
+                  </div>
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="dropdownAction"
+                >
+                  <li>
+                    <button class="dropdown-item">
+                      <i class="fa-solid fa-download"></i>
+                      Download Data
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item text-danger">
+                      <i class="fa-solid fa-trash-alt"></i>
+                      Delete All
+                    </button>
+                  </li>
+                </ul>
+              </div>
               <!-- Button Assign Kaiako -->
               <div class="col-auto">
                 <button
-                  class="btn btn-primary-style d-none d-md-block ms-3"
+                  class="btn btn-primary-style d-none d-md-block"
                   type="button"
                   data-bs-target="#assignKaiako"
                   data-bs-toggle="modal"
                 >
-                  <i class="fa fa-circle-plus"></i>
+                  <i class="fa fa-circle-plus me-2"></i>
                   Assign Kaiako
                 </button>
 
@@ -315,11 +385,21 @@
                 </button>
               </div>
             </div>
-            <!-- Content -->
+          </div>
+          <!-- Content -->
+          <div class="row gy-3 mb-3 mb-md-4">
             <div class="col-12 col-md-6 col-xl-4">
-              <div class="card">
-                <div class="row card-body px-3 py-4">
-                  <p class="col card-text">Grace Isabella</p>
+              <div class="card card-body">
+                <label for="list1" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      id="list1"
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="kaiako-list"
+                    />
+                    Grace Isabella
+                  </div>
                   <div class="col-auto ms-auto">
                     <a
                       class="icon-style rounded bg-red text-center"
@@ -330,13 +410,21 @@
                       <i class="fa fa-trash-alt text-danger"></i>
                     </a>
                   </div>
-                </div>
+                </label>
               </div>
             </div>
             <div class="col-12 col-md-6 col-xl-4">
-              <div class="card">
-                <div class="row card-body px-3 py-4">
-                  <p class="col card-text">Sienna Evelyn</p>
+              <div class="card card-body">
+                <label for="list2" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      id="list2"
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="kaiako-list"
+                    />
+                    Sienna Evelyn
+                  </div>
                   <div class="col-auto ms-auto">
                     <a
                       class="icon-style rounded bg-red text-center"
@@ -347,7 +435,7 @@
                       <i class="fa fa-trash-alt text-danger"></i>
                     </a>
                   </div>
-                </div>
+                </label>
               </div>
             </div>
           </div>
@@ -360,107 +448,423 @@
           role="tabpanel"
           aria-labelledby="tauira-tab"
         >
-          <div class="d-flex mb-3">
-            <!-- Form Search -->
-            <form class="form-search col">
-              <i class="fa fa-magnifying-glass"></i>
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search by name"
-                aria-label="Search"
-              />
-            </form>
-            <!-- Button Assign Tauira -->
-            <div class="col-auto">
-              <button
-                class="btn btn-primary-style d-none d-md-block ms-3"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#assignTauira"
-              >
-                <i class="fa fa-circle-plus"></i>
-                Assign Tauria
-              </button>
+          <!-- Utilities -->
+          <div class="mb-3 mb-md-4">
+            <div class="row gx-3 align-items-center">
+              <!-- Checkbox -->
+              <div class="col-auto">
+                <div class="bg-white rounded px-3 py-2 border">
+                  <input
+                    type="checkbox"
+                    class="form-check-input small"
+                    id="tauiraSelectAll"
+                  />
+                </div>
+              </div>
+              <!-- Form Search -->
+              <form class="form-search col">
+                <i class="fa fa-magnifying-glass"></i>
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search by name"
+                  aria-label="Search"
+                />
+              </form>
+              <!-- Dropdown Menu -->
+              <div class="col-auto dropdown">
+                <button
+                  class="btn btn-secondary-style dropdown-toggle no-icon"
+                  type="button"
+                  id="dropdownAction"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-offset="0,5"
+                >
+                  <div class="d-block d-md-none">
+                    <i class="fa fa-ellipsis-v p-1"></i>
+                  </div>
+                  <div class="d-none d-md-block">
+                    <span class="ms-4">Action</span>
+                    <i class="dropdown-icon fa-solid fa-chevron-down ms-4"></i>
+                  </div>
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="dropdownAction"
+                >
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      data-bs-toggle="modal"
+                      data-bs-target="#gradeUpTauira"
+                    >
+                      <i class="fa-solid fa-arrow-circle-right"></i>
+                      Grade Up
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item">
+                      <i class="fa-solid fa-download"></i>
+                      Download Data
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item text-danger">
+                      <i class="fa-solid fa-trash-alt"></i>
+                      Delete All
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <!-- Button Assign Tauira -->
+              <div class="col-auto">
+                <button
+                  class="btn btn-primary-style d-none d-md-block"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#assignTauira"
+                >
+                  <i class="fa fa-circle-plus me-2"></i>
+                  Assign Tauria
+                </button>
 
-              <button
-                class="btn-circle btn-primary-style d-block d-md-none"
-                data-bs-toggle="modal"
-                data-bs-target="#assignTauira"
-              >
-                <i class="fas fa-plus"></i>
-              </button>
+                <button
+                  class="btn-circle btn-primary-style d-block d-md-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#assignTauira"
+                >
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
             </div>
           </div>
           <!-- Content -->
-          <div class="row gy-3">
+          <div class="row gy-3 mb-3 mb-md-4">
             <div class="col-12 col-md-6 col-xl-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <h6>Sienna Evelyn</h6>
-                      <p>Kahikatoa - Y10</p>
-                    </div>
-                    <div class="col-auto ms-auto">
-                      <a
-                        class="icon-style rounded bg-red text-center"
-                        data-bs-target="#delTauiraModal"
-                        data-bs-toggle="modal"
-                        type="button"
-                      >
-                        <i class="fa fa-trash-alt text-danger"></i>
-                      </a>
-                    </div>
+              <div class="card card-body">
+                <label for="talist1" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist1"
+                    />
+                    Jane Cooper
                   </div>
-                </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
               </div>
             </div>
             <div class="col-12 col-md-6 col-xl-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <h6>Benjamin Jacob</h6>
-                      <p>Kahikatoa - Y10</p>
-                    </div>
-                    <div class="col-auto ms-auto">
-                      <a
-                        class="icon-style rounded bg-red text-center"
-                        data-bs-target="#delTauiraModal"
-                        data-bs-toggle="modal"
-                        type="button"
-                      >
-                        <i class="fa fa-trash-alt text-danger"></i>
-                      </a>
-                    </div>
+              <div class="card card-body">
+                <label for="talist2" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist2"
+                    />
+                    Annette Black
                   </div>
-                </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
               </div>
             </div>
             <div class="col-12 col-md-6 col-xl-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <h6>Ethan</h6>
-                      <p>Totara - Y10</p>
-                    </div>
-                    <div class="col-auto ms-auto">
-                      <a
-                        class="icon-style rounded bg-red text-center"
-                        data-bs-target="#delTauiraModal"
-                        data-bs-toggle="modal"
-                        type="button"
-                      >
-                        <i class="fa fa-trash-alt text-danger"></i>
-                      </a>
-                    </div>
+              <div class="card card-body">
+                <label for="talist3" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist3"
+                    />
+                    Arlene McCoy
                   </div>
-                </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card card-body">
+                <label for="talist4" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist4"
+                    />
+                    Bessie Cooper
+                  </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card card-body">
+                <label for="talist5" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist5"
+                    />
+                    Jerome Bell
+                  </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card card-body">
+                <label for="talist6" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist6"
+                    />
+                    Dianne Russell
+                  </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card card-body">
+                <label for="talist7" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist7"
+                    />
+                    Ralph Edwards
+                  </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card card-body">
+                <label for="talist8" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist8"
+                    />
+                    Courtney Henry
+                  </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card card-body">
+                <label for="talist9" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist9"
+                    />
+                    Ralph Edwards
+                  </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card card-body">
+                <label for="talist10" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist10"
+                    />
+                    Ronald Richards
+                  </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card card-body">
+                <label for="talist11" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist11"
+                    />
+                    Darrell Steward
+                  </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card card-body">
+                <label for="talist12" class="form-label mb-0 c-pointer row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input small me-2"
+                      name="tauira-list"
+                      id="talist12"
+                    />
+                    Ralph Edwards
+                  </div>
+                  <div class="col-auto ms-auto">
+                    <a
+                      class="icon-style rounded bg-red text-center"
+                      data-bs-target="#delTauiraModal"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      <i class="fa fa-trash-alt text-danger"></i>
+                    </a>
+                  </div>
+                </label>
               </div>
             </div>
           </div>
+          <!-- Page Navigation -->
+          <nav
+            class="d-flex justify-content-center"
+            aria-label="Page navigation"
+          >
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         <!-- Modal Delete Kaiako -->
@@ -471,7 +875,7 @@
           aria-labelledby="delKaiakoModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
                 <h6 class="modal-title" id="delKaiakoModalLabel">
@@ -487,10 +891,8 @@
               <div class="modal-body text-start">
                 <p class="mb-3">
                   Are you sure you want to delete -
-                  <span class="fw-bold">
-                    Grace Isabella from assigned kaiako list
-                  </span>
-                  ?
+                  <span class="fw-bold"> Grace Isabella </span>
+                  from assigned kaiako list ?
                 </p>
                 <div class="row gx-3">
                   <div class="col-6 col-md-auto">
@@ -525,7 +927,7 @@
           aria-labelledby="delTauiraModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
                 <h6 class="modal-title" id="delTauiraModalLabel">
@@ -541,10 +943,8 @@
               <div class="modal-body text-start">
                 <p class="mb-3">
                   Are you sure you want to delete -
-                  <span class="fw-bold">
-                    Sienna Evelyn from assigned tāuira list
-                  </span>
-                  ?
+                  <span class="fw-bold"> Ralph Edwards </span>
+                  from assigned tāuira list ?
                 </p>
                 <div class="row gx-3">
                   <div class="col-6 col-md-auto">
@@ -594,7 +994,10 @@
               <div class="modal-body p-0">
                 <div class="card">
                   <div class="card-body">
-                    <div class="nav mb-4 row gx-3 gx-md-4" role="tablist">
+                    <div
+                      class="nav mb-3 mb-md-4 row gx-3 gx-md-4"
+                      role="tablist"
+                    >
                       <label
                         class="col-6"
                         for="selectedKaiako"
@@ -634,9 +1037,12 @@
                         </div>
                       </label>
                     </div>
-                    <div class="tab-content mb-4 border-bottom">
-                      <div id="bySelectedKaiako" class="tab-pane mb-4 active">
-                        <form class="form-search col mb-4">
+                    <div class="tab-content mb-3 mb-md-4 border-bottom">
+                      <div
+                        id="bySelectedKaiako"
+                        class="tab-pane mb-3 mb-md-4 active"
+                      >
+                        <form class="form-search mb-3 mb-md-4">
                           <i class="fa fa-magnifying-glass"></i>
                           <input
                             class="form-control me-2"
@@ -645,6 +1051,7 @@
                             aria-label="Search"
                           />
                         </form>
+                        <!-- Content -->
                         <div
                           class="row overflow-auto gy-3 gy-md-4 list-checkbox"
                         >
@@ -728,7 +1135,7 @@
                           </div>
                         </div>
                       </div>
-                      <div id="bulkAssignKaiako" class="tab-pane mb-4">
+                      <div id="bulkAssignKaiako" class="tab-pane mb-3 mb-md-4">
                         <form class="btn-file mb-3">
                           <p class="label-file lh-sm mb-3">
                             Drag File Here To Upload
@@ -784,7 +1191,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mt-4 gx-3">
+                    <div class="row gx-3">
                       <div class="col-6 col-md-auto">
                         <button
                           type="button"
@@ -833,7 +1240,7 @@
               <div class="modal-body p-0">
                 <div class="card">
                   <div class="card-body">
-                    <div class="nav mb-4 row" role="tablist">
+                    <div class="nav mb-3 mb-md-4 row" role="tablist">
                       <label
                         class="col-6"
                         for="selectedTauira"
@@ -873,29 +1280,20 @@
                         </div>
                       </label>
                     </div>
-                    <div class="tab-content mb-4 border-bottom">
-                      <div id="bySelectedTauira" class="tab-pane mb-4 active">
-                        <div class="row">
-                          <div class="col-12 col-md mb-3">
-                            <form class="form-search">
-                              <i class="fa fa-magnifying-glass"></i>
-                              <input
-                                class="form-control me-2"
-                                type="search"
-                                placeholder="Search by name"
-                                aria-label="Search"
-                              />
-                            </form>
-                          </div>
-                          <div class="col-12 col-md-auto mb-3">
-                            <select class="form-select" aria-label="All Class">
-                              <option selected>All Class</option>
-                              <option value="1">Class 1</option>
-                              <option value="2">Class 2</option>
-                              <option value="3">Class 3</option>
-                            </select>
-                          </div>
-                        </div>
+                    <div class="tab-content mb-3 mb-md-4 border-bottom">
+                      <div
+                        id="bySelectedTauira"
+                        class="tab-pane mb-3 mb-md-4 active"
+                      >
+                        <form class="form-search mb-3 mb-md-4">
+                          <i class="fa fa-magnifying-glass"></i>
+                          <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search by name"
+                            aria-label="Search"
+                          />
+                        </form>
                         <div
                           class="row overflow-auto gy-3 gy-md-4 list-checkbox"
                         >
@@ -909,7 +1307,7 @@
                                 id="cb1"
                                 class="form-check-input checkbox-style"
                               />
-                              <span>Grace Isabella</span>
+                              Grace Isabella
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
@@ -922,7 +1320,7 @@
                                 id="cb2"
                                 class="form-check-input checkbox-style"
                               />
-                              <span>Sienna Evelyn</span>
+                              Sienna Evelyn
                             </label>
                           </div>
                           <div class="col-12 col-md-6">
@@ -979,7 +1377,7 @@
                           </div>
                         </div>
                       </div>
-                      <div id="bulkAssignTauira" class="tab-pane mb-4">
+                      <div id="bulkAssignTauira" class="tab-pane mb-3 mb-md-4">
                         <form class="btn-file mb-3">
                           <p class="label-file lh-sm mb-3">
                             Drag File Here To Upload
@@ -1033,7 +1431,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row mt-4 gx-3">
+                    <div class="row gx-3">
                       <div class="col-6 col-md-auto">
                         <button
                           type="button"
@@ -1052,6 +1450,57 @@
                         </button>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Grade Up Confirmation -->
+        <div
+          class="modal fade"
+          id="gradeUpTauira"
+          aria-labelledby="gradeUpTauiraLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="gradeUpTauiraLabel">
+                  Confirmation of student grade promotion
+                </h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body text-start">
+                <p class="mb-3">
+                  Selected students will move up the class rank to next
+                  curriculum,
+                  <span class="fw-bold"> Y10 - Kahikatea </span>
+                </p>
+                <div class="row gx-3">
+                  <div class="col-6 col-md-auto">
+                    <button
+                      type="button"
+                      class="btn btn-primary-style w-100"
+                      data-bs-dismiss="modal"
+                    >
+                      Ok, Process
+                    </button>
+                  </div>
+                  <div class="col-6 col-md-auto">
+                    <button
+                      type="button"
+                      class="btn btn-secondary-style w-100"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1107,6 +1556,62 @@
           $(".label-file").removeClass("d-none");
           $(".file-name").html("");
           $(".file-name").removeClass("me-3");
+        });
+
+        $(".dropdown-toggle.no-icon").click(function () {
+          var icon = $(".dropdown-icon");
+          if (icon.hasClass("fa-chevron-down")) {
+            $(".dropdown-icon").removeClass("fa-chevron-down");
+            $(".dropdown-icon").addClass("fa-chevron-up");
+          } else {
+            $(".dropdown-icon").removeClass("fa-chevron-up");
+            $(".dropdown-icon").addClass("fa-chevron-down");
+          }
+        });
+
+        var kaiakoList = $('input[name="kaiako-list"]');
+
+        $("input[name='kaiako-list']").click(function () {
+          if (kaiakoList.filter(":checked").length == kaiakoList.length) {
+            $("#kaiakoSelectAll").prop("checked", true);
+          } else {
+            $("#kaiakoSelectAll").prop("checked", false);
+          }
+        });
+
+        $("#kaiakoSelectAll").click(function () {
+          if (this.checked) {
+            $(kaiakoList).each(function () {
+              $(this).prop("checked", true);
+            });
+          } else {
+            $(kaiakoList).each(function () {
+              $(this).prop("checked", false);
+            });
+          }
+        });
+
+        var tauiraList = $('input[name="tauira-list"]');
+
+        $("input[name='tauira-list']").click(function () {
+          if (tauiraList.filter(":checked").length == tauiraList.length) {
+            $("#tauiraSelectAll").prop("checked", true);
+          } else {
+            $("#tauiraSelectAll").prop("checked", false);
+          }
+        });
+
+        $("#tauiraSelectAll").click(function () {
+          var input = $('input[name="tauira-list"]');
+          if (this.checked) {
+            $(input).each(function () {
+              $(this).prop("checked", true);
+            });
+          } else {
+            $(input).each(function () {
+              $(this).prop("checked", false);
+            });
+          }
         });
       });
     </script>
