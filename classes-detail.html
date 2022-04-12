@@ -1561,11 +1561,11 @@
         $(".dropdown-toggle.no-icon").click(function () {
           var icon = $(".dropdown-icon");
           if (icon.hasClass("fa-chevron-down")) {
-            $(".dropdown-icon").removeClass("fa-chevron-down");
-            $(".dropdown-icon").addClass("fa-chevron-up");
+            $(icon).removeClass("fa-chevron-down");
+            $(icon).addClass("fa-chevron-up");
           } else {
-            $(".dropdown-icon").removeClass("fa-chevron-up");
-            $(".dropdown-icon").addClass("fa-chevron-down");
+            $(icon).removeClass("fa-chevron-up");
+            $(icon).addClass("fa-chevron-down");
           }
         });
 
@@ -1602,17 +1602,24 @@
         });
 
         $("#tauiraSelectAll").click(function () {
-          var input = $('input[name="tauira-list"]');
           if (this.checked) {
-            $(input).each(function () {
+            $(tauiraList).each(function () {
               $(this).prop("checked", true);
             });
           } else {
-            $(input).each(function () {
+            $(tauiraList).each(function () {
               $(this).prop("checked", false);
             });
           }
         });
+      });
+
+      $(document).on("click", function (event) {
+        var trigger = $(".dropdown-toggle.no-icon");
+        if (trigger !== event.target && !trigger.has(event.target).length) {
+          $(".dropdown-icon").removeClass("fa-chevron-up");
+          $(".dropdown-icon").addClass("fa-chevron-down");
+        }
       });
     </script>
   </body>
