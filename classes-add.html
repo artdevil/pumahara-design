@@ -262,24 +262,30 @@
                 <input
                   type="text"
                   class="form-control h-100"
-                  id="description"
+                  id="addYear"
                   placeholder="Eg. Y10"
                 />
               </div>
               <div class="col-auto">
                 <button class="btn btn-secondary-style" id="add-class">
                   <i class="fa fa-circle-plus me-0 me-md-2"></i>
-                  <span class="d-none d-md-inline-flex">Add Class</span>
+                  <span class="d-none d-md-inline-flex">Add Data</span>
                 </button>
               </div>
             </div>
           </div>
           <div id="class-list" class="mb-3 mb-md-4">
             <div
-              class="border-active d-inline-flex align-items-center px-2 py-1 rounded-pill"
+              class="card d-inline-flex px-2 py-1 rounded-pill border-active"
             >
-              Y9
-              <i class="fa-solid fa-close ms-2"></i>
+              <div class="d-flex">
+                Y9
+                <button
+                  type="button"
+                  class="btn-close"
+                  aria-label="Close"
+                ></button>
+              </div>
             </div>
           </div>
           <a
@@ -306,5 +312,12 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".btn-close").click(function () {
+          $(this).parent().parent().addClass("d-none");
+        });
+      });
+    </script>
   </body>
 </html>
