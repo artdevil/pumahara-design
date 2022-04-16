@@ -584,6 +584,7 @@ border: 1px dashed var(--brown-500) !important;
 
 .header > .demo-icon {
   margin-right: 10px;
+  font-size: 30px;
 }
 
 .icon-style, .icon-upload {
