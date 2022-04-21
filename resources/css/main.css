@@ -581,8 +581,22 @@ border: 1px dashed var(--brown-500) !important;
   border-top: 6px solid var(--brown-500);
 }
 
-.h-40vh {
-  height: 40vh;
+.fs-12 {
+  font-size: 12px !important;
+  line-height: 24px;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+  line-height: 20px;
+}
+
+.modal-add {
+  max-height: calc(100vh - 190px);
+}
+
+.modal-detail {
+  max-height: calc(100vh - 120px);
 }
 
 .header,
@@ -650,7 +664,7 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .list-checkbox {
-  height: 40vh;
+  max-height: 40vh;
 }
 
 .modal-md {
