@@ -21,6 +21,7 @@
   --green-600: #2d6245;
   --gray: #7a7a7a;
   --gray-light: #e0e0e0;
+  --gray-lighter: #f1f1f1;
   --font: "Open Sans", sans-serif;
 }
 
@@ -255,6 +256,11 @@ a:hover {
 .bg-red {
   background-color: rgba(220, 53, 69, 0.25);
 }
+
+.bg-secondary {
+  background-color: var(--gray-lighter) !important;
+}
+
 .border-active {
   border: 1px solid var(--brown-500) !important;
 }
@@ -575,6 +581,24 @@ border: 1px dashed var(--brown-500) !important;
   border-top: 6px solid var(--brown-500);
 }
 
+.fs-12 {
+  font-size: 12px !important;
+  line-height: 24px;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+  line-height: 20px;
+}
+
+.modal-add {
+  max-height: calc(100vh - 190px);
+}
+
+.modal-detail {
+  max-height: calc(100vh - 120px);
+}
+
 .header,
 .header > .page-title {
   font-size: 16px;
@@ -584,6 +608,7 @@ border: 1px dashed var(--brown-500) !important;
 
 .header > .demo-icon {
   margin-right: 10px;
+  font-size: 30px;
 }
 
 .icon-style, .icon-upload {
@@ -639,7 +664,7 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .list-checkbox {
-  height: 40vh;
+  max-height: 40vh;
 }
 
 .modal-md {
