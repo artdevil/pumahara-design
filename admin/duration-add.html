@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Classes Update</title>
+    <title>Duration Add</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
@@ -23,11 +23,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" type="text/css" href="resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/main.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="resources/icon-dev-handoff/css/fontello.css"
+      href="../resources/icon-dev-handoff/css/fontello.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,9 +68,9 @@
             <picture>
               <source
                 media="(min-width:992px)"
-                srcset="resources/images/logo3.svg"
+                srcset="../resources/images/logo3.svg"
               />
-              <img src="resources/images/logo4.svg" alt="brand images" />
+              <img src="../resources/images/logo4.svg" alt="brand images" />
             </picture>
           </div>
           <a class="notification" href="#">
@@ -78,7 +78,7 @@
             <span>99+</span>
           </a>
           <div class="img-profile d-none d-lg-flex">
-            <img src="resources/images/profile.jpg" alt="image profile" />
+            <img src="../resources/images/profile.jpg" alt="image profile" />
           </div>
         </div>
         <div
@@ -88,14 +88,11 @@
         >
           <div class="bd-links offcanvas-body">
             <div class="img-profile d-lg-none">
-              <img src="resources/images/profile.jpg" alt="image profile" />
+              <img src="../resources/images/profile.jpg" alt="image profile" />
             </div>
             <p class="profile-name">Olivia Emily</p>
             <nav class="nav flex-column nav-style">
-              <a
-                href="/pumahara-design/index.html"
-                class="nav-link border-bottom"
-              >
+              <a href="#" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-home"></i>
                 </div>
@@ -105,7 +102,7 @@
                 </div>
               </a>
               <a
-                href="/pumahara-design/kaiako.html"
+                href="/pumahara-design/admin/kaiako.html"
                 class="nav-link border-bottom"
               >
                 <div class="nav-icon">
@@ -117,7 +114,7 @@
                 </div>
               </a>
               <a
-                href="/pumahara-design/tauira.html"
+                href="/pumahara-design/admin/tauira.html"
                 class="nav-link border-bottom"
               >
                 <div class="nav-icon">
@@ -129,8 +126,8 @@
                 </div>
               </a>
               <a
-                href="/pumahara-design/classes.html"
-                class="nav-link border-bottom active"
+                href="/pumahara-design/admin/classes.html"
+                class="nav-link border-bottom"
               >
                 <div class="nav-icon">
                   <i class="demo-icon icon-classes"></i>
@@ -141,7 +138,7 @@
                 </div>
               </a>
               <a
-                href="/pumahara-design/roopu.html"
+                href="/pumahara-design/admin/roopu.html"
                 class="nav-link border-bottom"
               >
                 <div class="nav-icon">
@@ -153,8 +150,8 @@
                 </div>
               </a>
               <a
-                href="/pumahara-design/ngapumanawa.html"
-                class="border-bottom nav-link"
+                href="/pumahara-design/admin/ngapumanawa.html"
+                class="nav-link border-bottom"
               >
                 <div class="nav-icon">
                   <i class="demo-icon icon-pumanawa"></i>
@@ -165,9 +162,18 @@
                 </div>
               </a>
               <a
-                href="/pumahara-design/plan.html"
-                class="nav-link border-bottom"
+                href="/pumahara-design/admin/duration.html"
+                class="nav-link border-bottom active"
               >
+                <div class="nav-icon">
+                  <i class="demo-icon icon-duration"></i>
+                </div>
+                <div class="nav-text">Term Duration</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="#" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-plan"></i>
                 </div>
@@ -176,10 +182,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a
-                href="/pumahara-design/marataka.html"
-                class="nav-link border-bottom"
-              >
+              <a href="#" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-maramataka"></i>
                 </div>
@@ -188,10 +191,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a
-                href="/pumahara-design/journal.html"
-                class="nav-link border-bottom"
-              >
+              <a href="#" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-journal"></i>
                 </div>
@@ -201,7 +201,7 @@
                 </div>
               </a>
               <a
-                href="/pumahara-design/account-setting.html"
+                href="/pumahara-design/admin/account-setting.html"
                 class="nav-link border-bottom"
               >
                 <div class="nav-icon">
@@ -225,7 +225,7 @@
       <!-- Main Section-->
       <main class="bd-main">
         <div class="nav-back d-flex align-items-center">
-          <a class="icon-back" href="/pumahara-design/classes.html">
+          <a class="icon-back" href="/pumahara-design/admin/duration.html">
             <svg
               width="16"
               height="21"
@@ -239,53 +239,45 @@
               />
             </svg>
           </a>
-          <h5 class="mb-0">Update Classes</h5>
+          <h5 class="mb-0">Add Term Duration</h5>
         </div>
         <form action="" class="form-update">
+          <div class="mb-3 md-md-4">
+            <p>Curriculum Year <span class="fw-bolder">: 2022</span></p>
+          </div>
           <div class="mb-3 mb-md-4">
-            <label for="name" class="form-label"
-              >Name <span class="text-danger">*</span></label
-            >
+            <label for="name" class="form-label">Title</label>
             <input
               type="text"
               class="form-control"
               id="name"
-              placeholder="Eg. Kahikatoa"
+              placeholder="Eg. Term Plan 1"
             />
           </div>
-          <div class="mb-3 mb-md-4">
-            <label for="description" class="form-label"
-              >Year Description <span class="text-danger">*</span></label
-            >
-            <div class="row gy-4">
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control h-100"
-                  id="description"
-                  placeholder="Eg. Y10"
-                />
-              </div>
-              <div class="col-auto">
-                <button class="btn btn-secondary-style" id="add-class">
-                  <i class="fa fa-circle-plus me-0 me-md-2"></i>
-                  <span class="d-none d-md-inline-flex">Add Class</span>
-                </button>
-              </div>
+          <div class="row mb-3 mb-md-4 gy-3">
+            <div class="col-12 col-md-6">
+              <label for="description" class="form-label">Start Date </label>
+              <input
+                type="date"
+                class="form-control"
+                id="StartDate"
+                value="2022-01-01"
+              />
             </div>
-          </div>
-          <div id="class-list" class="mb-3 mb-md-4">
-            <div
-              class="border-active d-inline-flex align-items-center px-2 py-1 rounded-pill"
-            >
-              Y9
-              <i class="fa-solid fa-close ms-2"></i>
+            <div class="col-12 col-md-6">
+              <label for="description" class="form-label">End Date </label>
+              <input
+                type="date"
+                class="form-control"
+                id="EndDate"
+                value="2022-02-28"
+              />
             </div>
           </div>
           <a
             class="btn btn-primary-style col-12 col-md-auto"
-            href="/pumahara-design/classes.html"
-            >Save Changes</a
+            href="/pumahara-design/admin/duration.html"
+            >Save</a
           >
         </form>
       </main>
@@ -306,5 +298,12 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".btn-close").click(function () {
+          $(this).parent().parent().addClass("d-none");
+        });
+      });
+    </script>
   </body>
 </html>
