@@ -14,7 +14,7 @@
   --brown-500: #9f6634;
   --brown-lite: #bb7d46;
   --brown-light: #e4bfa0;
-  --brown-dark: #b4a093;
+  --darkbrown-100: #b4a093;
   --green-100: #abd8c0;
   --green-300: #73bf95;
   --green-500: #46996b;
@@ -261,6 +261,11 @@ a:hover {
   background-color: var(--gray-lighter) !important;
 }
 
+.border-profile {
+  border: 3px solid var(--brown-light);
+  border-radius: 100%;
+}
+
 .border-active {
   border: 1px solid var(--brown-500) !important;
 }
@@ -368,6 +373,21 @@ border: 1px dashed var(--brown-500) !important;
   display: none;
 }
 
+.btn.btn-play {
+  border-radius: 100%;
+  font-size: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 60px;
+  width: 60px;
+  min-width: auto;
+}
+
+.btn-post {
+  min-width: auto;
+  padding:  5px 47.5px;
+}
+
 .btn-secondary-style {
   background-color: var(--white);
   color: var(--brown-500);
@@ -380,6 +400,10 @@ border: 1px dashed var(--brown-500) !important;
   position: absolute;
   padding: 7.5px 36px;
   width: 100%;
+}
+
+.btn.small {
+  min-width: auto;
 }
 
 .btn-upload {
@@ -395,6 +419,10 @@ border: 1px dashed var(--brown-500) !important;
   padding: 7.5px 30px;
 }
 
+.card {
+  border: none;
+}
+
 .card > .card-header {
   background-color: var(--white);
 }
@@ -405,6 +433,12 @@ border: 1px dashed var(--brown-500) !important;
 
 .card > .card-header > .list-style {
   margin-bottom: -8px;
+}
+
+.card-thumbnail {
+  width: 90px;
+  border: 1px solid var(--gray-light);
+  border-radius: 8px;
 }
 
 .card-body > .name {
@@ -591,6 +625,10 @@ border: 1px dashed var(--brown-500) !important;
   line-height: 20px;
 }
 
+.fs-30 {
+  font-size: 30px !important;
+}
+
 .modal-add {
   max-height: calc(100vh - 190px);
 }
@@ -650,6 +688,17 @@ border: 1px dashed var(--brown-500) !important;
 .img-profile > img {
   width: 75px;
   height: 75px;
+}
+
+.img-profile.small {
+  width: 50px;
+  height: 50px;
+  margin-top: 0px;
+}
+
+.img-thumbnails {
+  border-radius: 6px;
+  padding: 5px;
 }
 
 .icon-back {
@@ -814,6 +863,13 @@ border: 1px dashed var(--brown-500) !important;
   word-break: break-all;
 }
 
+.profile-classes {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--darkbrown-100)
+}
+
 .row-gap {
   --bs-gutter-x: 30px;
 }
@@ -825,6 +881,10 @@ border: 1px dashed var(--brown-500) !important;
   width: min-content;
   background-color: white;
   overflow-y: auto;
+}
+
+textarea:focus-visible {
+  outline-color: var(--gray-light);
 }
 
 .text-medium, .text-small {
@@ -844,6 +904,9 @@ border: 1px dashed var(--brown-500) !important;
   color: var(--green-500);
 }
 
+.text-secondary {
+  color: var(--darkbrown-100) !important;
+}
 
 @media (min-width: 576px) {
 }
