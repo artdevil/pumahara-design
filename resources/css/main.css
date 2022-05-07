@@ -467,7 +467,7 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .card-list {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .col-md-6 > .card {
@@ -629,14 +629,6 @@ border: 1px dashed var(--brown-500) !important;
   font-size: 30px !important;
 }
 
-.modal-add {
-  max-height: calc(100vh - 190px);
-}
-
-.modal-detail {
-  max-height: calc(100vh - 120px);
-}
-
 .header,
 .header > .page-title {
   font-size: 16px;
@@ -701,6 +693,11 @@ border: 1px dashed var(--brown-500) !important;
   padding: 5px;
 }
 
+.img-wrapper {
+  width: 100px;
+  height: 100px;
+}
+
 .icon-back {
   padding: 5px 9px;
   border: 1px solid var(--gray-light);
@@ -714,6 +711,14 @@ border: 1px dashed var(--brown-500) !important;
 
 .list-checkbox {
   max-height: 40vh;
+}
+
+.modal-add {
+  max-height: calc(100vh - 190px);
+}
+
+.modal-detail {
+  max-height: calc(100vh - 120px);
 }
 
 .modal-md {
@@ -958,6 +963,10 @@ textarea:focus-visible {
     margin-bottom: 0;
   }
 
+  .card-list {
+    margin-bottom: 30px;
+  }
+
   .form-check-input {
     width: 25px;
     height: 25px;
@@ -970,6 +979,11 @@ textarea:focus-visible {
 
   .icon-back + h5 {
     font-size: 20px;
+  }
+
+  .img-wrapper {
+    width: 200px;
+    height: 200px;
   }
 
   .modal-header > .modal-title,
