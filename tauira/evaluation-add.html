@@ -1328,6 +1328,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
             $(icon).addClass("fa-chevron-down");
           }
         });
+        $("#videoPreviewModal").on("hide.bs.modal", function (e) {
+          this.querySelector("video").pause();
+        });
       });
     </script>
   </body>
