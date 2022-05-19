@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Classes Menu</title>
+    <meta name="description" content="WELCOME TO PŪMAHARA" />
+    <meta name="keywords" content="WELCOME TO PŪMAHARA" />
+    <meta name="author" content="@shallness" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../resources/css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../resources/icon-dev-handoff/css/fontello.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/afe7e62084.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-box">
+      <!-- Navbar Section-->
+      <div class="sidebar">
+        <div class="navbar-small">
+          <button
+            class="btn-menu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasSidebar"
+          >
+            <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line y1="0.5" x2="20" y2="0.5" stroke="#3E332B" />
+              <line y1="10.5" x2="13.3333" y2="10.5" stroke="#3E332B" />
+              <line y1="20.5" x2="20" y2="20.5" stroke="#3E332B" />
+            </svg>
+            <p>MENU</p>
+          </button>
+          <div class="brand">
+            <picture>
+              <source
+                media="(min-width:992px)"
+                srcset="../resources/images/logo3.svg"
+              />
+              <img
+                src="../resources/images/logo4.svg"
+                alt="brand images"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <a class="notification" href="#">
+            <i class="demo-icon icon-bell"></i>
+            <span>99+</span>
+          </a>
+          <div class="img-profile d-none d-lg-flex">
+            <img
+              src="../resources/images/profile2.jpg"
+              alt="image profile"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div
+          class="offcanvas offcanvas-start bd-sidebar"
+          id="offcanvasSidebar"
+          tabindex="-1"
+        >
+          <div class="bd-links offcanvas-body">
+            <div class="img-profile d-lg-none">
+              <img
+                src="../resources/images/profile.jpg"
+                alt="image profile"
+                loading="lazy"
+              />
+            </div>
+            <p class="profile-name mb-1">Amelia Charlotte</p>
+            <p class="profile-classes mb-3">Puriri - Y7</p>
+            <nav class="nav flex-column nav-style">
+              <a href="#" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-home"></i>
+                </div>
+                <div class="nav-text">Home</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a
+                href="/pumahara-design/tauira/evaluation.html"
+                class="nav-link border-bottom active"
+              >
+                <div class="nav-icon">
+                  <i class="demo-icon icon-evaluation"></i>
+                </div>
+                <div class="nav-text">My Evaluations</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="#" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-maramataka"></i>
+                </div>
+                <div class="nav-text">Maramataka</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="#" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-journal"></i>
+                </div>
+                <div class="nav-text">Journal</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="#" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-plan"></i>
+                </div>
+                <div class="nav-text">Whānau</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a
+                href="/pumahara-design/admin/account-setting.html"
+                class="nav-link border-bottom"
+              >
+                <div class="nav-icon">
+                  <i class="demo-icon icon-setting"></i>
+                </div>
+                <div class="nav-text">Account Setting</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="#" class="nav-link text-danger">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-logout"></i>
+                </div>
+                <div class="nav-text">Logout</div>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Section-->
+      <main class="bd-main">
+        <div class="nav-back mb-3">
+          <div class="row gy-3">
+            <div class="col-12 col-md d-flex align-items-center">
+              <a
+                class="icon-back"
+                href="/pumahara-design/tauira/evaluation.html"
+              >
+                <svg
+                  width="16"
+                  height="21"
+                  viewBox="0 0 16 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.15371 15.3453C9.50564 14.9941 9.47105 14.4667 9.15503 14.1148L4.90546 10.0673L15.0305 10.0781C15.4875 10.0786 15.8746 9.72748 15.8751 9.23529L15.8763 8.11029C15.8768 7.65326 15.4905 7.26612 15.0335 7.26563L4.90848 7.25477L9.16668 3.25152C9.48346 2.9003 9.51919 2.373 9.168 2.02106L8.39539 1.24679C8.07933 0.930044 7.51683 0.929441 7.20008 1.24551L0.372418 8.09365C0.0205166 8.40968 0.0199508 8.93703 0.371174 9.25381L7.18413 16.1166C7.50019 16.4333 8.02754 16.4339 8.37944 16.1179L9.15371 15.3453Z"
+                    fill="#3E332B"
+                  />
+                </svg>
+              </a>
+              <div class="ms-3">
+                <h5 class="page-title">Term 1</h5>
+                <p class="fs-14">01/01/2022 - 28/02/2022</p>
+              </div>
+            </div>
+          </div>
+          <hr class="my-3 line-div opacity-100" />
+        </div>
+        <div class="row gy-3">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h6 class="fs-14 mb-1">Quality 1 - Tamatekapua</h6>
+                    <p class="fs-12">
+                      Successful Māori students understand core Māori values
+                    </p>
+                  </div>
+                  <div class="col-auto">
+                    <button
+                      type="button"
+                      class="btn small text-primary btn-detail"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseDetail"
+                      aria-expanded="false"
+                      aria-controls="collapseDetail"
+                    >
+                      <i class="detail-icon fas fa-chevron-down fs-14 me-2"></i>
+                      <span class="d-none d-md-inline-block">
+                        Show Detail
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div class="collapse mt-1" id="collapseDetail">
+                  <h6 class="fs-14 mb-1">Characteristic</h6>
+                  <p class="fs-12 mb-1">
+                    An ability to model the most meaningful qulities in Māori
+                    culture, portrayed by way of aroha (love), manaaki (care)
+                    and wairua (spritually)
+                  </p>
+                  <h6 class="fs-14 mb-1">Application to school and work</h6>
+                  <ol class="mb-0 ps-3 fs-12">
+                    <li>
+                      Manaakitangan - ability to care and be hospitable to
+                      others
+                    </li>
+                    <li>Kotahitanga - ability to commit to a kaupapa/vision</li>
+                    <li>
+                      Wairuatanga - moral compass and sense of social justice
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <textarea
+                    class="form-control px-2 mb-3 mb-md-4 fs-12"
+                    placeholder="What do you want to do or achieve and what has been done or achieved in this term plan?"
+                  ></textarea>
+                  <div class="row g-3">
+                    <div class="col-auto">
+                      <div class="card card-thumbnail">
+                        <img
+                          src="../resources/images/thumbnail1.png"
+                          alt="images"
+                          class="img-thumbnails"
+                          loading="lazy"
+                        />
+                        <button
+                          class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1"
+                        >
+                          Remove File
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="card card-thumbnail">
+                        <img
+                          src="../resources/images/thumbnail2.png"
+                          alt="images"
+                          class="img-thumbnails opacity-25"
+                          loading="lazy"
+                        />
+                        <button
+                          class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1"
+                        >
+                          Remove File
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="card card-thumbnail">
+                        <img
+                          src="../resources/images/thumbnail2.png"
+                          alt="images"
+                          class="img-thumbnails"
+                          loading="lazy"
+                        />
+
+                        <button
+                          class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1"
+                        >
+                          Remove File
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex mt-3">
+                    <button
+                      class="btn btn-primary-style btn-post col col-md-auto me-3"
+                      type="submit"
+                    >
+                      Post
+                    </button>
+                    <div class="ms-auto">
+                      <input
+                        class="form-control d-none"
+                        type="file"
+                        name="photo"
+                        id="photoFile"
+                        accept="image/*"
+                      />
+                      <label class="form-label primary-style" for="photoFile">
+                        <i class="fas fa-images me-md-2"></i>
+                        <span class="d-none d-md-inline-block">Photo</span>
+                      </label>
+                    </div>
+                    <div class="ms-3">
+                      <input
+                        class="form-control d-none"
+                        type="file"
+                        name="photo"
+                        id="videoFile"
+                        accept="video/*"
+                      />
+                      <label class="form-label primary-style" for="videoFile">
+                        <i class="fas fa-video me-md-2"></i>
+                        <span class="d-none d-md-inline-block">Video</span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div
+                  class="alert alert-warning fs-14 mb-3 mb-md-4"
+                  role="alert"
+                >
+                  Awaiting approval from your Kaiako
+                </div>
+                <div
+                  class="alert alert-warning fs-14 mb-3 mb-md-4"
+                  role="alert"
+                >
+                  Your kaiako would like to help you with this, please talk to
+                  them.
+                </div>
+                <div
+                  class="alert alert-success-style fs-14 mb-3 mb-md-4"
+                  role="alert"
+                >
+                  Post approved by your Kaiako
+                  <span class="fs-14 fw-bolder"> “Grace Isabella” </span>
+                </div>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <img
+                      class="img-profile small border-profile"
+                      src="../resources/images/profile2.jpg"
+                      alt="image profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col">
+                    <h6 class="fs-14">Amelia Charlotte</h6>
+                    <p class="fs-14">
+                      16 April 2022, 10:30
+                      <span class="text-primary">(Edited)</span>
+                    </p>
+                  </div>
+                  <div class="col-auto">
+                    <div class="ms-auto dropup">
+                      <a
+                        role="button"
+                        class="menu-option"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-bs-offset="0,-65"
+                      >
+                        <i class="fa-solid fa-ellipsis-v"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="dropdownMenuButton1"
+                        style=""
+                      >
+                        <li>
+                          <button
+                            class="dropdown-item"
+                            data-bs-toggle="modal"
+                            data-bs-target="#updatePostModal"
+                          >
+                            <i class="fa-solid fa-edit"></i>
+                            Edit
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            class="dropdown-item text-danger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deletePostModal"
+                          >
+                            <i class="fa-solid fa-trash-alt"></i>
+                            Delete
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 line-div opacity-100" />
+                <!-- Plan Post -->
+                <div class="my-3">
+                  <h6>
+                    <i class="fas fa-tag text-primary me-2"></i>
+                    MY PLAN POST
+                  </h6>
+                  <p class="fs-12">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vulputate faucibus tellus molestie proin sapien varius
+                    interdum sit. Diam viverra porta ut risus. Ut tristique
+                    risus imperdiet nunc pharetra.
+                  </p>
+                </div>
+
+                <div class="row g-3 justify-content-center mb-3">
+                  <div class="col-auto">
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#imagePreviewModal"
+                    >
+                      <img
+                        src="../resources/images/thumbnail1.png"
+                        alt="thumbnail1"
+                        class="img-wrapper"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <div class="position-relative">
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#videoPreviewModal"
+                      >
+                        <img
+                          src="../resources/images/thumbnail2.png"
+                          alt="thumbnail1"
+                          class="img-wrapper"
+                          loading="lazy"
+                        />
+                        <div
+                          class="position-absolute top-50 start-50 translate-middle"
+                        >
+                          <button class="btn btn-play">
+                            <i
+                              class="fas fa-play d-flex justify-content-center align-items-center"
+                            ></i>
+                          </button>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- list comment -->
+                <div class="row mb-4 gx-1 gx-md-3">
+                  <div class="col-auto mt-2">
+                    <img
+                      class="img-profile small border-profile"
+                      src="../resources/images/profile3.jpg"
+                      alt="profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="timeline-comment">
+                      <h6 class="fs-14">Jack William</h6>
+                      <p class="fs-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vulputate faucibus tellus molestie proin sapien varius
+                        interdum sit. Diam viverra porta ut risus. Ut tristique
+                        risus imperdiet nunc pharetra.
+                      </p>
+                    </div>
+                    <div class="row mt-1 align-items-center">
+                      <div class="col">
+                        <p class="fs-12 text-secondary ms-0 ms-2">1 day ago</p>
+                      </div>
+                      <div class="col-auto">
+                        <button
+                          class="btn small fs-14 text-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#updateCommentModal"
+                        >
+                          Edit
+                        </button>
+                      </div>
+                      <div class="col-auto">
+                        <button
+                          class="btn small fs-14 text-danger"
+                          data-bs-toggle="modal"
+                          data-bs-target="#deleteCommentModal"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4 gx-1 gx-md-3">
+                  <div class="col-auto mt-2">
+                    <img
+                      class="img-profile small border-profile"
+                      src="../resources/images/profile4.jpg"
+                      alt="profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="timeline-comment">
+                      <h6 class="fs-14">Grace Isabella</h6>
+                      <p class="fs-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vulputate faucibus tellus molestie proin sapien varius
+                        interdum sit. Diam viverra porta ut risus. Ut tristique
+                        risus imperdiet nunc pharetra.
+                      </p>
+                    </div>
+                    <div class="row mt-1 align-items-center">
+                      <div class="col">
+                        <p class="fs-12 text-secondary ms-0 ms-2">
+                          10 minutes ago
+                        </p>
+                      </div>
+                      <div class="col-auto">
+                        <button
+                          class="btn small fs-14 text-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#updateCommentModal"
+                        >
+                          Edit
+                        </button>
+                      </div>
+                      <div class="col-auto">
+                        <button
+                          class="btn small fs-14 text-danger"
+                          data-bs-toggle="modal"
+                          data-bs-target="#deleteCommentModal"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- form comment-->
+                <div class="row gx-1 gx-md-3">
+                  <div class="col-auto mt-2">
+                    <img
+                      class="img-profile small border-profile"
+                      src="../resources/images/profile2.jpg"
+                      alt="profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col">
+                    <form>
+                      <textarea
+                        class="form-control px-2 fs-12"
+                        placeholder="Write your comment..."
+                      ></textarea>
+                      <div class="d-flex mt-3">
+                        <button
+                          class="btn btn-primary-style btn-post col col-md-auto me-3 fs-14"
+                          type="submit"
+                        >
+                          Post Comment
+                        </button>
+                        <div class="ms-auto">
+                          <input
+                            class="form-control d-none"
+                            type="file"
+                            name="photo"
+                            id="photoFile"
+                            accept="image/*"
+                          />
+                          <label
+                            class="form-label primary-style"
+                            for="photoFile"
+                          >
+                            <i class="fas fa-images me-md-2"></i>
+                            <span class="d-none d-md-inline-block">Photo</span>
+                          </label>
+                        </div>
+                        <div class="ms-3">
+                          <input
+                            class="form-control d-none"
+                            type="file"
+                            name="photo"
+                            id="videoFile"
+                            accept="video/*"
+                          />
+                          <label
+                            class="form-label primary-style"
+                            for="videoFile"
+                          >
+                            <i class="fas fa-video me-md-2"></i>
+                            <span class="d-none d-md-inline-block">Video</span>
+                          </label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div
+                  class="alert alert-success-style fs-14 mb-3 mb-md-4"
+                  role="alert"
+                >
+                  Post approved by your Kaiako
+                  <span class="fs-14 fw-bolder"> “Grace Isabella” </span>
+                </div>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <img
+                      class="img-profile small border-profile"
+                      src="../resources/images/profile2.jpg"
+                      alt="image profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col">
+                    <h6 class="fs-14">Amelia Charlotte</h6>
+                    <p class="fs-14">15 June 2022, 10:30</p>
+                  </div>
+                  <div class="col-auto">
+                    <div class="ms-auto dropup">
+                      <a
+                        role="button"
+                        class="menu-option"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-bs-offset="0,-65"
+                      >
+                        <i class="fa-solid fa-ellipsis-v"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="dropdownMenuButton1"
+                        style=""
+                      >
+                        <li>
+                          <button
+                            class="dropdown-item"
+                            data-bs-toggle="modal"
+                            data-bs-target="#updatePostModal"
+                          >
+                            <i class="fa-solid fa-edit"></i>
+                            Edit
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            class="dropdown-item text-danger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deletePostModal"
+                          >
+                            <i class="fa-solid fa-trash-alt"></i>
+                            Delete
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 line-div opacity-100" />
+                <!-- Summary Post -->
+                <div class="my-3">
+                  <h6>
+                    <i class="fas fa-tag text-primary me-2"></i>
+                    MY SUMMARY POST
+                  </h6>
+                  <p class="fs-12">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vulputate faucibus tellus molestie proin sapien varius
+                    interdum sit. Diam viverra porta ut risus. Ut tristique
+                    risus imperdiet nunc pharetra.
+                  </p>
+                </div>
+
+                <div class="row gx-3 justify-content-center mb-3">
+                  <div class="col-auto">
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#imagePreviewModal"
+                    >
+                      <img
+                        src="../resources/images/thumbnail1.png"
+                        alt="thumbnail1"
+                        class="img-wrapper"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <div class="position-relative">
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#videoPreviewModal"
+                      >
+                        <img
+                          src="../resources/images/thumbnail2.png"
+                          alt="thumbnail1"
+                          class="img-wrapper"
+                          loading="lazy"
+                        />
+                        <div
+                          class="position-absolute top-50 start-50 translate-middle"
+                        >
+                          <button class="btn btn-play">
+                            <i
+                              class="fas fa-play d-flex justify-content-center align-items-center"
+                            ></i>
+                          </button>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- list comment -->
+                <div class="row gx-1 gx-md-3 mb-4">
+                  <div class="col-auto mt-0 mt-md-2">
+                    <img
+                      class="img-profile small border-profile"
+                      src="../resources/images/profile3.jpg"
+                      alt="profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="timeline-comment">
+                      <h6 class="fs-14">Jack William</h6>
+                      <p class="fs-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vulputate faucibus tellus molestie proin sapien varius
+                        interdum sit. Diam viverra porta ut risus. Ut tristique
+                        risus imperdiet nunc pharetra.
+                      </p>
+                    </div>
+                    <div class="row mt-1 align-items-center">
+                      <div class="col">
+                        <p class="fs-12 text-secondary ms-0 ms-2">1 day ago</p>
+                      </div>
+                      <div class="col-auto">
+                        <button
+                          class="btn small fs-14 text-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#updateCommentModal"
+                        >
+                          Edit
+                        </button>
+                      </div>
+                      <div class="col-auto">
+                        <button
+                          class="btn small fs-14 text-danger"
+                          data-bs-toggle="modal"
+                          data-bs-target="#deleteCommentModal"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row gx-1 gx-md-3 mb-4">
+                  <div class="col-auto mt-0 mt-md-2">
+                    <img
+                      class="img-profile small border-profile"
+                      src="../resources/images/profile4.jpg"
+                      alt="profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="timeline-comment">
+                      <h6 class="fs-14">Grace Isabella</h6>
+                      <p class="fs-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vulputate faucibus tellus molestie proin sapien varius
+                        interdum sit. Diam viverra porta ut risus. Ut tristique
+                        risus imperdiet nunc pharetra.
+                      </p>
+                    </div>
+                    <div class="row mt-1 align-items-center">
+                      <div class="col">
+                        <p class="fs-12 text-secondary ms-0 ms-2">
+                          10 minutes ago
+                        </p>
+                      </div>
+                      <div class="col-auto">
+                        <button
+                          class="btn small fs-14 text-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#updateCommentModal"
+                        >
+                          Edit
+                        </button>
+                      </div>
+                      <div class="col-auto">
+                        <button
+                          class="btn small fs-14 text-danger"
+                          data-bs-toggle="modal"
+                          data-bs-target="#deleteCommentModal"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- form comment-->
+                <div class="row gx-1 gx-md-3">
+                  <div class="col-auto mt-0 mt-md-2">
+                    <img
+                      class="img-profile small border-profile"
+                      src="../resources/images/profile2.jpg"
+                      alt="profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col">
+                    <form>
+                      <textarea
+                        class="form-control px-2 fs-12"
+                        placeholder="Write your comment..."
+                      ></textarea>
+                      <div class="d-flex mt-3">
+                        <button
+                          class="btn btn-primary-style btn-post col col-md-auto me-3 fs-14"
+                          type="submit"
+                        >
+                          Post Comment
+                        </button>
+                        <div class="ms-auto">
+                          <input
+                            class="form-control d-none"
+                            type="file"
+                            name="photo"
+                            id="photoFile"
+                            accept="image/*"
+                          />
+                          <label
+                            class="form-label primary-style"
+                            for="photoFile"
+                          >
+                            <i class="fas fa-images me-md-2"></i>
+                            <span class="d-none d-md-inline-block">Photo</span>
+                          </label>
+                        </div>
+                        <div class="ms-3">
+                          <input
+                            class="form-control d-none"
+                            type="file"
+                            name="photo"
+                            id="videoFile"
+                            accept="video/*"
+                          />
+                          <label
+                            class="form-label primary-style"
+                            for="videoFile"
+                          >
+                            <i class="fas fa-video me-md-2"></i>
+                            <span class="d-none d-md-inline-block">Video</span>
+                          </label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="text-center">
+              <img
+                src="../resources/images/icon-no-post.svg"
+                alt="no data"
+                class="mb-4"
+                loading="lazy"
+              />
+              <h6>Sorry, you haven't posted anything yet</h6>
+              <p class="fs-14">Please add text/photo/video to your post</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Delete Post Modal -->
+    <div
+      class="modal fade"
+      id="deletePostModal"
+      tabindex="-1"
+      aria-labelledby="deletePostModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="deletePostModalLabel">
+              Delete Confirmation
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="mb-3">
+              Are you sure you want to delete the post on
+              <span class="fw-bold"> 15 April 2022, 09:30</span>?
+            </p>
+            <div class="row gx-3">
+              <div class="col-6 col-md-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary-style w-100"
+                  data-bs-dismiss="modal"
+                >
+                  Yes, Delete
+                </button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button
+                  type="button"
+                  class="btn btn-secondary-style w-100"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Update Post Modal -->
+    <div
+      class="modal fade"
+      id="updatePostModal"
+      tabindex="-1"
+      aria-labelledby="updatePostModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header mx-3 px-0">
+            <h6 class="modal-title" id="updatePostModalLabel">
+              Update Term Plan Post
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start">
+            <form>
+              <textarea
+                class="form-control px-2 mb-3"
+                placeholder="What do you want to do or achieve and what has been done or achieved in this term plan?"
+                rows="3"
+              >
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tellus molestie proin sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc pharetra.</textarea
+              >
+              <div class="row g-3">
+                <div class="col-auto">
+                  <div class="card card-thumbnail">
+                    <img
+                      src="../resources/images/thumbnail1.png"
+                      alt="images"
+                      class="img-thumbnails"
+                      loading="lazy"
+                    />
+                    <button
+                      class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1"
+                    >
+                      Remove File
+                    </button>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="card card-thumbnail">
+                    <img
+                      src="../resources/images/thumbnail2.png"
+                      alt="images"
+                      class="img-thumbnails opacity-25"
+                      loading="lazy"
+                    />
+                    <button
+                      class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1"
+                    >
+                      Remove File
+                    </button>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="card card-thumbnail">
+                    <img
+                      src="../resources/images/thumbnail2.png"
+                      alt="images"
+                      class="img-thumbnails"
+                      loading="lazy"
+                    />
+                    <button
+                      class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1"
+                      role="option"
+                    >
+                      Remove File
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="modal-footer justify-content-start align-items-stretch mt-3 p-0 pt-3"
+              >
+                <button
+                  class="col col-md-auto btn btn-primary-style btn-post fs-14 me-3"
+                  type="submit"
+                >
+                  Update
+                </button>
+                <div class="ms-auto">
+                  <label class="form-label primary-style" for="photoFile">
+                    <i class="fas fa-images me-md-2"></i>
+                    <span class="d-none d-md-inline-block">Photo</span>
+                  </label>
+                  <input
+                    class="form-control d-none"
+                    type="file"
+                    name="photo"
+                    id="photoFile"
+                    accept="image/*"
+                  />
+                </div>
+                <div class="ms-3">
+                  <label class="form-label primary-style" for="videoFile">
+                    <i class="fas fa-video me-md-2"></i>
+                    <span class="d-none d-md-inline-block">Video</span>
+                  </label>
+                  <input
+                    class="form-control d-none"
+                    type="file"
+                    name="photo"
+                    id="videoFile"
+                    accept="video/*"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Comment Modal -->
+    <div
+      class="modal fade"
+      id="deleteCommentModal"
+      tabindex="-1"
+      aria-labelledby="deleteCommentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="deleteCommentModalLabel">
+              Delete Confirmation
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="mb-3">
+              Are you sure you want to delete comment from
+              <span class="fw-bold"> Jack William </span>
+              on
+              <span class="fw-bold"> 1 day ago </span>?
+            </p>
+            <div class="row gx-3">
+              <div class="col-6 col-md-auto">
+                <button
+                  type="button"
+                  class="btn btn-primary-style w-100"
+                  data-bs-dismiss="modal"
+                >
+                  Yes, Delete
+                </button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button
+                  type="button"
+                  class="btn btn-secondary-style w-100"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Update Comment Modal -->
+    <div
+      class="modal fade"
+      id="updateCommentModal"
+      tabindex="-1"
+      aria-labelledby="updateCommentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header mx-3 px-0">
+            <h6 class="modal-title" id="updateCommentModalLabel">
+              Update Comment
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start">
+            <div class="row gx-3 align-items-center mb-3">
+              <img
+                src="../resources/images/profile3.jpg"
+                alt="image profile"
+                class="col-auto rounded-circle"
+                height="30px"
+                width="30px"
+                loading="lazy"
+              />
+              <h6 class="col fs-14 mb-0">Jack William</h6>
+            </div>
+            <form>
+              <textarea
+                class="form-control px-2 mb-3"
+                placeholder="What do you want to do or achieve and what has been done or achieved in this term plan?"
+                rows="3"
+              >
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tellus molestie proin sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc pharetra.</textarea
+              >
+              <div class="row g-3">
+                <div class="col-auto">
+                  <div class="card card-thumbnail">
+                    <img
+                      src="../resources/images/thumbnail3.png"
+                      alt="images"
+                      class="img-thumbnails"
+                      loading="lazy"
+                    />
+                    <button
+                      class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1"
+                    >
+                      Remove File
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="modal-footer justify-content-start align-items-stretch mt-3 p-0 pt-3"
+              >
+                <button
+                  class="col col-md-auto btn btn-primary-style btn-post fs-14 me-3"
+                  type="submit"
+                >
+                  Update
+                </button>
+                <div class="ms-auto">
+                  <label class="form-label primary-style" for="photoFile">
+                    <i class="fas fa-images me-md-2"></i>
+                    <span class="d-none d-md-inline-block">Photo</span>
+                  </label>
+                  <input
+                    class="form-control d-none"
+                    type="file"
+                    name="photo"
+                    id="photoFile"
+                    accept="image/*"
+                  />
+                </div>
+                <div class="ms-3">
+                  <label class="form-label primary-style" for="videoFile">
+                    <i class="fas fa-video me-md-2"></i>
+                    <span class="d-none d-md-inline-block">Video</span>
+                  </label>
+                  <input
+                    class="form-control d-none"
+                    type="file"
+                    name="photo"
+                    id="videoFile"
+                    accept="video/*"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Preview Modal -->
+    <div
+      class="modal fade"
+      id="imagePreviewModal"
+      tabindex="-1"
+      aria-labelledby="imagePreviewModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content position-relative rounded">
+          <button
+            type="button"
+            class="position-absolute btn-close big outside top-0 end-0"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="row">
+            <img
+              src="../resources/images/thumbnail1-big.jpg"
+              alt="images"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Preview Modal -->
+    <div
+      class="modal fade"
+      id="videoPreviewModal"
+      tabindex="-1"
+      aria-labelledby="videoPreviewModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content position-relative">
+          <button
+            type="button"
+            class="position-absolute btn-close big outside top-0 end-0"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="row p-3">
+            <video
+              src="../resources/videos/sample.mp4"
+              controls
+              loading="lazy"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn-detail").click(function () {
+          var icon = $(".detail-icon");
+          if (icon.hasClass("fa-chevron-down")) {
+            $(icon).removeClass("fa-chevron-down");
+            $(icon).addClass("fa-chevron-up");
+          } else {
+            $(icon).removeClass("fa-chevron-up");
+            $(icon).addClass("fa-chevron-down");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
