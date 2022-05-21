@@ -23,13 +23,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
-      integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" type="text/css" href="../resources/css/main.css" />
     <link rel="stylesheet" type="text/css" href="../resources/trix/trix.css" />
     <link rel="stylesheet" type="text/css" href="../resources/icon-dev-handoff/css/fontello.css" />
@@ -169,26 +162,20 @@
                     placeholder="Eg. Rotorua"
                     value="Rotorua"
                   />
-                  <label for="location" class="col-auto textDate">
+                  <label for="location" class="col-auto icon">
                     <i class="fas fa-map-marker-alt"></i>
                   </label>
                 </div>
               </div>
               <div class="col-md-6">
                 <label class="form-label">Date time</label>
-                <div class="form-control d-flex">
-                  <input
-                    id="textDate"
-                    class="col no-border"
-                    name="textDate"
-                    type="text"
-                    value="25 / 04 / 2022"
-                    data-date-format="dd / mm / yyyy"
-                  />
-                  <label class="col-auto textDate" for="textDate">
-                    <i class="fas fa-calendar"></i>
-                  </label>
-                </div>
+                <input
+                  id="date"
+                  class="form-control"
+                  name="date"
+                  type="datetime-local"
+                  value="2022-04-25T10:30"
+                />
               </div>
             </div>
           </div>
@@ -374,23 +361,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      $(document).ready(function () {
-        // let input = "[name='hear'], [name='favorite'], [name='learn'], [name='features']";
-        // let location = "[name='location']";
-        // $(input).prop("value", "");
-        // $("[name='hear'], [name='favorite'], [name='learn'], [name='features']").prop(
-        //   "required",
-        //   "true"
-        // );
-
-        // $(input).on("change", function () {
-        //   alert(this.value);
-        // });
-
-        $("#textDate").datepicker({
-          todayHighlight: "true",
-        });
-      });
+      $(document).ready(function () {});
     </script>
   </body>
 </html>
