@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Journal Add Menu</title>
+    <meta name="description" content="WELCOME TO PŪMAHARA" />
+    <meta name="keywords" content="WELCOME TO PŪMAHARA" />
+    <meta name="author" content="@shallness" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/trix/trix.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/icon-dev-handoff/css/fontello.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/afe7e62084.js" crossorigin="anonymous"></script>
+    <script src="../resources/trix/trix.js"></script>
+  </head>
+  <body>
+    <div class="container-box">
+      <!-- Navbar Section-->
+      <div class="sidebar">
+        <div class="navbar-small">
+          <button
+            class="btn-menu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasSidebar"
+          >
+            <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line y1="0.5" x2="20" y2="0.5" stroke="#3E332B" />
+              <line y1="10.5" x2="13.3333" y2="10.5" stroke="#3E332B" />
+              <line y1="20.5" x2="20" y2="20.5" stroke="#3E332B" />
+            </svg>
+            <p>MENU</p>
+          </button>
+          <div class="brand">
+            <picture>
+              <source media="(min-width:992px)" srcset="../resources/images/logo3.svg" />
+              <img src="../resources/images/logo4.svg" alt="brand images" />
+            </picture>
+          </div>
+          <a class="notification" role="button">
+            <i class="demo-icon icon-bell"></i>
+            <span>99+</span>
+          </a>
+          <div class="img-profile d-none d-lg-flex">
+            <img src="../resources/images/profile2.jpg" alt="image profile" />
+          </div>
+        </div>
+        <div class="offcanvas offcanvas-start bd-sidebar" id="offcanvasSidebar" tabindex="-1">
+          <div class="bd-links offcanvas-body">
+            <div class="img-profile d-lg-none">
+              <img src="../resources/images/profile.jpg" alt="image profile" />
+            </div>
+            <p class="profile-name mb-1">Amelia Charlotte</p>
+            <p class="profile-classes mb-3">Puriri - Y7</p>
+            <nav class="nav flex-column nav-style">
+              <a href="#" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-home"></i>
+                </div>
+                <div class="nav-text">Home</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="/pumahara-design/tauira/evaluation.html" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-evaluation"></i>
+                </div>
+                <div class="nav-text">My Evaluations</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="/pumahara-design/tauira/journal.html" class="nav-link border-bottom active">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-journal"></i>
+                </div>
+                <div class="nav-text">Journal</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="#" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-plan"></i>
+                </div>
+                <div class="nav-text">Whānau</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="/pumahara-design/admin/account-setting.html" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-setting"></i>
+                </div>
+                <div class="nav-text">Account Setting</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="#" class="nav-link text-danger">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-logout"></i>
+                </div>
+                <div class="nav-text">Logout</div>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Main Section-->
+      <main class="bd-main">
+        <div class="nav-back mb-3 mb-md-4">
+          <div class="row gy-3">
+            <div class="col-12 col-md d-flex align-items-center">
+              <a class="icon-back" href="/pumahara-design/tauira/journal.html">
+                <i class="fas fa-arrow-left"></i>
+              </a>
+              <h5 class="page-title mb-0">Add Journal</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Alert -->
+        <div class="alert alert-danger-style fs-14 mb-3 mb-md-4" role="alert">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-circle-info fs-24 me-3"></i>
+            Today's journal already exists, please change to another date
+          </div>
+        </div>
+        <form action="" class="form-update">
+          <div class="mb-3 mb-md-4">
+            <div class="row gy-3 gy-md-4">
+              <div class="col-md-6">
+                <label for="location" class="form-label">Location</label>
+                <div class="form-control d-flex">
+                  <input
+                    type="text"
+                    class="col no-border"
+                    id="location"
+                    placeholder="Eg. Rotorua"
+                    value="Rotorua"
+                  />
+                  <label for="location" class="col-auto icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Date time</label>
+                <input id="textDate" class="form-control" type="datetime-local" />
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 mb-md-4 p-3 bg-secondary rounded">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../resources/images/icon-moonphase.svg"
+                    alt="moon phase"
+                    class="moonphase-wrapper"
+                  />
+                  <p class="text-normal fw-bold ms-2">Ōeunuku - Paengawhāwhā</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mt-3 mt-md-0">
+                <div class="row gx-3 align-items-center">
+                  <div class="col-auto">
+                    <img
+                      src="../resources/images/energy/il_loading-inland.svg"
+                      class="energy-wrapper"
+                      alt="energy loading"
+                    />
+                  </div>
+                  <div class="col">
+                    <p class="text-normal mb-1">Building / Loading - Inland</p>
+                    <p class="text-normal">
+                      <span class="text-normal fw-bold">Tane</span>
+                      <i class="fas fa-arrow-up-long text-energy-building ms-1"></i>
+                      08:27am
+                      <i class="fas fa-arrow-down-long text-energy-active ms-1"></i>
+                      03:48pm
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 mb-md-4">
+            <label class="form-label">What did I hear, see, and feel?</label>
+            <input id="hear" type="hidden" name="hear" required />
+            <trix-editor
+              input="hear"
+              placeholder="Describe what you hear, see, and feel"
+              class="border"
+            ></trix-editor>
+          </div>
+          <div class="mb-3 mb-md-4">
+            <label class="form-label">What was my favourite part?</label>
+            <input id="favorite" type="hidden" name="favorite" required />
+            <trix-editor input="favorite" placeholder="Describe your favorite part"></trix-editor>
+          </div>
+          <div class="mb-3 mb-md-4">
+            <label class="form-label">What did I learn about my self?</label>
+            <input id="learn" type="hidden" name="learn" required />
+            <trix-editor
+              input="learn"
+              placeholder="Describe what you learned from yourself"
+            ></trix-editor>
+          </div>
+          <div class="mb-3 mb-md-4">
+            <label class="form-label">Environment features, the sea or lakes</label>
+            <input id="features" type="hidden" name="features" required />
+            <trix-editor
+              input="features"
+              placeholder="Describe features, the sea or lakes"
+            ></trix-editor>
+          </div>
+          <div class="mb-3 mb-md-4 bg-gray rounded p-2 p-md-3">
+            <div class="row g-3 gy-md-0 align-items-center">
+              <div class="col-12 col-md">
+                <p class="text-normal">Add photo or video documentation</p>
+              </div>
+              <div class="col-6 col-md-auto">
+                <label
+                  class="form-label primary-style py-2 px-md-4 d-flex justify-content-center"
+                  for="photoFile"
+                >
+                  <i class="fas fa-images me-2"></i>
+                  Photo
+                </label>
+                <input
+                  class="form-control d-none"
+                  type="file"
+                  name="photo"
+                  id="photoFile"
+                  accept="image/*"
+                />
+              </div>
+              <div class="col-6 col-md-auto">
+                <label
+                  class="form-label primary-style py-2 px-md-4 d-flex justify-content-center"
+                  for="videoFile"
+                >
+                  <i class="fas fa-video me-2"></i>
+                  Video
+                </label>
+                <input
+                  class="form-control d-none"
+                  type="file"
+                  name="video"
+                  id="videoFile"
+                  accept="video/*"
+                />
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary-style col-12 col-md-auto" type="submit">Save</button>
+        </form>
+      </main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script></script>
+  </body>
+</html>
