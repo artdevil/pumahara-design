@@ -566,7 +566,7 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .dropdown-menu > li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .dropdown-menu > li:last-child {
@@ -750,6 +750,9 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .icon-style, .icon-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
   font-size: 14px;
@@ -815,13 +818,26 @@ label.icon {
   color: var(--blue-light);
 }
 
+label.item-list {
+  display: flex;
+  padding: 15px;
+  cursor: pointer;
+  background-color: var(--white);
+  border-radius: 5px;
+}
+
 .list-checkbox {
   max-height: 40vh;
 }
 
 .menu-option > i {
-  margin-right: 10px;
+  padding: 5px 10px;
   color: var(--text);
+  border-radius: 5px;
+}
+
+.menu-option > i:hover {
+  background-color: var(--gray-200);
 }
 
 .modal.detail > .modal-dialog > .modal-content > .modal-body > .label {
@@ -917,13 +933,19 @@ label.icon {
 }
 
 .nav-style {
-  margin: 0 15px;
+  margin: 10px 15px 0;
 }
 
 .nav-link.active,
 .nav-link:focus,
 .nav-link:hover {
   color: var(--brown-500);
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text);
 }
 
 .nav-style > .nav-link.active::before {
@@ -936,14 +958,8 @@ label.icon {
   position: relative;
 }
 
-.nav-link {
-  display: flex;
-  justify-content: space-between;
-  color: var(--text);
-}
-
 .nav-style > .nav-link:first-child {
-  padding: 7px 0 18px;
+  padding: 8px 0 18px;
 }
 
 .nav-style > .nav-link {
@@ -1173,6 +1189,10 @@ textarea:focus-visible {
   
   .modal.detail > .modal-dialog > .modal-content > .modal-body > .value {
     font-size: 16px;
+  }
+
+  .modal-dialog {
+    max-width: 626px;
   }
 
   .moonphase-wrapper {
