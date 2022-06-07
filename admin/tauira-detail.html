@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Detail Tauira</title>
+    <title>Detail Tauira | Admin</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
@@ -163,7 +163,7 @@
               />
             </svg>
           </a>
-          <h5 class="mb-0">Detail Tāuira</h5>
+          <h5 class="page-title">Detail Tāuira</h5>
         </div>
         <!-- Alert -->
         <div class="alert alert-success-style alert-dismissible fade show mb-4" role="alert">
@@ -241,15 +241,21 @@
                 <h6 class="mb-0">Grace Isabella</h6>
                 <p class="desc mb-3">Account Status : <span class="text-success">Active</span></p>
                 <div class="d-flex mb-3">
-                  <i class="fa-solid fa-envelope me-2"></i>
+                  <div class="icon-style me-2">
+                    <i class="fas fa-envelope"></i>
+                  </div>
                   <p>grace.isabella@gmail.com</p>
                 </div>
                 <div class="d-flex mb-3">
-                  <i class="fa-solid fa-phone me-2"></i>
+                  <div class="icon-style me-2">
+                    <i class="fas fa-phone"></i>
+                  </div>
                   <p>+64 1234 5678</p>
                 </div>
                 <div class="d-flex">
-                  <i class="fa-solid fa-map-marker-alt me-2"></i>
+                  <div class="icon-style me-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
                   <p>Whitemore St, Boulevard 99 O</p>
                 </div>
               </div>
@@ -258,30 +264,27 @@
         </div>
         <!-- Tab Whanau -->
         <div class="tab-pane fade show active" id="whanau" role="tabpanel" aria-labelledby="whanau-tab">
-          <div class="mb-3 d-flex">
+          <div class="row gx-3 mb-3 mb-md-4">
             <form class="form-search col">
-              <i class="fa fa-magnifying-glass"></i>
+              <div class="icon-style">
+                <i class="fa fa-magnifying-glass"></i>
+              </div>
               <input class="form-control me-2" type="search" placeholder="Search by name" aria-label="Search" />
             </form>
 
-            <div class="col-auto">
-              <button
-                class="btn btn-add btn-primary-style d-none d-md-inline-flex ms-3"
-                data-bs-toggle="modal"
-                data-bs-target="#inviteModal"
-              >
+            <div class="col-auto d-none d-md-block">
+              <button class="btn btn-add btn-primary-style" data-bs-toggle="modal" data-bs-target="#inviteModal">
                 <i class="fa fa-circle-plus me-2"></i>
                 Add Whānau
               </button>
-
-              <button
-                class="btn btn-circle btn-primary-style d-block d-md-none"
-                data-bs-toggle="modal"
-                data-bs-target="#inviteModal"
-              >
-                <i class="fas fa-plus"></i>
-              </button>
             </div>
+            <button
+              class="btn btn-circle btn-primary-style d-block d-md-none"
+              data-bs-toggle="modal"
+              data-bs-target="#inviteModal"
+            >
+              <i class="fas fa-plus"></i>
+            </button>
           </div>
           <div class="card-list row gy-3">
             <div class="col-12 col-md-6 col-xl-4">

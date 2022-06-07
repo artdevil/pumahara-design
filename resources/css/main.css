@@ -65,6 +65,7 @@ h5,
 h6 {
   font-weight: bold;
   font-family: var(--font);
+  margin-bottom: 0;
 }
 
 a {
@@ -226,10 +227,9 @@ a:hover {
 
 .bd-main {
   grid-area: main;
-  padding: 30px 15px 100px;
+  padding: 90px 15px 100px;
   overflow: auto;
   height: 100vh;
-  margin-top: 60px;
 }
 
 .bd-sidebar {
@@ -294,6 +294,10 @@ border: 1px dashed var(--brown-500) !important;
   justify-content: center;
 }
 
+.btn {
+  height: 100%;
+}
+
 .btn-circle {
   position: fixed;
   bottom: 15px;
@@ -310,7 +314,6 @@ border: 1px dashed var(--brown-500) !important;
 .btn-download {
   padding: 3.5px 7.5px;
   min-width: 50px;
-  margin-left: 15px;
 }
 
 .btn-file {
@@ -359,9 +362,9 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .btn-add {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 .btn.btn-play {
@@ -675,12 +678,12 @@ border: 1px dashed var(--brown-500) !important;
   position: relative;
 }
 
-.form-search > i {
+.form-search > .icon-style {
   position: absolute;
-  left: 18px;
-  top: 10px;
-  padding: 4px;
+  left: 14px;
+  top: 9px;
   color: var(--blue-light);
+  font-size: 16px;
 }
 
 .form-search > input {
@@ -720,11 +723,10 @@ border: 1px dashed var(--brown-500) !important;
   font-size: 30px !important;
 }
 
-.header,
+.header > .demo-icon,
 .header > .page-title {
   font-size: 16px;
   color: var(--brown-500);
-  margin: 0;
 }
 
 .header > .demo-icon {
@@ -737,16 +739,11 @@ border: 1px dashed var(--brown-500) !important;
   border: 1px solid var(--gray-400);
   border-radius: 4px;
   font-size: 18px;
-}
-
-.icon-back + h5 {
-  margin-bottom: 0;
-  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .icon-back + .page-title {
   font-size: 14px;
-  margin-bottom: 5px;
 }
 
 .icon-style, .icon-upload {
@@ -1036,6 +1033,10 @@ label.item-list {
   --bs-gutter-x: 30px;
 }
 
+.row > .form-search > .icon-style {
+  left: 20px;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -1122,9 +1123,7 @@ textarea:focus-visible {
   }
 
   .btn-download {
-    margin-left: 30px;
     min-width: 50px;
-    height: initial;
   }
 
   .btn-menu > p {
@@ -1160,6 +1159,10 @@ textarea:focus-visible {
 
   .form-label.primary-style {
     padding: 0 10px;
+  }
+
+  .form-search > .icon-style { 
+    font-size: 18px;
   }
 
   .header > .demo-icon ,
@@ -1226,7 +1229,6 @@ textarea:focus-visible {
 @media (min-width: 992px) {
   .bd-main {
     padding: 30px;
-    margin-top: 0;
   }
 
   .bd-sidebar {

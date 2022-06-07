@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Tauira</title>
+    <title>Tauira | Admin</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
@@ -154,9 +154,9 @@
       </div>
       <!-- Main Section-->
       <main class="bd-main">
-        <div class="header d-flex align-items-center mb-4">
+        <div class="header d-flex align-items-center mb-3 mb-md-4">
           <i class="demo-icon icon-tauira"></i>
-          <h4 class="mb-0">Tāuira</h4>
+          <h4 class="page-title">Tāuira</h4>
         </div>
 
         <div class="alert alert-success-style alert-dismissible fade show mb-4" role="alert">
@@ -167,32 +167,31 @@
           Delete data failed
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <div class="mb-3 d-flex">
+        <div class="row gx-3 mb-3 mb-md-4">
           <form class="form-search col">
-            <i class="fa fa-magnifying-glass"></i>
-            <input class="form-control me-2" type="search" placeholder="Search by name" aria-label="Search" />
+            <div class="icon-style">
+              <i class="fas fa-magnifying-glass"></i>
+            </div>
+            <input class="form-control" type="search" placeholder="Search by name" aria-label="Search" />
           </form>
-          <button class="btn btn-download btn-secondary-style col-auto d-none d-md-block">
-            <i class="fa fa-download"></i>
-          </button>
-          <div class="col-auto">
-            <button
-              class="btn btn-add btn-primary-style d-none d-md-inline-flex ms-3"
-              data-bs-toggle="modal"
-              data-bs-target="#sendInvitation"
-            >
+          <div class="col-auto d-none d-md-block">
+            <button class="btn btn-download btn-secondary-style">
+              <i class="fa fa-download"></i>
+            </button>
+          </div>
+          <div class="col-auto d-none d-md-inline-flex">
+            <button class="btn btn-add btn-primary-style" data-bs-toggle="modal" data-bs-target="#sendInvitation">
               <i class="fa fa-circle-plus me-2"></i>
               Add Tāuira
             </button>
-
-            <button
-              class="btn btn-circle btn-primary-style d-block d-md-none"
-              data-bs-toggle="modal"
-              data-bs-target="#sendInvitation"
-            >
-              <i class="fas fa-plus"></i>
-            </button>
           </div>
+          <button
+            class="btn btn-circle btn-primary-style d-block d-md-none"
+            data-bs-toggle="modal"
+            data-bs-target="#sendInvitation"
+          >
+            <i class="fas fa-plus"></i>
+          </button>
         </div>
         <div class="card-list row gy-3">
           <div class="col-12 col-md-6 col-xl-4">
