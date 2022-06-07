@@ -141,24 +141,19 @@
             <input class="form-control me-2" type="search" placeholder="Search by name" aria-label="Search" />
           </form>
 
-          <div class="col-auto">
-            <button
-              class="btn btn-add btn-primary-style d-none d-md-inline-flex"
-              data-bs-target="#inviteModal"
-              data-bs-toggle="modal"
-            >
+          <div class="col-auto d-none d-md-block">
+            <button class="btn btn-add btn-primary-style" data-bs-target="#inviteModal" data-bs-toggle="modal">
               <i class="fa fa-circle-plus me-2"></i>
               Add Whānau
             </button>
-
-            <button
-              class="btn btn-add btn-circle btn-primary-style d-inline-flex d-md-none"
-              data-bs-target="#inviteModal"
-              data-bs-toggle="modal"
-            >
-              <i class="fas fa-plus"></i>
-            </button>
           </div>
+          <button
+            class="btn btn-add btn-circle btn-primary-style d-inline-flex d-md-none"
+            data-bs-target="#inviteModal"
+            data-bs-toggle="modal"
+          >
+            <i class="fas fa-plus"></i>
+          </button>
         </div>
         <!-- list whanau -->
         <div class="card-list row gy-3">
