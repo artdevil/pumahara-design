@@ -2,14 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Evaluations Menu</title>
+    <title>Evaluations Menu | Tauira</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
 
@@ -19,10 +16,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" type="text/css" href="../resources/css/main.css" />
     <link rel="stylesheet" type="text/css" href="../resources/icon-dev-handoff/css/fontello.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,19 +32,8 @@
       <!-- Navbar Section-->
       <div class="sidebar">
         <div class="navbar-small">
-          <button
-            class="btn-menu"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasSidebar"
-          >
-            <svg
-              width="20"
-              height="21"
-              viewBox="0 0 20 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line y1="0.5" x2="20" y2="0.5" stroke="#3E332B" />
               <line y1="10.5" x2="13.3333" y2="10.5" stroke="#3E332B" />
               <line y1="20.5" x2="20" y2="20.5" stroke="#3E332B" />
@@ -88,10 +71,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a
-                href="/pumahara-design/tauira/evaluation.html"
-                class="nav-link border-bottom active"
-              >
+              <a href="/pumahara-design/tauira/evaluation.html" class="nav-link border-bottom active">
                 <div class="nav-icon">
                   <i class="demo-icon icon-evaluation"></i>
                 </div>
@@ -139,56 +119,6 @@
       </div>
       <!-- Main Section-->
       <main class="bd-main">
-        <!-- Delete Modal -->
-        <div
-          class="modal fade"
-          id="deleteModal"
-          tabindex="-1"
-          aria-labelledby="deleteModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="deleteModalLabel"> Delete Confirmation </h6>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-start">
-                <p class="mb-3">
-                  Are you sure you want to delete -
-                  <span class="fw-bold"> Kahikatoa</span>?
-                </p>
-                <div class="row gx-3">
-                  <div class="col-6 col-md-auto">
-                    <button
-                      type="button"
-                      class="btn btn-primary-style w-100"
-                      data-bs-dismiss="modal"
-                    >
-                      Yes, Delete
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-auto">
-                    <button
-                      type="button"
-                      class="btn btn-secondary-style w-100"
-                      data-bs-dismiss="modal"
-                    >
-                      Cancel
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Classes Section -->
         <div class="header d-flex align-items-center mb-3 mb-md-4">
           <i class="demo-icon icon-classes me-4"></i>
           <h4 class="page-title">My Evaluations</h4>
@@ -313,10 +243,35 @@
         </div>
         <div class="text-center">
           <img src="../resources/images/icon-no-data.svg" alt="no data" class="mb-4" />
-          <h6 class="fs-12 mb-0"> Sorry, data isn’t yet available in this curriculum </h6>
+          <h6 class="fs-12 mb-0">Sorry, data isn’t yet available in this curriculum</h6>
           <p class="fs-12">Please wait for information from Kaiako</p>
         </div>
       </main>
+    </div>
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="deleteModalLabel">Delete Confirmation</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="mb-3">
+              Are you sure you want to delete -
+              <span class="fw-bold"> Kahikatoa</span>?
+            </p>
+            <div class="row gx-3">
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Yes, Delete</button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
