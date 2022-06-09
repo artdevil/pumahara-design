@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Whānau Update Menu | Tauira</title>
+    <title>Home | Tauira</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
@@ -62,7 +62,7 @@
             <p class="profile-name mb-1">Amelia Charlotte</p>
             <p class="profile-classes mb-3">Puriri - Y7</p>
             <nav class="nav flex-column nav-style">
-              <a href="/pumahara-design/tauira" class="nav-link border-bottom">
+              <a href="/pumahara-design/tauira" class="nav-link border-bottom active">
                 <div class="nav-icon">
                   <i class="demo-icon icon-home"></i>
                 </div>
@@ -98,7 +98,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/whanau.html" class="nav-link border-bottom active">
+              <a href="/pumahara-design/tauira/whanau.html" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-whanau"></i>
                 </div>
@@ -128,59 +128,76 @@
       </div>
       <!-- Main Section-->
       <main class="bd-main">
-        <div class="nav-back mb-3 mb-md-4">
-          <div class="row gy-3">
-            <div class="col-12 col-md d-flex align-items-center">
-              <a class="icon-back" href="/pumahara-design/tauira/whanau.html">
-                <i class="fas fa-arrow-left"></i>
-              </a>
-              <h5 class="page-title mb-0">Update Whānau</h5>
+        <div class="collapse show addForm updateForm" id="main">
+          <div class="header d-flex align-items-center mb-3 mb-md-4">
+            <i class="demo-icon icon-home"></i>
+            <h4 class="page-title">Home</h4>
+          </div>
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <a href="/pumahara-design/tauira/roopu-assign-user.html">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <h6 class="fs-14 mb-1">Poitùkohu - Basketball</h6>
+                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur.</p>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <a href="/pumahara-design/tauira/roopu-assign-user.html">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <h6 class="fs-14 mb-1">Pà Whutupòro - Touch</h6>
+                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur.</p>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <form action="" class="form-update">
-          <div class="row">
-            <div class="mb-3 mb-md-4 col-12 col-md-6">
-              <label for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="Eg. Jack" disabled />
-            </div>
-            <div class="mb-3 mb-md-4 col-12 col-md-6">
-              <label for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="Eg. William" disabled />
-            </div>
-            <div class="mb-3 mb-md-4 col-12 col-md-6">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Type your name"
-                value="velove.vexia@gmail.com"
-              />
-            </div>
-            <div class="mb-3 mb-md-4 col-12 col-md-6">
-              <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phone" placeholder="Type your name" value="+64 1234 5678" />
-            </div>
-            <div class="mb-3 mb-md-4 col-12">
-              <label for="phone" class="form-label">Address</label>
-              <textarea class="form-control" placeholder="Fill in the address" rows="3" disabled></textarea>
-            </div>
-            <div class="mb-3 mb-md-4 col-12 col-md-6">
-              <label for="status" class="form-label">Status</label>
-              <select class="form-select" id="inputGroupSelect01" disabled>
-                <option value="active">Active</option>
-                <option selected value="Inactive">Inactive</option>
-              </select>
-            </div>
-          </div>
-          <a href="/pumahara-design/tauira/whanau.html" class="btn btn-primary-style col-12 col-md-auto">
-            Save Changes
-          </a>
-        </form>
       </main>
     </div>
 
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="deleteModalLabel">Delete Confirmation</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="mb-3">
+              Are you sure you want to delete -
+              <span class="fw-bold">Poitùkohu - Basketball</span>?
+            </p>
+            <div class="row gx-3">
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Yes, Delete</button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
