@@ -84,7 +84,7 @@ a {
 }
 
 a:hover {
-  color: var(--brown-500);
+  color: var(--brown-300) !important;
 }
 
 
