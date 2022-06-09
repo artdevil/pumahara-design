@@ -128,72 +128,323 @@
       </div>
       <!-- Main Section-->
       <main class="bd-main">
-        <div class="collapse show addForm updateForm" id="main">
-          <div class="header d-flex align-items-center mb-3 mb-md-4">
-            <i class="demo-icon icon-home"></i>
-            <h4 class="page-title">Home</h4>
+        <div class="header d-flex align-items-center mb-3 mb-md-4">
+          <i class="demo-icon icon-home"></i>
+          <h4 class="page-title">Home</h4>
+        </div>
+        <!-- DATE AND SEARCH INPUT -->
+        <div class="card mb-3 mb-md-4">
+          <div class="card-body">
+            <div class="row g-3">
+              <div class="col-md-auto">
+                <input id="textDate" class="form-control h-100" type="date" value="2022-05-25" />
+              </div>
+              <div class="col-12 col-md">
+                <form class="form-search">
+                  <div class="icon-style">
+                    <i class="fas fa-magnifying-glass"></i>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    type="search"
+                    placeholder="Search by name"
+                    aria-label="Search"
+                  />
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="row g-4">
-            <div class="col-12 col-md-6 col-xl-4">
-              <div class="card">
-                <div class="card-body">
-                  <a href="/pumahara-design/tauira/roopu-assign-user.html">
-                    <div class="row align-items-center">
-                      <div class="col">
-                        <h6 class="fs-14 mb-1">Poitùkohu - Basketball</h6>
-                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur.</p>
-                      </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="card-list row gy-3 gy-md-4 flex-column">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <!-- PROFILE -->
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <img
+                      class="img-profile small border-profile"
+                      src="../resources/images/profile2.jpg"
+                      alt="image profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="d-flex align-items-center">
+                      <h6 class="fs-14 mb-0 me-1 text-truncate">Amelia Charlotte</h6>
+                      <p class="fs-12 text-primary text-truncate">in Rotorua</p>
+                    </div>
+                    <div class="row gx-2 align-items-center">
                       <div class="col-auto">
-                        <i class="fas fa-chevron-right"></i>
+                        <img src="../resources/images/icon-moonphase.svg" alt="moon phase" width="30" height="30" />
+                      </div>
+                      <div class="col">
+                        <p class="text-small">Ōeunuku - Paengawhāwhā</p>
+                        <p class="fs-10 text-primary">25 April 2022, 10:30</p>
                       </div>
                     </div>
-                  </a>
+                  </div>
+                </div>
+                <hr class="my-3 line-div opacity-100" />
+                <!-- ENERGY -->
+                <div class="my-3">
+                  <div class="row gx-2 align-items-center mb-2">
+                    <div class="col-auto">
+                      <img src="../resources/images/energy/il_loading-inland.svg" alt="energy loading" />
+                    </div>
+                    <div class="col">
+                      <p class="fs-12">Building / Loading - Inland</p>
+                      <p class="fs-12">
+                        <span class="fs-12 fw-bold">Tane</span>
+                        <i class="fas fa-arrow-up-long text-energy-building ms-1"></i>
+                        08:27am
+                        <i class="fas fa-arrow-down-long text-energy-active ms-1"></i>
+                        03:48pm
+                      </p>
+                    </div>
+                  </div>
+
+                  <h6 class="fs-14">What did I hear, see, feel?</h6>
+                  <p class="fs-14 mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor
+                    risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit.
+                  </p>
+                  <h6 class="fs-14">What was my favourite part?</h6>
+                  <p class="fs-14 mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor
+                    risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit.
+                  </p>
+                  <h6 class="fs-14">What did I learn about my self?</h6>
+                  <p class="fs-14 mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor
+                    risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit.
+                  </p>
+                  <h6 class="fs-14">Environment features, the sea or lakes</h6>
+                  <p class="fs-14 mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor
+                    risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit.
+                  </p>
+                </div>
+
+                <div class="row g-3 justify-content-center mb-3">
+                  <div class="col-auto">
+                    <a data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                      <img
+                        src="../resources/images/thumbnail1.png"
+                        alt="thumbnail1"
+                        class="img-wrapper"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <div class="position-relative">
+                      <a data-bs-toggle="modal" data-bs-target="#videoPreviewModal">
+                        <img
+                          src="../resources/images/thumbnail2.png"
+                          alt="thumbnail1"
+                          class="img-wrapper"
+                          loading="lazy"
+                        />
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                          <button class="btn btn-play">
+                            <i class="fas fa-play d-flex justify-content-center align-items-center"></i>
+                          </button>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- COMMENT FORM -->
+                <div class="row p-2 justify-content-between">
+                  <!-- COMMENT -->
+                  <div class="col-auto">
+                    <i class="fas fa-comments me-2 text-primary"></i>
+                    <span class="fs-14 fw-bold"> 3 Comments </span>
+                  </div>
+                  <!-- BUTTON DETAIL -->
+                  <div class="col-auto">
+                    <a href="/pumahara-design/tauira/journal-detail.html" role="button" class="text-primary">
+                      See Detail
+                      <i class="fas fa-arrow-circle-right ms-2"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-4">
-              <div class="card">
-                <div class="card-body">
-                  <a href="/pumahara-design/tauira/roopu-assign-user.html">
-                    <div class="row align-items-center">
-                      <div class="col">
-                        <h6 class="fs-14 mb-1">Pà Whutupòro - Touch</h6>
-                        <p class="fs-14">Lorem ipsum dolor sit amet, consectetur.</p>
-                      </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <!-- PROFILE -->
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <img
+                      class="img-profile small border-profile"
+                      src="../resources/images/profile2.jpg"
+                      alt="image profile"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="d-flex align-items-center">
+                      <h6 class="fs-14 mb-0 me-1 text-truncate">Amelia Charlotte</h6>
+                      <p class="fs-12 text-primary text-truncate">in Rotorua</p>
+                    </div>
+                    <div class="row gx-2 align-items-center">
                       <div class="col-auto">
-                        <i class="fas fa-chevron-right"></i>
+                        <img src="../resources/images/icon-moonphase.svg" alt="moon phase" width="30" height="30" />
+                      </div>
+                      <div class="col">
+                        <p class="text-small">Ōeunuku - Paengawhāwhā</p>
+                        <p class="fs-10 text-primary">25 April 2022, 10:30</p>
                       </div>
                     </div>
-                  </a>
+                  </div>
+                </div>
+                <hr class="my-3 line-div opacity-100" />
+                <!-- ENERGY -->
+                <div class="my-3">
+                  <div class="row gx-2 align-items-center mb-2">
+                    <div class="col-auto">
+                      <img src="../resources/images/energy/il_loading-inland.svg" alt="energy loading" />
+                    </div>
+                    <div class="col">
+                      <p class="fs-12">Building / Loading - Inland</p>
+                      <p class="fs-12">
+                        <span class="fs-12 fw-bold">Tane</span>
+                        <i class="fas fa-arrow-up-long text-energy-building ms-1"></i>
+                        08:27am
+                        <i class="fas fa-arrow-down-long text-energy-active ms-1"></i>
+                        03:48pm
+                      </p>
+                    </div>
+                  </div>
+
+                  <h6 class="fs-14">What did I hear, see, feel?</h6>
+                  <p class="fs-14 mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor
+                    risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit.
+                  </p>
+                  <h6 class="fs-14">What was my favourite part?</h6>
+                  <p class="fs-14 mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor
+                    risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit.
+                  </p>
+                  <h6 class="fs-14">What did I learn about my self?</h6>
+                  <p class="fs-14 mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor
+                    risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit.
+                  </p>
+                  <h6 class="fs-14">Environment features, the sea or lakes</h6>
+                  <p class="fs-14 mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor
+                    risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit.
+                  </p>
+                </div>
+
+                <div class="row g-3 justify-content-center mb-3">
+                  <div class="col-auto">
+                    <a data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                      <img
+                        src="../resources/images/thumbnail1.png"
+                        alt="thumbnail1"
+                        class="img-wrapper"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <div class="position-relative">
+                      <a data-bs-toggle="modal" data-bs-target="#videoPreviewModal">
+                        <img
+                          src="../resources/images/thumbnail2.png"
+                          alt="thumbnail1"
+                          class="img-wrapper"
+                          loading="lazy"
+                        />
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                          <button class="btn btn-play">
+                            <i class="fas fa-play d-flex justify-content-center align-items-center"></i>
+                          </button>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- COMMENT FORM -->
+                <div class="row p-2 justify-content-between">
+                  <!-- COMMENT -->
+                  <div class="col-auto">
+                    <i class="fas fa-comments me-2 text-primary"></i>
+                    <span class="fs-14 fw-bold"> 3 Comments </span>
+                  </div>
+                  <!-- BUTTON DETAIL -->
+                  <div class="col-auto">
+                    <a href="/pumahara-design/tauira/journal-detail.html" role="button" class="text-primary">
+                      See Detail
+                      <i class="fas fa-arrow-circle-right ms-2"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="text-center">
+          <img src="../resources/images/icon-no-data.svg" alt="no data" class="mb-1 mb-md-4" />
+          <h6 class="text-medium mb-0">Sorry, data is not available on this date</h6>
+          <p class="text-small">Please fill in the journal first</p>
+        </div>
       </main>
     </div>
 
-    <!-- Delete Modal -->
-    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h6 class="modal-title" id="deleteModalLabel">Delete Confirmation</h6>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Image Preview Modal -->
+    <div
+      class="modal fade"
+      id="imagePreviewModal"
+      tabindex="-1"
+      aria-labelledby="imagePreviewModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content position-relative rounded">
+          <button
+            type="button"
+            class="position-absolute btn-close big outside top-0 end-0"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="row">
+            <img src="../resources/images/thumbnail1-big.jpg" alt="images" loading="lazy" />
           </div>
-          <div class="modal-body text-start">
-            <p class="mb-3">
-              Are you sure you want to delete -
-              <span class="fw-bold">Poitùkohu - Basketball</span>?
-            </p>
-            <div class="row gx-3">
-              <div class="col-6 col-md-auto">
-                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Yes, Delete</button>
-              </div>
-              <div class="col-6 col-md-auto">
-                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
-              </div>
-            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Preview Modal -->
+    <div
+      class="modal fade"
+      id="videoPreviewModal"
+      tabindex="-1"
+      aria-labelledby="videoPreviewModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content position-relative">
+          <button
+            type="button"
+            class="position-absolute btn-close big outside top-0 end-0"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="row p-3">
+            <video src="../resources/videos/sample.mp4" controls loading="lazy"></video>
           </div>
         </div>
       </div>
