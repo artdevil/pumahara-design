@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Detail Tauira | Admin</title>
+    <meta name="description" content="WELCOME TO PŪMAHARA" />
+    <meta name="keywords" content="WELCOME TO PŪMAHARA" />
+    <meta name="author" content="@shallness" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/icon-dev-handoff/css/fontello.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/afe7e62084.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-box">
+      <!-- Navbar Section-->
+      <div class="sidebar">
+        <div class="navbar-small">
+          <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="0.5" x2="20" y2="0.5" stroke="#3E332B" />
+              <line y1="10.5" x2="13.3333" y2="10.5" stroke="#3E332B" />
+              <line y1="20.5" x2="20" y2="20.5" stroke="#3E332B" />
+            </svg>
+            <p>MENU</p>
+          </button>
+          <div class="brand">
+            <picture>
+              <source media="(min-width:992px)" srcset="../resources/images/logo3.svg" />
+              <img src="../resources/images/logo4.svg" alt="brand images" />
+            </picture>
+          </div>
+          <a class="notification" href="#">
+            <i class="demo-icon icon-bell"></i>
+            <span>99+</span>
+          </a>
+          <div class="img-profile d-none d-lg-flex">
+            <img src="../resources/images/profile.jpg" alt="image profile" />
+          </div>
+        </div>
+        <div class="offcanvas offcanvas-start bd-sidebar" id="offcanvasSidebar" tabindex="-1">
+          <div class="bd-links offcanvas-body">
+            <div class="img-profile d-lg-none">
+              <img src="../resources/images/profile.jpg" alt="image profile" />
+            </div>
+            <p class="profile-name">Olivia Emily</p>
+            <nav class="nav flex-column nav-style">
+              <a href="#" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-home"></i>
+                </div>
+                <div class="nav-text">Home</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="/pumahara-design/admin/kaiako.html" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-kaiako"></i>
+                </div>
+                <div class="nav-text">Kaiako</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="/pumahara-design/admin/tauira.html" class="nav-link border-bottom active">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-tauira"></i>
+                </div>
+                <div class="nav-text">Tāuira</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="/pumahara-design/admin/classes.html" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-classes"></i>
+                </div>
+                <div class="nav-text">Classes</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="/pumahara-design/admin/roopu.html" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-ropu"></i>
+                </div>
+                <div class="nav-text">Roopu</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="/pumahara-design/admin/ngapumanawa.html" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-pumanawa"></i>
+                </div>
+                <div class="nav-text">Ngā Pūmanawa</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="/pumahara-design/admin/duration.html" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-duration"></i>
+                </div>
+                <div class="nav-text">Term Duration</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="#" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-plan"></i>
+                </div>
+                <div class="nav-text">Term Plan</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="/pumahara-design/admin/account-setting.html" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-setting"></i>
+                </div>
+                <div class="nav-text">Account Setting</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
+              <a href="#" class="nav-link text-danger">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-logout"></i>
+                </div>
+                <div class="nav-text">Logout</div>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Main Section-->
+      <main class="bd-main">
+        <div class="nav-back d-flex align-items-center">
+          <a class="icon-back" href="/pumahara-design/admin/tauira.html">
+            <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.15371 15.3453C9.50564 14.9941 9.47105 14.4667 9.15503 14.1148L4.90546 10.0673L15.0305 10.0781C15.4875 10.0786 15.8746 9.72748 15.8751 9.23529L15.8763 8.11029C15.8768 7.65326 15.4905 7.26612 15.0335 7.26563L4.90848 7.25477L9.16668 3.25152C9.48346 2.9003 9.51919 2.373 9.168 2.02106L8.39539 1.24679C8.07933 0.930044 7.51683 0.929441 7.20008 1.24551L0.372418 8.09365C0.0205166 8.40968 0.0199508 8.93703 0.371174 9.25381L7.18413 16.1166C7.50019 16.4333 8.02754 16.4339 8.37944 16.1179L9.15371 15.3453Z"
+                fill="#3E332B"
+              />
+            </svg>
+          </a>
+          <h5 class="page-title">Detail Tāuira</h5>
+        </div>
+        <!-- Alert -->
+        <div class="alert alert-success-style alert-dismissible fade show mb-4" role="alert">
+          Email invitation sent successfully
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-success-style alert-dismissible fade show mb-4" role="alert">
+          Invitation successfully resent to <span class="fs-14 fw-bold">velove.vexia@gmail.com</span>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Tab Menu -->
+        <div class="card text-center mb-3">
+          <div class="card-header m-0">
+            <nav class="nav nav-tab" id="myTab" role="tablist">
+              <a
+                class="nav-link col-3 col-md-auto"
+                id="personal-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#personal"
+                type="button"
+                role="tab"
+                aria-controls="personal"
+                aria-selected="true"
+              >
+                Personal
+              </a>
+              <a
+                class="nav-link col-3 col-md-auto active"
+                id="whanau-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#whanau"
+                type="button"
+                role="tab"
+                aria-controls="whanau"
+                aria-selected="false"
+              >
+                Whānau
+              </a>
+              <a
+                class="nav-link col-3 col-md-auto"
+                id="roopu-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#roopu"
+                type="button"
+                role="tab"
+                aria-controls="roopu"
+                aria-selected="false"
+              >
+                Roopu
+              </a>
+              <a
+                class="nav-link col-3 col-md-auto"
+                id="classes-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#classes"
+                type="button"
+                role="tab"
+                aria-controls="classes"
+                aria-selected="false"
+              >
+                Classes
+              </a>
+            </nav>
+          </div>
+        </div>
+        <!-- Tab Personal -->
+        <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+          <div class="card card-body d-flex">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-auto mb-4 mb-md-0">
+                <img src="../resources/images/profile.jpg" alt="image preview" class="img-personal d-block mx-auto" />
+              </div>
+              <div class="col-12 col-md-auto">
+                <h6 class="mb-0">Grace Isabella</h6>
+                <p class="desc mb-3">Account Status : <span class="text-success">Active</span></p>
+                <div class="d-flex mb-3">
+                  <div class="icon-style me-2">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <p>grace.isabella@gmail.com</p>
+                </div>
+                <div class="d-flex mb-3">
+                  <div class="icon-style me-2">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <p>+64 1234 5678</p>
+                </div>
+                <div class="d-flex">
+                  <div class="icon-style me-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p>Whitemore St, Boulevard 99 O</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tab Whanau -->
+        <div class="tab-pane fade show active" id="whanau" role="tabpanel" aria-labelledby="whanau-tab">
+          <div class="row gx-3 mb-3 mb-md-4">
+            <form class="form-search col">
+              <div class="icon-style">
+                <i class="fa fa-magnifying-glass"></i>
+              </div>
+              <input class="form-control me-2" type="search" placeholder="Search by name" aria-label="Search" />
+            </form>
+
+            <div class="col-auto d-none d-md-block">
+              <button class="btn btn-add btn-primary-style" data-bs-toggle="modal" data-bs-target="#inviteModal">
+                <i class="fa fa-circle-plus me-2"></i>
+                Add Whānau
+              </button>
+            </div>
+            <button
+              class="btn btn-circle btn-primary-style d-block d-md-none"
+              data-bs-toggle="modal"
+              data-bs-target="#inviteModal"
+            >
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+          <div class="card-list row gy-3">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card-name">
+                <div class="card-body">
+                  <div class="name">-</div>
+                  <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <p>velove.vexia@gmail.com</p>
+                  </div>
+                  <div class="phone">
+                    <i class="fas fa-phone"></i>
+                    <p>+64 1234 5678</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="bg-inactive">Inactive</div>
+                  <div class="ms-auto dropup">
+                    <a
+                      class="menu-option"
+                      id="dropdownMenuButton6"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-bs-offset="0,-25"
+                      role="button"
+                    >
+                      <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a class="dropdown-item" href="/pumahara-design/admin/whanau-update-inactive.html">
+                          <i class="fas fa-edit"></i>
+                          Edit
+                        </a>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#resendModal">
+                          <i class="fa-solid fa-sync"></i>
+                          Resend
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                          <i class="fas fa-trash-alt"></i>
+                          Delete
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card-name">
+                <div class="card-body">
+                  <div class="name">Jack William</div>
+                  <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <p>jack.william@gmail.com</p>
+                  </div>
+                  <div class="classes">
+                    <i class="fas fa-phone"></i>
+                    <p>+64 1234 5678</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="bg-active">Active</div>
+                  <div class="ms-auto dropup">
+                    <a
+                      class="menu-option"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-bs-offset="0,-25"
+                      role="button"
+                    >
+                      <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a class="dropdown-item" href="/pumahara-design/admin/whanau-update-active.html">
+                          <i class="fas fa-edit"></i>
+                          Edit
+                        </a>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" data-bs-target="#detailModal" data-bs-toggle="modal">
+                          <i class="fas fa-info-circle"></i>
+                          Detail
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                          <i class="fas fa-trash-alt"></i>
+                          Delete
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tab Roopu -->
+        <div class="tab-pane fade" id="roopu" role="tabpanel" aria-labelledby="roopu-tab">
+          <div class="row gy-3">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <h6>Pà Whutupòro - Touch</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <h6>Flippa Ball/Water Polo</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <h6>Kapa Haka</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tab Classes -->
+        <div class="tab-pane fade" id="classes" role="tabpanel" aria-labelledby="classes-tab">
+          <div class="row gy-3">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <h6>Kahikatoa</h6>
+                  <p>Y7 - Y8</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <h6>Puriri</h6>
+                  <p>Y7 - Y8</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Modal -->
+    <!-- Invite Modal -->
+    <div class="modal fade" id="inviteModal" tabindex="-1" aria-labelledby="inviteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="resendModalLabel">Send Invitation</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <form>
+              <div class="mb-3 mb-md-4">
+                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" placeholder="Eg. jameswilliam@gmail.com" />
+              </div>
+              <div class="mb-3 mb-md-4">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Eg. +64 1234 5678" />
+              </div>
+              <div class="row gx-3">
+                <div class="col-6 col-md-auto">
+                  <button type="button" class="btn btn-primary-style w-100">Send</button>
+                </div>
+                <div class="col-6 col-md-auto">
+                  <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resend Modal -->
+    <div class="modal fade" id="resendModal" tabindex="-1" aria-labelledby="resendModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="resendModalLabel">Resend Invitation Confirmation</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="mb-3">
+              Are you sure to resend invitation to
+              <span class="fw-bold">velove.vexia@gmail.com</span>?
+            </p>
+            <div class="row gx-3">
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Yes, Resend</button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="deleteModalLabel">Delete Confirmation</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="mb-3 mb-md-4">
+              Are you sure you want to delete -
+              <span class="fw-bold">velove.vexia@gmail.com</span>?
+            </p>
+            <div class="row gx-3">
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Yes, Delete</button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detail Modal -->
+    <div class="modal detail fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="detailModalLabel">Detail Data</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="label">Full Name</p>
+            <h6 class="value">Jack William</h6>
+            <p class="label">Email</p>
+            <h6 class="value">jack.william@gmail.com</h6>
+            <p class="label">Phone Number</p>
+            <h6 class="value">+64 1234 5678</h6>
+            <p class="label">Address</p>
+            <h6 class="value">Whitemore St, Boulevard 99 O</h6>
+            <p class="mb-1">Status</p>
+            <div class="bg-active d-inline-block">Active</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

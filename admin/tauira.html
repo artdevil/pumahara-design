@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Kaiako | Admin</title>
+    <title>Tauira | Admin</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
@@ -70,7 +70,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/admin/kaiako.html" class="nav-link border-bottom active">
+              <a href="/pumahara-design/admin/kaiako.html" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-kaiako"></i>
                 </div>
@@ -79,7 +79,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/admin/tauira.html" class="nav-link border-bottom">
+              <a href="/pumahara-design/admin/tauira.html" class="nav-link border-bottom active">
                 <div class="nav-icon">
                   <i class="demo-icon icon-tauira"></i>
                 </div>
@@ -154,139 +154,9 @@
       </div>
       <!-- Main Section-->
       <main class="bd-main">
-        <!-- Email Invitation Modal -->
-        <div
-          class="modal fade"
-          id="sendInvitation"
-          tabindex="-1"
-          aria-labelledby="sendInvitationLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="sendInvitationLabel">Send Invitation</h6>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="nav mb-4 row gx-3" role="tablist">
-                  <label class="col-6 active" for="optSingle" data-bs-toggle="tab" data-bs-target="#singleInvite">
-                    <div class="form-check h-100 text-medium border-active">
-                      <input class="form-check-input" id="optSingle" checked name="invitetype" type="radio" />
-                      Single Invitation
-                    </div>
-                  </label>
-                  <label class="col-6" for="optBulk" data-bs-toggle="tab" data-bs-target="#bulkInvite">
-                    <div class="form-check h-100 text-medium">
-                      <input class="form-check-input" id="optBulk" name="invitetype" type="radio" />
-                      Bulk Invitation
-                    </div>
-                  </label>
-                </div>
-                <div class="tab-content mb-4 border-bottom">
-                  <div id="singleInvite" class="tab-pane mb-4 active">
-                    <div class="mb-4">
-                      <label for="email" class="form-label"> Email <span class="text-danger">*</span> </label>
-                      <input type="email" class="form-control" id="email" placeholder="Eg. jameswilliam@gmail.com" />
-                    </div>
-                  </div>
-                  <div id="bulkInvite" class="tab-pane mb-4">
-                    <form class="btn-file mb-3">
-                      <p class="label-file lh-sm mb-3">Drag File Here To Upload</p>
-                      <p class="label-file lh-sm mb-3">Or</p>
-                      <label for="fileTemplate" class="form-label d-block mb-0">
-                        <a class="btn-file-input label-file"> Browser File </a>
-                      </label>
-                      <input type="file" class="d-none" id="fileTemplate" accept=".csv, application/vnd.ms-excel" />
-                      <span class="file-name"></span>
-                      <span id="resetSelectedFile" class="d-none c-pointer">
-                        <i class="fa fa-times-circle text-danger" aria-placeholder="cancel"></i>
-                      </span>
-                      <p class="label-file mt-3">Allowed Extension CSV, XLS</p>
-                    </form>
-                    <div class="row justify-content-between align-items-center">
-                      <h6 class="col-12 col-md text-small mb-md-0 text-center text-md-start">
-                        Please download template before uploading data
-                      </h6>
-                      <a class="col-12 col-md-auto d-flex justify-content-center text-primary desc" href="#">
-                        <i class="fa-solid fa-download me-2"></i>
-                        Invitation Template
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-4 gx-3">
-                  <div class="col-6 col-md-auto">
-                    <button type="button" class="btn btn-primary-style w-100">Send</button>
-                  </div>
-                  <div class="col-6 col-md-auto">
-                    <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Delete Modal -->
-        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="deleteModalLabel">Delete Confirmation</h6>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body text-start">
-                <p class="mb-3">
-                  Are you sure you want to delete
-                  <span class="fw-bold">grace.isabella@gmail.com</span>?
-                </p>
-                <div class="row gx-3">
-                  <div class="col-6 col-md-auto">
-                    <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">
-                      Yes, Delete
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-auto">
-                    <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Resend Modal -->
-        <div class="modal fade" id="resendModal" tabindex="-1" aria-labelledby="resendModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="resendModalLabel">Resend Invitation Confirmation</h6>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body text-start">
-                <p class="mb-3">
-                  Are you sure to resend invitation to
-                  <span class="fw-bold">ethan.hunter@gmail.com</span>?
-                </p>
-                <div class="row gx-3">
-                  <div class="col-6 col-md-auto">
-                    <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">
-                      Yes, Resend
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-auto">
-                    <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="header d-flex align-items-center mb-3 mb-md-4">
-          <i class="demo-icon icon-kaiako"></i>
-          <h4 class="page-title">Kaiako</h4>
+          <i class="demo-icon icon-tauira"></i>
+          <h4 class="page-title">Tāuira</h4>
         </div>
 
         <div class="alert alert-success-style alert-dismissible fade show mb-4" role="alert">
@@ -304,15 +174,15 @@
             </div>
             <input class="form-control" type="search" placeholder="Search by name" aria-label="Search" />
           </form>
-          <div class="col-auto">
+          <div class="col-auto d-none d-md-block">
             <button class="btn btn-download btn-secondary-style">
-              <i class="fas fa-download"></i>
+              <i class="fa fa-download"></i>
             </button>
           </div>
           <div class="col-auto d-none d-md-block">
             <button class="btn btn-add btn-primary-style" data-bs-toggle="modal" data-bs-target="#sendInvitation">
-              <i class="fas fa-circle-plus me-2"></i>
-              Add Kaiko
+              <i class="fa fa-circle-plus me-2"></i>
+              Add Tāuira
             </button>
           </div>
           <button
@@ -327,14 +197,14 @@
           <div class="col-12 col-md-6 col-xl-4">
             <div class="card-name">
               <div class="card-body">
-                <div class="name">Grace Isabella</div>
+                <div class="name">Amelia Charlotte</div>
                 <div class="email">
                   <i class="fas fa-envelope"></i>
-                  <p>grace.isabella@gmail.com</p>
+                  <p>amelia.charlotte@gmail.com</p>
                 </div>
-                <div class="phone">
-                  <i class="fas fa-phone"></i>
-                  <p>+64 1234 5678</p>
+                <div class="classes">
+                  <i class="fas fa-laptop"></i>
+                  <p>Kahikatoa</p>
                 </div>
               </div>
               <div class="card-footer">
@@ -348,18 +218,18 @@
                     href="#"
                     data-bs-offset="0,-25"
                   >
-                    <i class="fa-solid fa-ellipsis-v"></i>
+                    <i class="fas fa-ellipsis-v"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                     <li>
-                      <a class="dropdown-item" href="/pumahara-design/admin/kaiako-update.html">
-                        <i class="fa-solid fa-edit"></i>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-update.html">
+                        <i class="fas fa-edit"></i>
                         Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/pumahara-design/admin/kaiako-detail.html">
-                        <i class="fa-solid fa-info-circle"></i>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-detail.html">
+                        <i class="fas fa-info-circle"></i>
                         Detail
                       </a>
                     </li>
@@ -370,7 +240,7 @@
                         data-bs-target="#deleteModal"
                         href="#"
                       >
-                        <i class="fa-solid fa-trash-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
                         Delete
                       </a>
                     </li>
@@ -387,9 +257,9 @@
                   <i class="fas fa-envelope"></i>
                   <p>sienna.evelyn@gmail.com</p>
                 </div>
-                <div class="phone">
-                  <i class="fas fa-phone"></i>
-                  <p>+64 1234 5678</p>
+                <div class="classes">
+                  <i class="fas fa-laptop"></i>
+                  <p>Kahikatoa</p>
                 </div>
               </div>
               <div class="card-footer">
@@ -397,24 +267,24 @@
                 <div class="ms-auto dropup">
                   <a
                     class="menu-option"
-                    id="dropdownMenuButton2"
+                    id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     href="#"
                     data-bs-offset="0,-25"
                   >
-                    <i class="fa-solid fa-ellipsis-v"></i>
+                    <i class="fas fa-ellipsis-v"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                     <li>
-                      <a class="dropdown-item" href="/pumahara-design/admin/kaiako-update.html">
-                        <i class="fa-solid fa-edit"></i>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-update.html">
+                        <i class="fas fa-edit"></i>
                         Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/pumahara-design/admin/kaiako-detail.html">
-                        <i class="fa-solid fa-info-circle"></i>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-detail.html">
+                        <i class="fas fa-info-circle"></i>
                         Detail
                       </a>
                     </li>
@@ -425,7 +295,7 @@
                         data-bs-target="#deleteModal"
                         href="#"
                       >
-                        <i class="fa-solid fa-trash-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
                         Delete
                       </a>
                     </li>
@@ -442,9 +312,9 @@
                   <i class="fas fa-envelope"></i>
                   <p>benjamin.jacob@gmail.com</p>
                 </div>
-                <div class="phone">
-                  <i class="fas fa-phone"></i>
-                  <p>+64 1234 5678</p>
+                <div class="classes">
+                  <i class="fas fa-laptop"></i>
+                  <p>-</p>
                 </div>
               </div>
               <div class="card-footer">
@@ -458,18 +328,18 @@
                     href="#"
                     data-bs-offset="0,-25"
                   >
-                    <i class="fa-solid fa-ellipsis-v"></i>
+                    <i class="fas fa-ellipsis-v"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                     <li>
-                      <a class="dropdown-item" href="/pumahara-design/admin/kaiako-update.html">
-                        <i class="fa-solid fa-edit"></i>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-update.html">
+                        <i class="fas fa-edit"></i>
                         Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/pumahara-design/admin/kaiako-detail.html">
-                        <i class="fa-solid fa-info-circle"></i>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-detail.html">
+                        <i class="fas fa-info-circle"></i>
                         Detail
                       </a>
                     </li>
@@ -480,7 +350,7 @@
                         data-bs-target="#deleteModal"
                         href="#"
                       >
-                        <i class="fa-solid fa-trash-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
                         Delete
                       </a>
                     </li>
@@ -497,8 +367,8 @@
                   <i class="fas fa-envelope"></i>
                   <p>ethan.hunter@gmail.com</p>
                 </div>
-                <div class="phone">
-                  <i class="fas fa-phone"></i>
+                <div class="classes">
+                  <i class="fas fa-laptop"></i>
                   <p>-</p>
                 </div>
               </div>
@@ -513,12 +383,12 @@
                     href="#"
                     data-bs-offset="0,-25"
                   >
-                    <i class="fa-solid fa-ellipsis-v"></i>
+                    <i class="fas fa-ellipsis-v"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                     <li>
-                      <a class="dropdown-item" href="/pumahara-design/admin/kaiako-update.html">
-                        <i class="fa-solid fa-edit"></i>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-update.html">
+                        <i class="fas fa-edit"></i>
                         Edit
                       </a>
                     </li>
@@ -535,7 +405,7 @@
                         data-bs-target="#deleteModal"
                         href="#"
                       >
-                        <i class="fa-solid fa-trash-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
                         Delete
                       </a>
                     </li>
@@ -552,8 +422,8 @@
                   <i class="fas fa-envelope"></i>
                   <p>ethan.hunter@gmail.com</p>
                 </div>
-                <div class="phone">
-                  <i class="fas fa-phone"></i>
+                <div class="classes">
+                  <i class="fas fa-laptop"></i>
                   <p>-</p>
                 </div>
               </div>
@@ -568,12 +438,12 @@
                     href="#"
                     data-bs-offset="0,-25"
                   >
-                    <i class="fa-solid fa-ellipsis-v"></i>
+                    <i class="fas fa-ellipsis-v"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                     <li>
-                      <a class="dropdown-item" href="/pumahara-design/admin/kaiako-update.html">
-                        <i class="fa-solid fa-edit"></i>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-update.html">
+                        <i class="fas fa-edit"></i>
                         Edit
                       </a>
                     </li>
@@ -590,7 +460,7 @@
                         data-bs-target="#deleteModal"
                         href="#"
                       >
-                        <i class="fa-solid fa-trash-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
                         Delete
                       </a>
                     </li>
@@ -607,8 +477,8 @@
                   <i class="fas fa-envelope"></i>
                   <p>ethan.hunter@gmail.com</p>
                 </div>
-                <div class="phone">
-                  <i class="fas fa-phone"></i>
+                <div class="classes">
+                  <i class="fas fa-laptop"></i>
                   <p>-</p>
                 </div>
               </div>
@@ -623,12 +493,12 @@
                     href="#"
                     data-bs-offset="0,-25"
                   >
-                    <i class="fa-solid fa-ellipsis-v"></i>
+                    <i class="fas fa-ellipsis-v"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                     <li>
-                      <a class="dropdown-item" href="/pumahara-design/admin/kaiako-update.html">
-                        <i class="fa-solid fa-edit"></i>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-update.html">
+                        <i class="fas fa-edit"></i>
                         Edit
                       </a>
                     </li>
@@ -645,7 +515,172 @@
                         data-bs-target="#deleteModal"
                         href="#"
                       >
-                        <i class="fa-solid fa-trash-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                        Delete
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card-name">
+              <div class="card-body">
+                <div class="name">-</div>
+                <div class="email">
+                  <i class="fas fa-envelope"></i>
+                  <p>ethan.hunter@gmail.com</p>
+                </div>
+                <div class="classes">
+                  <i class="fas fa-laptop"></i>
+                  <p>-</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="bg-inactive">Inactive</div>
+                <div class="ms-auto dropup">
+                  <a
+                    class="menu-option"
+                    id="dropdownMenuButton6"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    data-bs-offset="0,-25"
+                  >
+                    <i class="fas fa-ellipsis-v"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-update.html">
+                        <i class="fas fa-edit"></i>
+                        Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#resendModal">
+                        <i class="fa-solid fa-sync"></i>
+                        Resend
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                        href="#"
+                      >
+                        <i class="fas fa-trash-alt"></i>
+                        Delete
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card-name">
+              <div class="card-body">
+                <div class="name">-</div>
+                <div class="email">
+                  <i class="fas fa-envelope"></i>
+                  <p>ethan.hunter@gmail.com</p>
+                </div>
+                <div class="classes">
+                  <i class="fas fa-laptop"></i>
+                  <p>-</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="bg-inactive">Inactive</div>
+                <div class="ms-auto dropup">
+                  <a
+                    class="menu-option"
+                    id="dropdownMenuButton6"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    data-bs-offset="0,-25"
+                  >
+                    <i class="fas fa-ellipsis-v"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-update.html">
+                        <i class="fas fa-edit"></i>
+                        Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#resendModal">
+                        <i class="fa-solid fa-sync"></i>
+                        Resend
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                        href="#"
+                      >
+                        <i class="fas fa-trash-alt"></i>
+                        Delete
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card-name">
+              <div class="card-body">
+                <div class="name">-</div>
+                <div class="email">
+                  <i class="fas fa-envelope"></i>
+                  <p>ethan.hunter@gmail.com</p>
+                </div>
+                <div class="classes">
+                  <i class="fas fa-laptop"></i>
+                  <p>-</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="bg-inactive">Inactive</div>
+                <div class="ms-auto dropup">
+                  <a
+                    class="menu-option"
+                    id="dropdownMenuButton6"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    data-bs-offset="0,-25"
+                  >
+                    <i class="fas fa-ellipsis-v"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                      <a class="dropdown-item" href="/pumahara-design/admin/tauira-update.html">
+                        <i class="fas fa-edit"></i>
+                        Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#resendModal">
+                        <i class="fa-solid fa-sync"></i>
+                        Resend
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                        href="#"
+                      >
+                        <i class="fas fa-trash-alt"></i>
                         Delete
                       </a>
                     </li>
@@ -675,6 +710,126 @@
           </ul>
         </nav>
       </main>
+    </div>
+
+    <!-- Email Invitation Modal -->
+    <div class="modal fade" id="sendInvitation" tabindex="-1" aria-labelledby="sendInvitationLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="sendInvitationLabel">Send Invitation</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="nav mb-4 row gx-3" role="tablist">
+              <label class="col-6 active" for="optSingle" data-bs-toggle="tab" data-bs-target="#singleInvite">
+                <div class="form-check h-100 text-medium border-active">
+                  <input class="form-check-input" id="optSingle" checked name="invitetype" type="radio" />
+                  Single Invitation
+                </div>
+              </label>
+              <label class="col-6" for="optBulk" data-bs-toggle="tab" data-bs-target="#bulkInvite">
+                <div class="form-check h-100 text-medium">
+                  <input class="form-check-input" id="optBulk" name="invitetype" type="radio" />
+                  Bulk Invitation
+                </div>
+              </label>
+            </div>
+            <div class="tab-content mb-4 border-bottom">
+              <div id="singleInvite" class="tab-pane mb-4 active">
+                <div class="mb-4">
+                  <label for="email" class="form-label"> Email <span class="text-danger">*</span> </label>
+                  <input type="email" class="form-control" id="email" placeholder="Eg. jameswilliam@gmail.com" />
+                </div>
+              </div>
+              <div id="bulkInvite" class="tab-pane mb-4">
+                <form class="btn-file mb-3">
+                  <p class="label-file lh-sm mb-3">Drag File Here To Upload</p>
+                  <p class="label-file lh-sm mb-3">Or</p>
+                  <label for="fileTemplate" class="form-label d-block mb-0">
+                    <a class="btn-file-input label-file"> Browser File </a>
+                  </label>
+                  <input type="file" class="d-none" id="fileTemplate" accept=".csv, application/vnd.ms-excel" />
+                  <span class="file-name"></span>
+                  <span id="resetSelectedFile" class="d-none c-pointer">
+                    <i class="fa fa-times-circle text-danger" aria-placeholder="cancel"></i>
+                  </span>
+                  <p class="label-file mt-3">Allowed Extension CSV, XLS</p>
+                </form>
+                <div class="row justify-content-between align-items-center">
+                  <h6 class="col-12 col-md text-small mb-md-0 text-center text-md-start">
+                    Please download template before uploading data
+                  </h6>
+                  <a class="col-12 col-md-auto d-flex justify-content-center text-primary desc" href="#">
+                    <i class="fa-solid fa-download me-2"></i>
+                    Invitation Template
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4 gx-3">
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-primary-style w-100">Send</button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="deleteModalLabel">Delete Confirmation</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="mb-3">
+              Are you sure you want to delete
+              <span class="fw-bold">grace.isabella@gmail.com</span>?
+            </p>
+            <div class="row gx-3">
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Yes, Delete</button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resend Modal -->
+    <div class="modal fade" id="resendModal" tabindex="-1" aria-labelledby="resendModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="resendModalLabel">Resend Invitation Confirmation</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="mb-3">
+              Are you sure to resend invitation to
+              <span class="fw-bold">ethan.hunter@gmail.com</span>?
+            </p>
+            <div class="row gx-3">
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Yes, Resend</button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

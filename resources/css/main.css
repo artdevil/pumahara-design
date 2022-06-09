@@ -16,6 +16,7 @@
   --brown-300: #bb7d46;
   --brown-500: #9f6634;
   --darkbrown-100: #b4a093;
+  --darkbrown-400: #786354;
   --darkbrown-600: #3E332B;
   --green-100: #abd8c0;
   --green-300: #73bf95;
@@ -23,8 +24,9 @@
   --green-600: #2d6245;
   --gray-100: #F9F9F9;
   --gray-200: #f1f1f1;
+  --gray-300: #ececec;
+  --gray-400: #e0e0e0;
   --gray-500: #7a7a7a;
-  --gray-300: #e0e0e0;
   --yellow-100: #F6EECB;
   --yellow-300: #EAD885;
   --yellow-600: #8C7618;
@@ -63,6 +65,7 @@ h5,
 h6 {
   font-weight: bold;
   font-family: var(--font);
+  margin-bottom: 0;
 }
 
 a {
@@ -89,7 +92,7 @@ a:hover {
   margin: 1rem 0;
   display: block;
   height: 1px;
-  background-color: var(--gray-300);
+  background-color: var(--gray-400);
 }
 
 .sign-sect {
@@ -143,15 +146,15 @@ a:hover {
 }
 
 .cst-form ::-webkit-input-placeholder {
-  color: var(--gray-300);
+  color: var(--gray-400);
 }
 
 .cst-form :-ms-input-placeholder {
-  color: var(--gray-300);
+  color: var(--gray-400);
 }
 
 .cst-form ::placeholder {
-  color: var(--gray-300);
+  color: var(--gray-400);
 }
 
 .cst-form .form-check-input:checked {
@@ -224,10 +227,9 @@ a:hover {
 
 .bd-main {
   grid-area: main;
-  padding: 30px 15px 100px;
+  padding: 90px 15px 100px;
   overflow: auto;
   height: 100vh;
-  margin-top: 60px;
 }
 
 .bd-sidebar {
@@ -243,6 +245,7 @@ a:hover {
   color: var(--green-500);
   border-radius: 24px;
   padding: 5px 19.5px;
+  cursor: default;
 }
 
 .bg-gray {
@@ -254,6 +257,7 @@ a:hover {
   color: var(--brown-500);
   border-radius: 50px;
   padding: 5px 14.5px;
+  cursor: default;
 }
 
 .bg-red {
@@ -290,6 +294,10 @@ border: 1px dashed var(--brown-500) !important;
   justify-content: center;
 }
 
+.btn {
+  height: 100%;
+}
+
 .btn-circle {
   position: fixed;
   bottom: 15px;
@@ -306,7 +314,6 @@ border: 1px dashed var(--brown-500) !important;
 .btn-download {
   padding: 3.5px 7.5px;
   min-width: 50px;
-  margin-left: 15px;
 }
 
 .btn-file {
@@ -355,9 +362,9 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .btn-add {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 .btn.btn-play {
@@ -469,13 +476,27 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .card-body > .email,
-.card-body > .phone {
+.card-body > .phone,
+.card-body > .classes {
   display: flex;
+  align-items: center;
   word-break: break-all;
 }
 
+.card-body > .email > i,
+.card-body > .phone > i,
+.card-body > .classes > i {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card-body > .phone > p,
-.card-body > .email > p {
+.card-body > .email > p,
+.card-body > .classes > p {
+  font-size: 14px;
   margin-bottom: 0;
   margin-left: 5px;
 }
@@ -500,7 +521,7 @@ border: 1px dashed var(--brown-500) !important;
 
 .card-name {
   background-color: var(--white);
-  border: 1px solid var(--gray-300);
+  /* border: 1px solid var(--gray-400); */
   border-radius: 6px;
   word-wrap: break-word;
 }
@@ -512,7 +533,7 @@ border: 1px dashed var(--brown-500) !important;
 .card-name > .card-footer {
   margin: 0 15px;
   padding: 15px 0;
-  border-top: 1px solid var(--gray-300);
+  border-top: 1px solid var(--gray-400);
   background-color: var(--white);
   display: flex;
   align-items: center;
@@ -520,7 +541,7 @@ border: 1px dashed var(--brown-500) !important;
 
 .card-thumbnail {
   width: 90px;
-  border: 1px solid var(--gray-300);
+  border: 1px solid var(--gray-400);
   border-radius: 8px;
 }
 
@@ -548,7 +569,7 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .dropdown-menu > li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .dropdown-menu > li:last-child {
@@ -618,13 +639,26 @@ border: 1px dashed var(--brown-500) !important;
   margin-top: 0.25em;
 }
 
+.form-control {
+  color: var(--text);
+}
+
 .form-control:focus {
   border-color: var(--brown-100);
+}
+
+.form-control:disabled {
+  background-color: var(--gray-300);
+}
+
+.form-control::placeholder {
+  color: var(--gray-400);
 }
 
 .form-label {
   font-size: 14px;
   margin-bottom: 10px;
+  color: #000;
 }
 
 .form-label.primary-style {
@@ -644,12 +678,12 @@ border: 1px dashed var(--brown-500) !important;
   position: relative;
 }
 
-.form-search > i {
+.form-search > .icon-style {
   position: absolute;
-  left: 18px;
-  top: 10px;
-  padding: 4px;
+  left: 14px;
+  top: 9px;
   color: var(--blue-light);
+  font-size: 16px;
 }
 
 .form-search > input {
@@ -658,7 +692,7 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .form-search > input::placeholder {
-  color: var(--gray-300);
+  color: var(--gray-400);
 }
 
 .form-update {
@@ -689,11 +723,10 @@ border: 1px dashed var(--brown-500) !important;
   font-size: 30px !important;
 }
 
-.header,
+.header > .demo-icon,
 .header > .page-title {
   font-size: 16px;
   color: var(--brown-500);
-  margin: 0;
 }
 
 .header > .demo-icon {
@@ -703,22 +736,20 @@ border: 1px dashed var(--brown-500) !important;
 
 .icon-back {
   padding: 5px 9px;
-  border: 1px solid var(--gray-300);
+  border: 1px solid var(--gray-400);
   border-radius: 4px;
   font-size: 18px;
-}
-
-.icon-back + h5 {
-  margin-bottom: 0;
-  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .icon-back + .page-title {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .icon-style, .icon-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
   font-size: 14px;
@@ -784,13 +815,39 @@ label.icon {
   color: var(--blue-light);
 }
 
+label.item-list {
+  display: flex;
+  padding: 15px;
+  cursor: pointer;
+  background-color: var(--white);
+  border-radius: 5px;
+}
+
 .list-checkbox {
   max-height: 40vh;
 }
 
 .menu-option > i {
-  margin-right: 10px;
+  padding: 5px 10px;
   color: var(--text);
+  border-radius: 5px;
+}
+
+.menu-option > i:hover {
+  background-color: var(--gray-200);
+}
+
+.modal.detail > .modal-dialog > .modal-content > .modal-body > .label {
+  color: var(--darkbrown-400);
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.modal.detail > .modal-dialog > .modal-content > .modal-body > .value {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 140%;
 }
 
 .modal-add {
@@ -812,6 +869,10 @@ label.icon {
 
 .modal-md {
   max-width: 626px;
+}
+
+.modal-title {
+  color: #333333;
 }
 
 .moonphase-wrapper {
@@ -869,13 +930,19 @@ label.icon {
 }
 
 .nav-style {
-  margin: 0 15px;
+  margin: 10px 15px 0;
 }
 
 .nav-link.active,
 .nav-link:focus,
 .nav-link:hover {
   color: var(--brown-500);
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text);
 }
 
 .nav-style > .nav-link.active::before {
@@ -888,14 +955,8 @@ label.icon {
   position: relative;
 }
 
-.nav-link {
-  display: flex;
-  justify-content: space-between;
-  color: var(--text);
-}
-
 .nav-style > .nav-link:first-child {
-  padding: 7px 0 18px;
+  padding: 8px 0 18px;
 }
 
 .nav-style > .nav-link {
@@ -938,6 +999,10 @@ label.icon {
   color: var(--brown-500);
 }
 
+.pagination > .page-item > .page-link > span {
+  font-weight: 900;
+}
+
 .pagination > .page-item > .page-link:focus {
   box-shadow: none;
 }
@@ -968,6 +1033,10 @@ label.icon {
   --bs-gutter-x: 30px;
 }
 
+.row > .form-search > .icon-style {
+  left: 20px;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -978,7 +1047,7 @@ label.icon {
 }
 
 textarea:focus-visible {
-  outline-color: var(--gray-300);
+  outline-color: var(--gray-400);
 }
 
 .text-normal {
@@ -1054,9 +1123,7 @@ textarea:focus-visible {
   }
 
   .btn-download {
-    margin-left: 30px;
     min-width: 50px;
-    height: initial;
   }
 
   .btn-menu > p {
@@ -1094,6 +1161,10 @@ textarea:focus-visible {
     padding: 0 10px;
   }
 
+  .form-search > .icon-style { 
+    font-size: 18px;
+  }
+
   .header > .demo-icon ,
   .header > .page-title {
     font-size: 24px;
@@ -1113,6 +1184,18 @@ textarea:focus-visible {
   .modal-body > p,
   .modal-body > p > span {
     font-size: 1rem;
+  }
+
+  .modal.detail > .modal-dialog > .modal-content > .modal-body > .label {
+    font-size: 14px;
+  }
+  
+  .modal.detail > .modal-dialog > .modal-content > .modal-body > .value {
+    font-size: 16px;
+  }
+
+  .modal-dialog {
+    max-width: 626px;
   }
 
   .moonphase-wrapper {
@@ -1146,7 +1229,6 @@ textarea:focus-visible {
 @media (min-width: 992px) {
   .bd-main {
     padding: 30px;
-    margin-top: 0;
   }
 
   .bd-sidebar {

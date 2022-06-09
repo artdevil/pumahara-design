@@ -2,14 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Ngā Pūmanawa Menu</title>
+    <title>Ngā Pūmanawa Menu | Admin</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
 
@@ -19,10 +16,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" type="text/css" href="../resources/css/main.css" />
     <link rel="stylesheet" type="text/css" href="../resources/icon-dev-handoff/css/fontello.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,19 +32,8 @@
       <!-- Navbar Section-->
       <div class="sidebar">
         <div class="navbar-small">
-          <button
-            class="btn-menu"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasSidebar"
-          >
-            <svg
-              width="20"
-              height="21"
-              viewBox="0 0 20 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line y1="0.5" x2="20" y2="0.5" stroke="#3E332B" />
               <line y1="10.5" x2="13.3333" y2="10.5" stroke="#3E332B" />
               <line y1="20.5" x2="20" y2="20.5" stroke="#3E332B" />
@@ -123,10 +106,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a
-                href="/pumahara-design/admin/ngapumanawa.html"
-                class="nav-link border-bottom active"
-              >
+              <a href="/pumahara-design/admin/ngapumanawa.html" class="nav-link border-bottom active">
                 <div class="nav-icon">
                   <i class="demo-icon icon-pumanawa"></i>
                 </div>
@@ -174,141 +154,39 @@
       </div>
       <!-- Main Section-->
       <main class="bd-main">
-        <!-- Delete Modal -->
-        <div
-          class="modal fade"
-          id="deleteModal"
-          tabindex="-1"
-          aria-labelledby="deleteModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="deleteModalLabel"> Delete Confirmation </h6>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-start">
-                <p class="mb-3">
-                  Are you sure you want to delete
-                  <span class="fw-bold">Taukiri</span>?
-                </p>
-                <div class="row gx-3">
-                  <div class="col-6 col-md-auto">
-                    <button
-                      type="button"
-                      class="btn btn-primary-style w-100"
-                      data-bs-dismiss="modal"
-                    >
-                      Yes, Delete
-                    </button>
-                  </div>
-                  <div class="col-6 col-md-auto">
-                    <button
-                      type="button"
-                      class="btn btn-secondary-style w-100"
-                      data-bs-dismiss="modal"
-                    >
-                      Cancel
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Modal Detail-->
-        <div class="modal fade" id="detailModal" tabindex="-1">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="sendInviteModalLabel"> Detail Ngā Pūmanawa </h6>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body text-start">
-                <div class="row">
-                  <div class="mb-3 col-12">
-                    <p class="mb-1">Title</p>
-                    <h6>Tuakiri</h6>
-                  </div>
-                  <div class="mb-3 col-12">
-                    <p class="mb-1">Author</p>
-                    <h6>Tamatekapua</h6>
-                  </div>
-                  <div class="col-12">
-                    <p class="mb-1">Content</p>
-                    <h6 class="lh-base">
-                      He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna
-                      āheinga, ā, kāore e paku horokukū ana ki te mahi i ētehi mea e kīīā ai te
-                      kōrero he manawa kai roke ia.
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- nga pumanawa section -->
-        <div class="header d-flex align-items-center mb-4">
+        <div class="header d-flex align-items-center mb-3 mb-md-4">
           <i class="demo-icon icon-pumanawa"></i>
-          <h4 class="mb-0">Ngā Pūmanawa</h4>
+          <h4 class="page-title">Ngā Pūmanawa</h4>
         </div>
         <div class="alert alert-success-style alert-dismissible fade show mb-4" role="alert">
           Data added successfully
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
-          ></button>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="alert alert-danger-style alert-dismissible fade show mb-4" role="alert">
           Data added failed
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
-          ></button>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <div class="mb-3 d-flex">
+        <div class="row gx-3 mb-3 mb-md-4">
           <form class="form-search col">
-            <i class="fa fa-magnifying-glass"></i>
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search by kounga"
-              aria-label="Search"
-            />
+            <div class="icon-style">
+              <i class="fa fa-magnifying-glass"></i>
+            </div>
+            <input class="form-control" type="search" placeholder="Search by kounga" aria-label="Search" />
           </form>
-          <div class="col-auto">
-            <a
-              class="btn btn-primary-style d-none d-md-block ms-3"
-              href="/pumahara-design/admin/ngapumanawa-add.html"
-            >
+          <div class="col-auto d-none d-md-block">
+            <a class="btn btn-primary-style" href="/pumahara-design/admin/ngapumanawa-add.html">
               <i class="fa fa-circle-plus me-2"></i>
               Add Ngā Pūmanawa
             </a>
-
-            <a
-              class="btn-circle btn-primary-style d-inline-flex d-md-none"
-              href="/pumahara-design/admin/ngapumanawa-add.html"
-            >
-              <i class="fas fa-plus"></i>
-            </a>
           </div>
+          <a
+            class="btn btn-circle btn-primary-style d-inline-flex d-md-none align-items-center justify-content-center"
+            href="/pumahara-design/admin/ngapumanawa-add.html"
+            role="button"
+          >
+            <i class="fas fa-plus"></i>
+          </a>
         </div>
         <div class="card-list">
           <div class="row">
@@ -331,26 +209,15 @@
                       >
                         <i class="fa-solid fa-ellipsis-v"></i>
                       </a>
-                      <ul
-                        class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                         <li>
-                          <a
-                            class="dropdown-item"
-                            href="/pumahara-design/admin/ngapumanawa-update.html"
-                          >
+                          <a class="dropdown-item" href="/pumahara-design/admin/ngapumanawa-update.html">
                             <i class="fa-solid fa-edit"></i>
                             Edit</a
                           >
                         </li>
                         <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#detailModal"
-                            href="#"
-                          >
+                          <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#detailModal" href="#">
                             <i class="fa-solid fa-info-circle"></i>
                             Detail</a
                           >
@@ -370,8 +237,7 @@
                     </div>
                   </div>
                   <p class="card-text">
-                    He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna
-                    āhei...
+                    He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna āhei...
                   </p>
                 </div>
               </div>
@@ -395,26 +261,15 @@
                       >
                         <i class="fa-solid fa-ellipsis-v"></i>
                       </a>
-                      <ul
-                        class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                         <li>
-                          <a
-                            class="dropdown-item"
-                            href="/pumahara-design/admin/ngapumanawa-update.html"
-                          >
+                          <a class="dropdown-item" href="/pumahara-design/admin/ngapumanawa-update.html">
                             <i class="fa-solid fa-edit"></i>
                             Edit</a
                           >
                         </li>
                         <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#detailModal"
-                            href="#"
-                          >
+                          <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#detailModal" href="#">
                             <i class="fa-solid fa-info-circle"></i>
                             Detail</a
                           >
@@ -459,26 +314,15 @@
                       >
                         <i class="fa-solid fa-ellipsis-v"></i>
                       </a>
-                      <ul
-                        class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                         <li>
-                          <a
-                            class="dropdown-item"
-                            href="/pumahara-design/admin/ngapumanawa-update.html"
-                          >
+                          <a class="dropdown-item" href="/pumahara-design/admin/ngapumanawa-update.html">
                             <i class="fa-solid fa-edit"></i>
                             Edit</a
                           >
                         </li>
                         <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#detailModal"
-                            href="#"
-                          >
+                          <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#detailModal" href="#">
                             <i class="fa-solid fa-info-circle"></i>
                             Detail</a
                           >
@@ -498,8 +342,7 @@
                     </div>
                   </div>
                   <p class="card-text">
-                    Te āheinga kia mau tonu ngā hononga e kitea tonuhia ai te mana o te tangata
-                    me...
+                    Te āheinga kia mau tonu ngā hononga e kitea tonuhia ai te mana o te tangata me...
                   </p>
                 </div>
               </div>
@@ -524,26 +367,15 @@
                       >
                         <i class="fa-solid fa-ellipsis-v"></i>
                       </a>
-                      <ul
-                        class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                         <li>
-                          <a
-                            class="dropdown-item"
-                            href="/pumahara-design/admin/ngapumanawa-update.html"
-                          >
+                          <a class="dropdown-item" href="/pumahara-design/admin/ngapumanawa-update.html">
                             <i class="fa-solid fa-edit"></i>
                             Edit</a
                           >
                         </li>
                         <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#detailModal"
-                            href="#"
-                          >
+                          <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#detailModal" href="#">
                             <i class="fa-solid fa-info-circle"></i>
                             Detail</a
                           >
@@ -563,8 +395,7 @@
                     </div>
                   </div>
                   <p class="card-text">
-                    He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna
-                    āhei...
+                    He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna āhei...
                   </p>
                 </div>
               </div>
@@ -576,7 +407,7 @@
                   <div class="row align-items-center mb-3">
                     <div class="col">
                       <h6 class="card-title">Oranga</h6>
-                      <p class="card-subtitle"> Dorothy Huhana (Bubles) Mihinui </p>
+                      <p class="card-subtitle">Dorothy Huhana (Bubles) Mihinui</p>
                     </div>
                     <div class="col-auto ms-auto dropup">
                       <a
@@ -589,26 +420,15 @@
                       >
                         <i class="fa-solid fa-ellipsis-v"></i>
                       </a>
-                      <ul
-                        class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                         <li>
-                          <a
-                            class="dropdown-item"
-                            href="/pumahara-design/admin/ngapumanawa-update.html"
-                          >
+                          <a class="dropdown-item" href="/pumahara-design/admin/ngapumanawa-update.html">
                             <i class="fa-solid fa-edit"></i>
                             Edit</a
                           >
                         </li>
                         <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#detailModal"
-                            href="#"
-                          >
+                          <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#detailModal" href="#">
                             <i class="fa-solid fa-info-circle"></i>
                             Detail</a
                           >
@@ -628,8 +448,7 @@
                     </div>
                   </div>
                   <p class="card-text">
-                    He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna
-                    āhei...
+                    He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna āhei...
                   </p>
                 </div>
               </div>
@@ -654,26 +473,15 @@
                       >
                         <i class="fa-solid fa-ellipsis-v"></i>
                       </a>
-                      <ul
-                        class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                         <li>
-                          <a
-                            class="dropdown-item"
-                            href="/pumahara-design/admin/ngapumanawa-update.html"
-                          >
+                          <a class="dropdown-item" href="/pumahara-design/admin/ngapumanawa-update.html">
                             <i class="fa-solid fa-edit"></i>
                             Edit</a
                           >
                         </li>
                         <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#detailModal"
-                            href="#"
-                          >
+                          <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#detailModal" href="#">
                             <i class="fa-solid fa-info-circle"></i>
                             Detail</a
                           >
@@ -693,8 +501,7 @@
                     </div>
                   </div>
                   <p class="card-text">
-                    He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna
-                    āhei...
+                    He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna āhei...
                   </p>
                 </div>
               </div>
@@ -718,26 +525,15 @@
                       >
                         <i class="fa-solid fa-ellipsis-v"></i>
                       </a>
-                      <ul
-                        class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                         <li>
-                          <a
-                            class="dropdown-item"
-                            href="/pumahara-design/admin/ngapumanawa-update.html"
-                          >
+                          <a class="dropdown-item" href="/pumahara-design/admin/ngapumanawa-update.html">
                             <i class="fa-solid fa-edit"></i>
                             Edit</a
                           >
                         </li>
                         <li>
-                          <a
-                            class="dropdown-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#detailModal"
-                            href="#"
-                          >
+                          <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#detailModal" href="#">
                             <i class="fa-solid fa-info-circle"></i>
                             Detail</a
                           >
@@ -757,8 +553,7 @@
                     </div>
                   </div>
                   <p class="card-text">
-                    He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna
-                    āhei...
+                    He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna āhei...
                   </p>
                 </div>
               </div>
@@ -766,6 +561,62 @@
           </div>
         </div>
       </main>
+    </div>
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="deleteModalLabel">Delete Confirmation</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="mb-3">
+              Are you sure you want to delete
+              <span class="fw-bold">Taukiri</span>?
+            </p>
+            <div class="row gx-3">
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Yes, Delete</button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Detail-->
+    <div class="modal fade" id="detailModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="sendInviteModalLabel">Detail Ngā Pūmanawa</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <div class="row">
+              <div class="mb-3 col-12">
+                <p class="mb-1">Title</p>
+                <h6>Tuakiri</h6>
+              </div>
+              <div class="mb-3 col-12">
+                <p class="mb-1">Author</p>
+                <h6>Tamatekapua</h6>
+              </div>
+              <div class="col-12">
+                <p class="mb-1">Content</p>
+                <h6 class="lh-base">
+                  He tangata e whakapono ana ki a ia anō, ki tōna whanonga, ki tōna āhua, ki ōna āheinga, ā, kāore e
+                  paku horokukū ana ki te mahi i ētehi mea e kīīā ai te kōrero he manawa kai roke ia.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
