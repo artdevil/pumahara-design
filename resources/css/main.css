@@ -655,6 +655,11 @@ border: 1px dashed var(--brown-500) !important;
   color: var(--gray-400);
 }
 
+.form-date > input {
+  padding: 5.5px 14px 5.5px 14px;
+  height: 41px;
+}
+
 .form-label {
   font-size: 14px;
   margin-bottom: 10px;
@@ -685,6 +690,7 @@ border: 1px dashed var(--brown-500) !important;
   color: var(--blue-light);
   font-size: 16px;
 }
+
 
 .form-search > input {
   padding: 5.5px 14px 5.5px 48px;
