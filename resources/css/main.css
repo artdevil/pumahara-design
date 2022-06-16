@@ -284,7 +284,7 @@ a:hover {
 border: 1px dashed var(--brown-500) !important;
 }
 
-.border-brown {
+.border-primary {
   border-color: var(--brown-500) !important;
 }
 
@@ -843,6 +843,10 @@ input.no-border {
   outline: none;
 }
 
+input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
 label.icon {
   color: var(--blue-light);
 }
@@ -1117,6 +1121,10 @@ textarea:focus-visible {
 
 .text-secondary {
   color: var(--darkbrown-100) !important;
+}
+
+.text-gray {
+  color: var(--gray-400);
 }
 
 .timeline-comment {
