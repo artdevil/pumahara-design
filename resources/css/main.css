@@ -248,6 +248,10 @@ a:hover {
   cursor: default;
 }
 
+.bg-brown-100 {
+  background-color: var(--brown-100);
+}
+
 .bg-gray {
   background-color: var(--gray-100)!important;
 }
@@ -258,6 +262,10 @@ a:hover {
   border-radius: 50px;
   padding: 5px 14.5px;
   cursor: default;
+}
+
+.bg-neutral {
+  background-color: var(--bg);
 }
 
 .bg-red {
@@ -274,6 +282,10 @@ a:hover {
 
 .border-active-dashed {
 border: 1px dashed var(--brown-500) !important;
+}
+
+.border-brown {
+  border-color: var(--brown-500) !important;
 }
 
 .border-profile {
@@ -729,15 +741,15 @@ border: 1px dashed var(--brown-500) !important;
   font-size: 30px !important;
 }
 
-.header > .demo-icon,
-.header > .page-title {
+.header .page-title {
   font-size: 16px;
   color: var(--brown-500);
+  margin-left: 10px;
 }
 
-.header > .demo-icon {
-  margin-right: 10px;
+.header .demo-icon {
   font-size: 20px;
+  color: var(--brown-500);
 }
 
 .icon-back {
@@ -764,6 +776,20 @@ border: 1px dashed var(--brown-500) !important;
 
 .icon-upload {
    margin-right: 5px;
+}
+
+.icon-large {
+  width: 36px;
+  height: 36px;
+}
+
+.icon-giant {
+  height: 108px;
+  width: 108px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-preview,
@@ -827,6 +853,10 @@ label.item-list {
   cursor: pointer;
   background-color: var(--white);
   border-radius: 5px;
+}
+
+.lh-lg {
+  line-height: 28px !important;
 }
 
 .list-checkbox {
@@ -1171,8 +1201,8 @@ textarea:focus-visible {
     font-size: 18px;
   }
 
-  .header > .demo-icon ,
-  .header > .page-title {
+  .header .demo-icon ,
+  .header .page-title {
     font-size: 24px;
   }
   
