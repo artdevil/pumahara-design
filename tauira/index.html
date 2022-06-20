@@ -270,7 +270,7 @@
 
                   <div class="row g-3 justify-content-center mb-3">
                     <div class="col-auto">
-                      <a data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                      <a id="thumbnail1" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
                         <img
                           src="../resources/images/thumbnail1.png"
                           alt="thumbnail1"
@@ -392,7 +392,7 @@
 
                   <div class="row g-3 justify-content-center mb-3">
                     <div class="col-auto">
-                      <a data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                      <a id="thumbnail2" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
                         <img
                           src="../resources/images/thumbnail1.png"
                           alt="thumbnail1"
@@ -403,7 +403,7 @@
                     </div>
                     <div class="col-auto">
                       <div class="position-relative">
-                        <a data-bs-toggle="modal" data-bs-target="#videoPreviewModal">
+                        <a id="thumbnail2" data-bs-toggle="modal" data-bs-target="#videoPreviewModal">
                           <img
                             src="../resources/images/thumbnail2.png"
                             alt="thumbnail1"
@@ -447,7 +447,7 @@
         </div>
 
         <!-- Tab Announcement -->
-        <div class="tab-pane fade show" id="announcement" role="tabpanel" aria-labelledby="term-tab">
+        <div class="tab-pane fade active show" id="announcement" role="tabpanel" aria-labelledby="term-tab">
           <!-- DATE AND SEARCH INPUT -->
           <div class="card mb-3 mb-md-4">
             <div class="card-body">
@@ -648,6 +648,9 @@
 
     <script>
       $(document).ready(function () {
+        $("#thumbnail1, #thumbnail2").click(function () {
+          $("#pictures").attr("src", "../resources/images/thumbnail1-big.jpg");
+        });
         $("#picture1").click(function () {
           $("#pictures").attr("src", "../resources/images/picture-1.jpg");
         });
