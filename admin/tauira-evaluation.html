@@ -242,7 +242,7 @@
 
                 <div class="row gx-3 justify-content-center mb-3">
                   <div class="col-auto">
-                    <a data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                    <a id="picture1" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
                       <img
                         src="../resources/images/thumbnail1.png"
                         alt="thumbnail1"
@@ -287,7 +287,9 @@
                         proin sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc
                         pharetra.
                       </p>
-                      <img src="../resources/images/thumbnail3.png" alt="images" class="image-comment" />
+                      <a id="image-comment" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                        <img src="../resources/images/thumbnail3.jpg" alt="images" class="image-comment" />
+                      </a>
                     </div>
                     <div class="row mt-1 align-items-center">
                       <div class="col">
@@ -512,7 +514,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
       aria-labelledby="imagePreviewModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered fit-content">
         <div class="modal-content position-relative rounded">
           <button
             type="button"
@@ -520,9 +522,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
-          <div class="row">
-            <img src="../resources/images/thumbnail1-big.jpg" alt="images" loading="lazy" />
-          </div>
+          <img
+            id="pictures"
+            class="fullview-wrapper"
+            src="../resources/images/thumbnail1-big.jpg"
+            alt="images"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>
@@ -535,7 +541,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
       aria-labelledby="videoPreviewModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered fit-content">
         <div class="modal-content position-relative">
           <button
             type="button"
@@ -543,9 +549,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
-          <div class="row p-3">
-            <video src="../resources/videos/sample.mp4" controls loading="lazy"></video>
-          </div>
+          <video class="fullview-wrapper" src="../resources/videos/sample.mp4" controls loading="lazy"></video>
         </div>
       </div>
     </div>
@@ -576,6 +580,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
             $(icon).removeClass("fa-chevron-up");
             $(icon).addClass("fa-chevron-down");
           }
+        });
+
+        $("#picture1").click(function () {
+          $("#pictures").attr("src", "../resources/images/thumbnail1-big.jpg");
+        });
+
+        $("#image-comment").click(function () {
+          $("#pictures").attr("src", "../resources/images/thumbnail3.jpg");
         });
         $("#videoPreviewModal").on("hide.bs.modal", function (e) {
           this.querySelector("video").pause();
