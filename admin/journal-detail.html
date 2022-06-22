@@ -61,7 +61,7 @@
             </div>
             <p class="profile-name">Olivia Emily</p>
             <nav class="nav flex-column nav-style">
-              <a href="#" class="nav-link border-bottom active">
+              <a href="/pumahara-design/admin/" class="nav-link border-bottom active">
                 <div class="nav-icon">
                   <i class="demo-icon icon-home"></i>
                 </div>
@@ -234,7 +234,13 @@
               <div class="row g-3 justify-content-center mb-3">
                 <div class="col-auto">
                   <a data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
-                    <img src="../resources/images/thumbnail1.png" alt="thumbnail1" class="img-wrapper" loading="lazy" />
+                    <img
+                      id="picture1"
+                      src="../resources/images/thumbnail1.png"
+                      alt="thumbnail1"
+                      class="img-wrapper"
+                      loading="lazy"
+                    />
                   </a>
                 </div>
                 <div class="col-auto">
@@ -348,7 +354,9 @@
                       sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc
                       pharetra.
                     </p>
-                    <img src="/resources/images/thumbnail3.png" alt="" class="image-comment" />
+                    <a id="image-comment" data-bs-target="#imagePreviewModal" data-bs-toggle="modal">
+                      <img src="../resources/images/thumbnail7.jpg" alt="" class="image-comment" />
+                    </a>
                   </div>
                   <div class="row mt-1 align-items-center">
                     <div class="col">
@@ -462,7 +470,7 @@
           <div class="modal-body text-start">
             <div class="row gx-3 align-items-center mb-3">
               <img
-                src="../resources/images/profile3.jpg"
+                src="../resources/images/profile.jpg"
                 alt="image profile"
                 class="col-auto rounded-circle"
                 height="30px"
@@ -477,13 +485,12 @@
                 placeholder="What do you want to do or achieve and what has been done or achieved in this term plan?"
                 rows="3"
               >
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tellus molestie proin sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc pharetra.
-</textarea
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tellus molestie proin sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc pharetra.</textarea
               >
               <div class="row g-3">
                 <div class="col-auto">
                   <div class="card card-thumbnail">
-                    <img src="../resources/images/thumbnail3.png" alt="images" class="img-thumbnails" loading="lazy" />
+                    <img src="../resources/images/thumbnail7.jpg" alt="images" class="img-thumbnails" loading="lazy" />
                     <button class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1">Remove File</button>
                   </div>
                 </div>
@@ -557,7 +564,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
       aria-labelledby="imagePreviewModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered fit-content">
         <div class="modal-content position-relative rounded">
           <button
             type="button"
@@ -565,9 +572,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
-          <div class="row">
-            <img src="../resources/images/thumbnail1-big.jpg" alt="images" loading="lazy" />
-          </div>
+          <img
+            src="../resources/images/thumbnail1-big.jpg"
+            alt="images"
+            loading="lazy"
+            class="fullview-wrapper"
+            id="pictures"
+          />
         </div>
       </div>
     </div>
@@ -612,6 +623,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
     ></script>
     <script>
       $(document).ready(function () {
+        $("#picture1").click(function () {
+          $("#pictures").attr("src", "../resources/images/thumbnail1-big.jpg");
+        });
+        $("#image-comment").click(function () {
+          $("#pictures").attr("src", "../resources/images/thumbnail7.jpg");
+        });
         $("#deleteComment").click(function () {
           $("#myComment").remove();
         });

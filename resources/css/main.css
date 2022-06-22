@@ -180,7 +180,6 @@ a:hover {
 .card-text,
 .desc,
 .modal-header > .modal-title,
-.form-control,
 .modal-body > p,
 .modal-body > p > span {
   font-size: 14px;
@@ -1254,7 +1253,6 @@ textarea:focus-visible {
   }
 
   .modal-header > .modal-title,
-  .form-control,
   .modal-body > p,
   .modal-body > p > span {
     font-size: 1rem;
