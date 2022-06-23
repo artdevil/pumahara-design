@@ -421,6 +421,33 @@
       </main>
     </div>
 
+    <!-- Image Preview Modal -->
+    <div
+      class="modal fade"
+      id="imagePreviewModal"
+      tabindex="-1"
+      aria-labelledby="imagePreviewModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered fit-content">
+        <div class="modal-content position-relative rounded">
+          <button
+            type="button"
+            class="position-absolute btn-close big outside top-0 end-0"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <img
+            class="fullview-wrapper"
+            src="../resources/images/picture-1.jpg"
+            alt="images"
+            loading="lazy"
+            id="pictures"
+          />
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -437,5 +464,19 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#picture1").click(function () {
+          $("#pictures").attr("src", "../resources/images/picture-1.jpg");
+        });
+        $("#picture2").click(function () {
+          $("#pictures").attr("src", "../resources/images/picture-2.jpg");
+        });
+        $("#picture3").click(function () {
+          $("#pictures").attr("src", "../resources/images/picture-3.jpg");
+        });
+      });
+    </script>
   </body>
 </html>
