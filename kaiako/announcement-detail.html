@@ -149,7 +149,7 @@
               <hr class="my-3 line-div opacity-100" />
 
               <!-- CONTENT -->
-              <p class="fs-12 mb-3">
+              <p class="fs-14 lh-lg mb-3">
                 Good afternoon class, <br />
                 is a reminder of your duty to bring a pot of red, purple or yellow flowers tomorrow. <br />
                 Thank you!
@@ -190,6 +190,14 @@
                       sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc
                       pharetra.
                     </p>
+                    <a id="image-comment" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                      <img
+                        class="image-comment"
+                        src="../resources/images/thumbnail3.jpg"
+                        alt="thumbnail"
+                        loading="lazy"
+                      />
+                    </a>
                   </div>
                   <div class="row mt-1 align-items-center">
                     <div class="col">
@@ -233,29 +241,10 @@
                       sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc
                       pharetra.
                     </p>
-                    <img src="../resources/images/thumbnail3.png" alt="thumbnail" loading="lazy" />
                   </div>
                   <div class="row mt-1 align-items-center">
                     <div class="col">
                       <p class="fs-12 text-secondary ms-0 ms-2">5 minutes ago</p>
-                    </div>
-                    <div class="col-auto">
-                      <button
-                        class="btn small fs-14 text-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#updateCommentModal"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <div class="col-auto">
-                      <button
-                        class="btn small fs-14 text-danger"
-                        data-bs-toggle="modal"
-                        data-bs-target="#deleteCommentModal"
-                      >
-                        Delete
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -264,7 +253,7 @@
                 <div class="col-auto mt-2">
                   <img
                     class="img-profile small border-profile"
-                    src="../resources/images/profile3.jpg"
+                    src="../resources/images/profile5.jpg"
                     alt="profile"
                     loading="lazy"
                   />
@@ -281,24 +270,6 @@
                   <div class="row mt-1 align-items-center">
                     <div class="col">
                       <p class="fs-12 text-secondary ms-0 ms-2">10 minutes ago</p>
-                    </div>
-                    <div class="col-auto">
-                      <button
-                        class="btn small fs-14 text-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#updateCommentModal"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <div class="col-auto">
-                      <button
-                        class="btn small fs-14 text-danger"
-                        data-bs-toggle="modal"
-                        data-bs-target="#deleteCommentModal"
-                      >
-                        Delete
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -454,7 +425,7 @@
       aria-labelledby="imagePreviewModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered fit-content">
         <div class="modal-content position-relative rounded">
           <button
             type="button"
@@ -462,9 +433,13 @@
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
-          <div class="row">
-            <img src="../resources/images/thumbnail1-big.jpg" alt="images" loading="lazy" id="pictures" />
-          </div>
+          <img
+            class="fullview-wrapper"
+            src="../resources/images/thumbnail1-big.jpg"
+            alt="images"
+            loading="lazy"
+            id="pictures"
+          />
         </div>
       </div>
     </div>
@@ -477,7 +452,7 @@
       aria-labelledby="videoPreviewModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered fit-content">
         <div class="modal-content position-relative">
           <button
             type="button"
@@ -485,9 +460,7 @@
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
-          <div class="row p-3">
-            <video src="../resources/videos/sample.mp4" controls loading="lazy"></video>
-          </div>
+          <video class="fullview-wrapper" src="../resources/videos/sample.mp4" controls loading="lazy"></video>
         </div>
       </div>
     </div>
@@ -509,6 +482,9 @@
     ></script>
     <script>
       $(document).ready(function () {
+        $("#image-comment").click(function () {
+          $("#pictures").attr("src", "../resources/images/thumbnail3.jpg");
+        });
         $("#picture1").click(function () {
           $("#pictures").attr("src", "../resources/images/picture-1.jpg");
         });
