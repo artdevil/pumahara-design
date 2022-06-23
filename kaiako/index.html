@@ -1094,6 +1094,12 @@ Good afternoon class,&#10;This is a reminder of your duty to bring a pot of red,
           $(".title").html('<i class="fas fa-tag text-primary me-2"></i>' + this.value.toUpperCase());
           $(".link-detail").attr("href", "/pumahara-design/kaiako/tauira-evaluation.html?title=" + this.value);
         });
+
+        let params = new window.URLSearchParams(window.location.search);
+        if (params.get("delete") == "y") {
+          $("#alert-delete").addClass("show");
+          $("#myAnnouncement").remove();
+        }
       });
     </script>
   </body>
