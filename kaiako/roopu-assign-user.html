@@ -46,12 +46,12 @@
               <img src="../resources/images/logo4.svg" alt="brand images" />
             </picture>
           </div>
-          <a class="notification" href="#">
+          <a class="notification" href="/pumahara-design/kaiako/notifications.html">
             <i class="demo-icon icon-bell"></i>
             <span>99+</span>
           </a>
           <div class="img-profile d-none d-lg-flex">
-            <img src="../resources/images/profile.jpg" alt="image profile" />
+            <img src="../resources/images/profile4.jpg" alt="image profile" />
           </div>
         </div>
         <div class="offcanvas offcanvas-start bd-sidebar" id="offcanvasSidebar" tabindex="-1">
@@ -59,9 +59,9 @@
             <div class="img-profile d-lg-none">
               <img src="../resources/images/profile.jpg" alt="image profile" />
             </div>
-            <p class="profile-name">Olivia Emily</p>
+            <p class="profile-name">Grace Isabella</p>
             <nav class="nav flex-column nav-style">
-              <a href="#" class="nav-link border-bottom">
+              <a href="/pumahara-design/kaiako" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-home"></i>
                 </div>
@@ -70,11 +70,20 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
+              <a href="/pumahara-design/kaiako/mahi.html" class="nav-link border-bottom">
+                <div class="nav-icon">
+                  <i class="demo-icon icon-ic_mymahi"></i>
+                </div>
+                <div class="nav-text">My Mahi</div>
+                <div class="nav-arrow">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </a>
               <a href="/pumahara-design/kaiako/classes.html" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-classes"></i>
                 </div>
-                <div class="nav-text">My Classes</div>
+                <div class="nav-text">My Class Detail</div>
                 <div class="nav-arrow">
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
@@ -128,6 +137,17 @@
             <nav class="nav nav-tab" id="myTab" role="tablist">
               <a
                 class="nav-link active col-6 col-md-auto"
+                id="announcement-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#announcement"
+                role="button"
+                aria-controls="announcement"
+                aria-selected="true"
+              >
+                Announcement
+              </a>
+              <a
+                class="nav-link col-6 col-md-auto"
                 id="kaiako-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#kaiako"
@@ -152,8 +172,145 @@
           </div>
         </div>
 
+        <!-- Tab Announcement -->
+        <div class="tab-pane fade show active" id="announcement" role="tabpanel" aria-labelledby="home-tab">
+          <!-- DATE -->
+          <div class="card mb-3 mb-md-4">
+            <div class="card-body">
+              <input id="textDate" class="form-control" type="date" value="2022-05-25" />
+            </div>
+          </div>
+
+          <!-- CONTENT -->
+          <div class="card-list row gy-3 gy-md-4 flex-column">
+            <div id="myAnnouncement" class="col">
+              <div class="card">
+                <div class="card-body">
+                  <!-- PROFILE -->
+                  <div class="row gx-3 align-items-center">
+                    <div class="col-auto">
+                      <img
+                        class="img-profile small border-profile"
+                        src="../resources/images/profile4.jpg"
+                        alt="image profile"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="col">
+                      <h6 class="fs-14 mb-0 me-1 text-truncate">Grace Isabella</h6>
+                      <p class="fs-14">25 April 2022, 13:30</p>
+                    </div>
+                  </div>
+                  <hr class="my-3 line-div opacity-100" />
+
+                  <!-- CONTENT -->
+                  <p class="fs-14 lh-lg mb-3">
+                    Good afternoon class, <br />
+                    is a reminder of your duty to bring a pot of red, purple or yellow flowers tomorrow. <br />
+                    Thank you!
+                  </p>
+                  <!-- IMAGES -->
+                  <div class="row g-3 justify-content-center mb-3">
+                    <div class="col-auto">
+                      <a id="picture1" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                        <img
+                          src="../resources/images/picture-1.jpg"
+                          alt="thumbnail1"
+                          class="img-wrapper"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-auto">
+                      <a id="picture2" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                        <img
+                          src="../resources/images/picture-2.jpg"
+                          alt="thumbnail1"
+                          class="img-wrapper"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-auto">
+                      <a id="picture3" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                        <img
+                          src="../resources/images/picture-3.jpg"
+                          alt="thumbnail1"
+                          class="img-wrapper"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- COMMENT FORM -->
+                  <div class="row p-2 justify-content-between">
+                    <!-- COMMENT -->
+                    <div class="col-auto">
+                      <i class="fas fa-comments me-2 text-primary"></i>
+                      <span class="fs-14 fw-bold"> 3 Comments </span>
+                    </div>
+                    <!-- BUTTON DETAIL -->
+                    <div class="col-auto">
+                      <a href="/pumahara-design/kaiako/announcement-detail.html" role="button" class="text-primary">
+                        See Detail
+                        <i class="fas fa-arrow-circle-right ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <!-- PROFILE -->
+                  <div class="row gx-3 align-items-center">
+                    <div class="col-auto">
+                      <img
+                        class="img-profile small border-profile"
+                        src="../resources/images/profile.jpg"
+                        alt="image profile"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="col">
+                      <h6 class="fs-14 mb-0 me-1 text-truncate">Olivia Emily</h6>
+                      <p class="fs-14">20 April 2022, 08:30</p>
+                    </div>
+                  </div>
+                  <hr class="my-3 line-div opacity-100" />
+
+                  <!-- CONTENT -->
+                  <p class="fs-14 lh-lg mb-3">
+                    Good morning class,<br />
+                    This is a reminder to wear boots tomorrow<br />
+                    Thank you!
+                  </p>
+
+                  <!-- COMMENT FORM -->
+                  <div class="row p-2 justify-content-between">
+                    <!-- COMMENT -->
+                    <div class="col-auto">
+                      <i class="fas fa-comments me-2 text-primary"></i>
+                      <span class="fs-14 fw-bold"> 3 Comments </span>
+                    </div>
+                    <!-- BUTTON DETAIL -->
+                    <div class="col-auto">
+                      <a href="/pumahara-design/kaiako/announcement-detail.html" role="button" class="text-primary">
+                        See Detail
+                        <i class="fas fa-arrow-circle-right ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Tab Kaiako -->
-        <div class="tab-pane fade show active" id="kaiako" role="tabpanel" aria-labelledby="kaiako-tab">
+        <div class="tab-pane fade" id="kaiako" role="tabpanel" aria-labelledby="kaiako-tab">
           <div class="row gx-3 mb-3 mb-md-4">
             <!-- Form Search -->
             <form class="form-search col">
@@ -704,6 +861,33 @@
         </div>
       </div>
     </div>
+
+    <!-- Image Preview Modal -->
+    <div
+      class="modal fade"
+      id="imagePreviewModal"
+      tabindex="-1"
+      aria-labelledby="imagePreviewModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered fit-content">
+        <div class="modal-content position-relative rounded">
+          <button
+            type="button"
+            class="position-absolute btn-close big outside top-0 end-0"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <img
+            class="fullview-wrapper"
+            src="../resources/images/picture-1.jpg"
+            alt="images"
+            loading="lazy"
+            id="pictures"
+          />
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -747,6 +931,16 @@
           $(".label-file").removeClass("d-none");
           $(".file-name").html("");
           $(".file-name").removeClass("me-3");
+        });
+
+        $("#picture1").click(function () {
+          $("#pictures").attr("src", "../resources/images/picture-1.jpg");
+        });
+        $("#picture2").click(function () {
+          $("#pictures").attr("src", "../resources/images/picture-2.jpg");
+        });
+        $("#picture3").click(function () {
+          $("#pictures").attr("src", "../resources/images/picture-3.jpg");
         });
       });
     </script>

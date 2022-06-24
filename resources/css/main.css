@@ -180,7 +180,6 @@ a:hover {
 .card-text,
 .desc,
 .modal-header > .modal-title,
-.form-control,
 .modal-body > p,
 .modal-body > p > span {
   font-size: 14px;
@@ -552,7 +551,7 @@ border: 1px dashed var(--brown-500) !important;
 }
 
 .card-thumbnail {
-  width: 90px;
+  width: 92px;
   border: 1px solid var(--gray-400);
   border-radius: 8px;
 }
@@ -719,6 +718,11 @@ border: 1px dashed var(--brown-500) !important;
   border-top: 6px solid var(--brown-500);
 }
 
+.fullview-wrapper {
+  border: solid 15px white;
+  border-radius: 6px;
+}
+
 .fs-10 {
   font-size: 10px !important;
 }
@@ -792,6 +796,14 @@ border: 1px dashed var(--brown-500) !important;
   justify-content: center;
 }
 
+.image-comment {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .image-preview,
 .img-profile > img,
 .img-personal {
@@ -815,11 +827,15 @@ border: 1px dashed var(--brown-500) !important;
   display: flex;
   justify-content: center;
   margin-top: 15px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .img-profile > img {
   width: 75px;
   height: 75px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .img-profile.small {
@@ -830,12 +846,18 @@ border: 1px dashed var(--brown-500) !important;
 
 .img-thumbnails {
   border-radius: 6px;
-  padding: 5px;
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
 
 .img-wrapper {
   width: 100px;
   height: 100px;
+  cursor: pointer;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 input.no-border {
@@ -896,6 +918,11 @@ label.item-list {
 
 .modal-detail {
   max-height: calc(100vh - 120px);
+}
+
+.modal-dialog.fit-content {
+ width: fit-content;
+ max-width: calc(100% - 16px);
 }
 
 .modal-footer > * {
@@ -1228,7 +1255,6 @@ textarea:focus-visible {
   }
 
   .modal-header > .modal-title,
-  .form-control,
   .modal-body > p,
   .modal-body > p > span {
     font-size: 1rem;
@@ -1361,6 +1387,9 @@ textarea:focus-visible {
     margin-bottom: 30px;
   }
 
+  .modal-dialog.fit-content {
+    max-width: 750px;
+  }
   .model-header .modal-content {
     width: 626px;
     height: 183px;

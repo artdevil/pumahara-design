@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Home | Tauira</title>
+    <title>Home | Kaiako</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
@@ -46,12 +46,12 @@
               <img src="../resources/images/logo4.svg" alt="brand images" />
             </picture>
           </div>
-          <a class="notification" role="button">
+          <a class="notification" href="/pumahara-design/kaiako/notifications.html">
             <i class="demo-icon icon-bell"></i>
             <span>99+</span>
           </a>
           <div class="img-profile d-none d-lg-flex">
-            <img src="../resources/images/profile2.jpg" alt="image profile" />
+            <img src="../resources/images/profile4.jpg" alt="image profile" />
           </div>
         </div>
         <div class="offcanvas offcanvas-start bd-sidebar" id="offcanvasSidebar" tabindex="-1">
@@ -59,10 +59,9 @@
             <div class="img-profile d-lg-none">
               <img src="../resources/images/profile.jpg" alt="image profile" />
             </div>
-            <p class="profile-name mb-1">Amelia Charlotte</p>
-            <p class="profile-classes mb-3">Puriri - Y7</p>
+            <p class="profile-name">Grace Isabella</p>
             <nav class="nav flex-column nav-style">
-              <a href="/pumahara-design/tauira" class="nav-link border-bottom active">
+              <a href="/pumahara-design/kaiako" class="nav-link border-bottom active">
                 <div class="nav-icon">
                   <i class="demo-icon icon-home"></i>
                 </div>
@@ -71,25 +70,25 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/evaluation.html" class="nav-link border-bottom">
+              <a href="/pumahara-design/kaiako/mahi.html" class="nav-link border-bottom">
                 <div class="nav-icon">
-                  <i class="demo-icon icon-evaluation"></i>
+                  <i class="demo-icon icon-ic_mymahi"></i>
                 </div>
-                <div class="nav-text">My Evaluations</div>
+                <div class="nav-text">My Mahi</div>
                 <div class="nav-arrow">
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/journal.html" class="nav-link border-bottom">
+              <a href="/pumahara-design/kaiako/classes.html" class="nav-link border-bottom">
                 <div class="nav-icon">
-                  <i class="demo-icon icon-journal"></i>
+                  <i class="demo-icon icon-classes"></i>
                 </div>
-                <div class="nav-text">My Journal</div>
+                <div class="nav-text">My Class Detail</div>
                 <div class="nav-arrow">
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/roopu.html" class="nav-link border-bottom">
+              <a href="/pumahara-design/kaiako/roopu.html" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-ropu"></i>
                 </div>
@@ -98,16 +97,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/whanau.html" class="nav-link border-bottom">
-                <div class="nav-icon">
-                  <i class="demo-icon icon-whanau"></i>
-                </div>
-                <div class="nav-text">Whānau</div>
-                <div class="nav-arrow">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </div>
-              </a>
-              <a href="/pumahara-design/tauira/account-setting.html" class="nav-link border-bottom">
+              <a href="#" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-setting"></i>
                 </div>
@@ -136,9 +126,9 @@
         <!-- Tab Navigation -->
         <div class="card text-center mb-3 mb-md-4">
           <div class="card-header m-0">
-            <nav class="nav nav-tab" id="myTab" role="tablist">
+            <nav class="nav nav-tab flex-nowrap overflow-auto" id="myTab" role="tablist">
               <a
-                class="nav-link col-6 col-md-auto active"
+                class="nav-link col-auto active"
                 id="journal-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#journal"
@@ -147,10 +137,22 @@
                 aria-controls="journal"
                 aria-selected="true"
               >
-                My Journal
+                Tauira Journal’s
               </a>
               <a
-                class="nav-link col-6 col-md-auto"
+                class="nav-link col-auto"
+                id="evaluation-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#evaluation"
+                type="button"
+                role="tab"
+                aria-controls="evaluation"
+                aria-selected="false"
+              >
+                Tauira Evaluations
+              </a>
+              <a
+                class="nav-link col-auto"
                 id="announcement-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#announcement"
@@ -165,12 +167,15 @@
           </div>
         </div>
 
-        <!-- Tab Journal -->
-        <div class="tab-pane fade active show" id="journal" role="tabpanel" aria-labelledby="term-tab">
+        <!-- Tab Tauira Journal’s -->
+        <div class="tab-pane fade active show" id="journal" role="tabpanel" aria-labelledby="home-tab">
           <!-- DATE AND SEARCH INPUT -->
           <div class="card mb-3 mb-md-4">
             <div class="card-body">
-              <div class="row g-3">
+              <div class="row g-3 align-items-center">
+                <div class="col-md-auto">
+                  <h5>Puriri Class - Y7</h5>
+                </div>
                 <div class="col-md-auto">
                   <input id="textDate" class="form-control h-100" type="date" value="2022-05-25" />
                 </div>
@@ -202,7 +207,7 @@
                     <div class="col-auto">
                       <img
                         class="img-profile small border-profile"
-                        src="../resources/images/profile5.jpg"
+                        src="../resources/images/profile2.jpg"
                         alt="image profile"
                         loading="lazy"
                       />
@@ -218,7 +223,7 @@
                         </div>
                         <div class="col">
                           <p class="text-small">Ōeunuku - Paengawhāwhā</p>
-                          <p class="fs-10 text-primary">25 April 2022, 10:30</p>
+                          <p class="fs-10 text-primary">25 April 2022, 10:50</p>
                         </div>
                       </div>
                     </div>
@@ -270,9 +275,9 @@
 
                   <div class="row g-3 justify-content-center mb-3">
                     <div class="col-auto">
-                      <a id="thumbnail1" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                      <a id="picture1" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
                         <img
-                          src="../resources/images/thumbnail4.jpg"
+                          src="../resources/images/thumbnail1.png"
                           alt="thumbnail1"
                           class="img-wrapper"
                           loading="lazy"
@@ -283,7 +288,7 @@
                       <div class="position-relative">
                         <a data-bs-toggle="modal" data-bs-target="#videoPreviewModal">
                           <img
-                            src="../resources/images/thumbnail5.jpg"
+                            src="../resources/images/thumbnail2.png"
                             alt="thumbnail1"
                             class="img-wrapper"
                             loading="lazy"
@@ -307,7 +312,7 @@
                     </div>
                     <!-- BUTTON DETAIL -->
                     <div class="col-auto">
-                      <a href="/pumahara-design/tauira/journal-detail.html" role="button" class="text-primary">
+                      <a href="/pumahara-design/kaiako/journal-detail.html" role="button" class="text-primary">
                         See Detail
                         <i class="fas fa-arrow-circle-right ms-2"></i>
                       </a>
@@ -392,9 +397,9 @@
 
                   <div class="row g-3 justify-content-center mb-3">
                     <div class="col-auto">
-                      <a id="thumbnail2" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                      <a id="picture2" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
                         <img
-                          src="../resources/images/thumbnail6.jpg"
+                          src="../resources/images/thumbnail1.png"
                           alt="thumbnail1"
                           class="img-wrapper"
                           loading="lazy"
@@ -403,9 +408,9 @@
                     </div>
                     <div class="col-auto">
                       <div class="position-relative">
-                        <a id="thumbnail2" data-bs-toggle="modal" data-bs-target="#videoPreviewModal">
+                        <a data-bs-toggle="modal" data-bs-target="#videoPreviewModal">
                           <img
-                            src="../resources/images/thumbnail5.jpg"
+                            src="../resources/images/thumbnail2.png"
                             alt="thumbnail1"
                             class="img-wrapper"
                             loading="lazy"
@@ -429,7 +434,7 @@
                     </div>
                     <!-- BUTTON DETAIL -->
                     <div class="col-auto">
-                      <a href="/pumahara-design/tauira/journal-detail.html" role="button" class="text-primary">
+                      <a href="/pumahara-design/kaiako/journal-detail.html" role="button" class="text-primary">
                         See Detail
                         <i class="fas fa-arrow-circle-right ms-2"></i>
                       </a>
@@ -439,24 +444,297 @@
               </div>
             </div>
           </div>
-          <div class="text-center">
-            <img src="../resources/images/icon-no-data.svg" alt="no data" class="mb-1 mb-md-4" />
-            <h6 class="text-medium mb-0">Sorry, data is not available on this date</h6>
-            <p class="text-small">Please fill in the journal first</p>
+        </div>
+
+        <!-- Tab Tauira Evaluations -->
+        <div class="tab-pane fade" id="evaluation" role="tabpanel" aria-labelledby="home-tab">
+          <div class="card mb-3 mb-md-4">
+            <div class="card-body">
+              <div class="row g-3 align-items-center">
+                <div class="col-md-auto">
+                  <h5 class="me-4">Puriri Class - Y7</h5>
+                </div>
+                <div class="col-md-auto">
+                  <select class="form-select" aria-label="Select Post">
+                    <option>My Summary Post</option>
+                    <option selected>My Plan Post</option>
+                  </select>
+                </div>
+                <div class="col-md-auto">
+                  <input id="textDate" class="form-control h-100" type="date" value="2022-05-25" />
+                </div>
+                <div class="col-12 col-md">
+                  <form class="form-search">
+                    <div class="icon-style">
+                      <i class="fas fa-magnifying-glass"></i>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      type="search"
+                      placeholder="Search by name"
+                      aria-label="Search"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 mb-md-4">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h5 class="mb-1">Term 1</h5>
+                  <p class="fs-14">01/01/2022 - 28/02/2022</p>
+                </div>
+                <div class="col-auto">
+                  <button
+                    type="button"
+                    class="btn small text-primary btn-detail"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseDetail"
+                    aria-expanded="false"
+                    aria-controls="collapseDetail"
+                  >
+                    <i class="detail-icon fas fa-chevron-down fs-14 me-2"></i>
+                    <span class="d-none d-md-inline-block"> Show Detail </span>
+                  </button>
+                </div>
+              </div>
+              <div class="collapse mt-3" id="collapseDetail">
+                <h6 class="fs-14 mb-1">Quality 1 - Tamatekapua</h6>
+                <p class="fs-12 mb-1">Successful Māori students understand core Māori values</p>
+                <h6 class="fs-14 mb-1">Characteristic</h6>
+                <p class="fs-12 mb-1">
+                  An ability to model the most meaningful qulities in Māori culture, portrayed by way of aroha (love),
+                  manaaki (care) and wairua (spritually)
+                </p>
+                <h6 class="fs-14 mb-1">Application to school and work</h6>
+                <ol class="mb-0 ps-3 fs-12">
+                  <li>Manaakitangan - ability to care and be hospitable to others</li>
+                  <li>Kotahitanga - ability to commit to a kaupapa/vision</li>
+                  <li>Wairuatanga - moral compass and sense of social justice</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTENT -->
+          <div class="card-list row gy-3 gy-md-4 flex-column">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <!-- PROFILE -->
+                  <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <img
+                        class="img-profile small border-profile"
+                        src="../resources/images/profile2.jpg"
+                        alt="image profile"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="col">
+                      <h6 class="fs-14 mb-1">Amelia Charlotte</h6>
+                      <p class="fs-14">15 April 2022, 09:30</p>
+                    </div>
+                  </div>
+                  <hr class="my-3 line-div opacity-100" />
+                  <!-- Plan Post -->
+                  <div class="my-3">
+                    <h5 class="title text-capitalize">
+                      <i class="fas fa-tag text-primary me-2"></i>
+                      MY PLAN POST
+                    </h5>
+                    <p class="fs-12 lh-lg">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tellus molestie proin
+                      sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc
+                      pharetra.
+                    </p>
+                  </div>
+
+                  <div class="row g-3 justify-content-center mb-3">
+                    <div class="col-auto">
+                      <a id="picture3" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                        <img
+                          src="../resources/images/thumbnail1.png"
+                          alt="thumbnail1"
+                          class="img-wrapper"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-auto">
+                      <div class="position-relative">
+                        <a data-bs-toggle="modal" data-bs-target="#videoPreviewModal">
+                          <img
+                            src="../resources/images/thumbnail2.png"
+                            alt="thumbnail1"
+                            class="img-wrapper"
+                            loading="lazy"
+                          />
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <button class="btn btn-play">
+                              <i class="fas fa-play d-flex justify-content-center align-items-center"></i>
+                            </button>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- COMMENT FORM -->
+                  <div class="row p-2 justify-content-between">
+                    <!-- COMMENT -->
+                    <div class="col-auto">
+                      <i class="fas fa-comments me-2 text-primary"></i>
+                      <span class="fs-14 fw-bold"> 2 Comments </span>
+                    </div>
+                    <!-- BUTTON DETAIL -->
+                    <div class="col-auto">
+                      <a
+                        href="/pumahara-design/kaiako/tauira-evaluation.html"
+                        role="button"
+                        class="text-primary link-detail"
+                      >
+                        See Detail
+                        <i class="fas fa-arrow-circle-right ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <!-- PROFILE -->
+                  <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <img
+                        class="img-profile small border-profile"
+                        src="../resources/images/profile3.jpg"
+                        alt="image profile"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="col">
+                      <h6 class="fs-14 mb-1">Samuel Mason</h6>
+                      <p class="fs-14">14 April 2022, 11:30</p>
+                    </div>
+                  </div>
+                  <hr class="my-3 line-div opacity-100" />
+                  <!-- Plan Post -->
+                  <div class="my-3">
+                    <h5 class="title">
+                      <i class="fas fa-tag text-primary me-2"></i>
+                      MY PLAN POST
+                    </h5>
+                    <p class="fs-12 lh-lg">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tellus molestie proin
+                      sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc
+                      pharetra.
+                    </p>
+                  </div>
+
+                  <div class="row g-3 justify-content-center mb-3">
+                    <div class="col-auto">
+                      <a id="picture4" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                        <img
+                          src="../resources/images/thumbnail1.png"
+                          alt="thumbnail1"
+                          class="img-wrapper"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-auto">
+                      <div class="position-relative">
+                        <a data-bs-toggle="modal" data-bs-target="#videoPreviewModal">
+                          <img
+                            src="../resources/images/thumbnail2.png"
+                            alt="thumbnail1"
+                            class="img-wrapper"
+                            loading="lazy"
+                          />
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <button class="btn btn-play">
+                              <i class="fas fa-play d-flex justify-content-center align-items-center"></i>
+                            </button>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- COMMENT FORM -->
+                  <div class="row p-2 justify-content-between">
+                    <!-- COMMENT -->
+                    <div class="col-auto">
+                      <i class="fas fa-comments me-2 text-primary"></i>
+                      <span class="fs-14 fw-bold"> 2 Comments </span>
+                    </div>
+                    <!-- BUTTON DETAIL -->
+                    <div class="col-auto">
+                      <a
+                        href="/pumahara-design/kaiako/tauira-evaluation.html"
+                        role="button"
+                        class="text-primary link-detail"
+                      >
+                        See Detail
+                        <i class="fas fa-arrow-circle-right ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Tab Announcement -->
-        <div class="tab-pane fade" id="announcement" role="tabpanel" aria-labelledby="term-tab">
-          <!-- DATE AND SEARCH INPUT -->
+        <div class="tab-pane fade" id="announcement" role="tabpanel" aria-labelledby="home-tab">
+          <!-- DATE -->
           <div class="card mb-3 mb-md-4">
             <div class="card-body">
-              <input id="textDate" class="form-control h-100" type="date" value="2022-05-25" />
+              <div class="row g-3 align-items-center">
+                <div class="col-md-auto">
+                  <h5 class="me-4">Puriri Class - Y7</h5>
+                </div>
+                <div class="col-md-auto me-auto">
+                  <input id="textDate" class="form-control h-100" type="date" value="2022-05-25" />
+                </div>
+                <div class="col-auto d-none d-md-block">
+                  <a class="btn btn-add btn-primary-style" href="/pumahara-design/kaiako/announcement-add.html">
+                    <i class="fa fa-circle-plus me-2"></i>
+                    Add Announcement
+                  </a>
+                </div>
+                <a
+                  class="btn btn-add btn-circle btn-primary-style d-inline-flex d-md-none"
+                  href="/pumahara-design/kaiako/announcement-add.html"
+                >
+                  <i class="fas fa-plus"></i>
+                </a>
+              </div>
             </div>
           </div>
+
+          <!-- Alert -->
+          <div id="alert-update" class="alert alert-success-style alert-dismissible fade mb-4" role="alert">
+            Announcement updated successfully
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+          <div id="alert-delete" class="alert alert-success-style alert-dismissible fade mb-4" role="alert">
+            Announcement deleted successfully
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
           <!-- CONTENT -->
           <div class="card-list row gy-3 gy-md-4 flex-column">
-            <div class="col">
+            <div id="myAnnouncement" class="col">
               <div class="card">
                 <div class="card-body">
                   <!-- PROFILE -->
@@ -473,6 +751,37 @@
                       <h6 class="fs-14 mb-0 me-1 text-truncate">Grace Isabella</h6>
                       <p class="fs-14">25 April 2022, 13:30</p>
                     </div>
+                    <div class="col-auto dropup">
+                      <a
+                        href="#"
+                        class="menu-option"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-bs-offset="0,-35"
+                      >
+                        <i class="fa-solid fa-ellipsis-v"></i>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                          <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#updateModal">
+                            <i class="fa-solid fa-edit"></i>
+                            Edit
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item text-danger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deleteModal"
+                            href="#"
+                          >
+                            <i class="fa-solid fa-trash-alt"></i>
+                            Delete
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                   <hr class="my-3 line-div opacity-100" />
 
@@ -485,7 +794,7 @@
                   <!-- IMAGES -->
                   <div class="row g-3 justify-content-center mb-3">
                     <div class="col-auto">
-                      <a id="picture1" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                      <a id="picture5" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
                         <img
                           src="../resources/images/picture-1.jpg"
                           alt="thumbnail1"
@@ -495,7 +804,7 @@
                       </a>
                     </div>
                     <div class="col-auto">
-                      <a id="picture2" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                      <a id="picture6" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
                         <img
                           src="../resources/images/picture-2.jpg"
                           alt="thumbnail1"
@@ -505,7 +814,7 @@
                       </a>
                     </div>
                     <div class="col-auto">
-                      <a id="picture3" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
+                      <a id="picture7" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
                         <img
                           src="../resources/images/picture-3.jpg"
                           alt="thumbnail1"
@@ -525,7 +834,7 @@
                     </div>
                     <!-- BUTTON DETAIL -->
                     <div class="col-auto">
-                      <a href="/pumahara-design/tauira/announcement-detail.html" role="button" class="text-primary">
+                      <a href="/pumahara-design/kaiako/announcement-detail.html" role="button" class="text-primary">
                         See Detail
                         <i class="fas fa-arrow-circle-right ms-2"></i>
                       </a>
@@ -542,13 +851,13 @@
                     <div class="col-auto">
                       <img
                         class="img-profile small border-profile"
-                        src="../resources/images/profile4.jpg"
+                        src="../resources/images/profile.jpg"
                         alt="image profile"
                         loading="lazy"
                       />
                     </div>
                     <div class="col">
-                      <h6 class="fs-14 mb-0 me-1 text-truncate">Grace Isabella</h6>
+                      <h6 class="fs-14 mb-0 me-1 text-truncate">Olivia Emily</h6>
                       <p class="fs-14">20 April 2022, 08:30</p>
                     </div>
                   </div>
@@ -570,7 +879,7 @@
                     </div>
                     <!-- BUTTON DETAIL -->
                     <div class="col-auto">
-                      <a href="/pumahara-design/tauira/announcement-detail.html" role="button" class="text-primary">
+                      <a href="/pumahara-design/kaiako/announcement-detail.html" role="button" class="text-primary">
                         See Detail
                         <i class="fas fa-arrow-circle-right ms-2"></i>
                       </a>
@@ -601,11 +910,11 @@
             aria-label="Close"
           ></button>
           <img
+            class="fullview-wrapper"
             src="../resources/images/thumbnail1-big.jpg"
             alt="images"
             loading="lazy"
             id="pictures"
-            class="fullview-wrapper"
           />
         </div>
       </div>
@@ -627,7 +936,116 @@
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
-          <video src="../resources/videos/sample.mp4" controls loading="lazy" class="fullview-wrapper"></video>
+          <video class="fullview-wrapper" src="../resources/videos/sample.mp4" controls loading="lazy"></video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Delete -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="delTauiraModalLabel">Delete Confirmation</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <p class="mb-3">
+              Are you sure you want to delete announcement on
+              <span class="fw-bold">25 April 2022, 13:30</span>?
+            </p>
+            <div class="row gx-3">
+              <div class="col-6 col-md-auto">
+                <button id="button-delete" type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">
+                  Yes, Delete
+                </button>
+              </div>
+              <div class="col-6 col-md-auto">
+                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Update -->
+    <div class="modal fade" id="updateModal" aria-labelledby="updateModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header mx-3 px-0">
+            <h6 class="modal-title" id="addTermLabel">Update Announcement</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="card overflow-auto modal-add border-0">
+              <div class="card-body">
+                <div class="mb-3 mb-md-4">
+                  <p>Curriculum Year : <span class="fw-bold">2022</span></p>
+                </div>
+                <div class="mb-3 mb-md-4">
+                  <label class="form-label" for="announcement">Announcement for</label>
+                  <select class="form-select" name="announcement" id="announcement" aria-label=".form-select">
+                    <option value="class">Class</option>
+                    <option value="roopu">Roopu</option>
+                  </select>
+                </div>
+                <div class="mb-3 mb-md-4">
+                  <label class="form-label" for="description">Description</label>
+                  <textarea
+                    class="form-control fs-12"
+                    id="description"
+                    rows="3"
+                    placeholder="Describe the announcement"
+                  >
+Good afternoon class,&#10;This is a reminder of your duty to bring a pot of red, purple or yellow flowers tomorrow.&#13;Thank you!</textarea
+                  >
+                </div>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <div class="card card-thumbnail">
+                      <img src="../resources/images/picture-1.jpg" alt="images" class="img-thumbnails" loading="lazy" />
+                      <button class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1">Remove File</button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-thumbnail">
+                      <img src="../resources/images/picture-2.jpg" alt="images" class="img-thumbnails" loading="lazy" />
+                      <button class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1">Remove File</button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-thumbnail">
+                      <img src="../resources/images/picture-3.jpg" alt="images" class="img-thumbnails" loading="lazy" />
+
+                      <button class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1">Remove File</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-3 p-3">
+              <div class="col col-md-auto me-auto">
+                <button id="button-update" type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">
+                  Update
+                </button>
+              </div>
+              <div class="col-auto">
+                <input class="form-control d-none" type="file" name="photo" id="photoFile" accept="image/*" />
+                <label class="form-label primary-style" for="photoFile">
+                  <i class="fas fa-images me-md-2"></i>
+                  <span class="d-none d-md-inline-block">Photo</span>
+                </label>
+              </div>
+              <div class="col-auto">
+                <input class="form-control d-none" type="file" name="photo" id="videoFile" accept="video/*" />
+                <label class="form-label primary-style" for="videoFile">
+                  <i class="fas fa-video me-md-2"></i>
+                  <span class="d-none d-md-inline-block">Video</span>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -650,21 +1068,38 @@
 
     <script>
       $(document).ready(function () {
-        $("#thumbnail1").click(function () {
-          $("#pictures").attr("src", "../resources/images/thumbnail4.jpg");
+        $("#picture1, #picture2, #picture3, #picture4").click(function () {
+          $("#pictures").attr("src", "../resources/images/thumbnail1-big.jpg");
         });
-        $("#thumbnail2").click(function () {
-          $("#pictures").attr("src", "../resources/images/thumbnail6.jpg");
-        });
-        $("#picture1").click(function () {
+        $("#picture5").click(function () {
           $("#pictures").attr("src", "../resources/images/picture-1.jpg");
         });
-        $("#picture2").click(function () {
+        $("#picture6").click(function () {
           $("#pictures").attr("src", "../resources/images/picture-2.jpg");
         });
-        $("#picture3").click(function () {
+        $("#picture7").click(function () {
           $("#pictures").attr("src", "../resources/images/picture-3.jpg");
         });
+
+        $("#button-delete").click(function () {
+          $("#alert-delete").addClass("show");
+          $("#myAnnouncement").remove();
+        });
+
+        $("#button-update").click(function () {
+          $("#alert-update").addClass("show");
+        });
+
+        $(".form-select").change(function () {
+          $(".title").html('<i class="fas fa-tag text-primary me-2"></i>' + this.value.toUpperCase());
+          $(".link-detail").attr("href", "/pumahara-design/kaiako/tauira-evaluation.html?title=" + this.value);
+        });
+
+        let params = new window.URLSearchParams(window.location.search);
+        if (params.get("delete") == "y") {
+          $("#alert-delete").addClass("show");
+          $("#myAnnouncement").remove();
+        }
       });
     </script>
   </body>

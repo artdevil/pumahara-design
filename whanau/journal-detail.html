@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Journal Detail | Tauira</title>
+    <title>Journal Detail | Whanau</title>
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
@@ -46,23 +46,22 @@
               <img src="../resources/images/logo4.svg" alt="brand images" />
             </picture>
           </div>
-          <a class="notification" role="button">
+          <a class="notification" href="/pumahara-design/whanau/notification.html">
             <i class="demo-icon icon-bell"></i>
             <span>99+</span>
           </a>
           <div class="img-profile d-none d-lg-flex">
-            <img src="../resources/images/profile2.jpg" alt="image profile" />
+            <img src="../resources/images/profile3.jpg" alt="image profile" />
           </div>
         </div>
         <div class="offcanvas offcanvas-start bd-sidebar" id="offcanvasSidebar" tabindex="-1">
           <div class="bd-links offcanvas-body">
             <div class="img-profile d-lg-none">
-              <img src="../resources/images/profile.jpg" alt="image profile" />
+              <img src="../resources/images/profile3.jpg" alt="image profile" />
             </div>
-            <p class="profile-name mb-1">Amelia Charlotte</p>
-            <p class="profile-classes mb-3">Puriri - Y7</p>
+            <p class="profile-name">Jack William</p>
             <nav class="nav flex-column nav-style">
-              <a href="/pumahara-design/tauira" class="nav-link border-bottom active">
+              <a href="/pumahara-design/whanau/" class="nav-link border-bottom active">
                 <div class="nav-icon">
                   <i class="demo-icon icon-home"></i>
                 </div>
@@ -71,43 +70,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/evaluation.html" class="nav-link border-bottom">
-                <div class="nav-icon">
-                  <i class="demo-icon icon-evaluation"></i>
-                </div>
-                <div class="nav-text">My Evaluations</div>
-                <div class="nav-arrow">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </div>
-              </a>
-              <a href="/pumahara-design/tauira/journal.html" class="nav-link border-bottom">
-                <div class="nav-icon">
-                  <i class="demo-icon icon-journal"></i>
-                </div>
-                <div class="nav-text">My Journal</div>
-                <div class="nav-arrow">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </div>
-              </a>
-              <a href="/pumahara-design/tauira/roopu.html" class="nav-link border-bottom">
-                <div class="nav-icon">
-                  <i class="demo-icon icon-ropu"></i>
-                </div>
-                <div class="nav-text">My Roopu</div>
-                <div class="nav-arrow">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </div>
-              </a>
-              <a href="/pumahara-design/tauira/whanau.html" class="nav-link border-bottom">
-                <div class="nav-icon">
-                  <i class="demo-icon icon-whanau"></i>
-                </div>
-                <div class="nav-text">Whānau</div>
-                <div class="nav-arrow">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </div>
-              </a>
-              <a href="/pumahara-design/tauira/account-setting.html" class="nav-link border-bottom">
+              <a href="/pumahara-design/whanau/account-setting.html" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-setting"></i>
                 </div>
@@ -130,7 +93,7 @@
       <main class="bd-main">
         <div class="nav-back mb-3 mb-md-4">
           <div class="d-flex align-items-center">
-            <a class="icon-back" href="/pumahara-design/tauira" role="button">
+            <a class="icon-back" href="/pumahara-design/whanau" role="button">
               <i class="fas fa-arrow-left"></i>
             </a>
             <h5 class="page-title">Journal Detail</h5>
@@ -153,7 +116,7 @@
                 <div class="col">
                   <div class="d-flex align-items-center">
                     <h6 class="fs-14 mb-0 me-1 text-truncate">Amelia Charlotte</h6>
-                    <p class="fs-12 text-primary text-truncate">in Rotorua</p>
+                    <p class="fs-12 text-primary text-truncate">in Kaituna River</p>
                   </div>
                   <div class="row gx-2 align-items-center">
                     <div class="col-auto">
@@ -208,14 +171,20 @@
               <div class="row g-3 justify-content-center mb-3">
                 <div class="col-auto">
                   <a data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
-                    <img src="../resources/images/thumbnail6.jpg" alt="thumbnail1" class="img-wrapper" loading="lazy" />
+                    <img
+                      id="picture1"
+                      src="../resources/images/thumbnail1.png"
+                      alt="thumbnail1"
+                      class="img-wrapper"
+                      loading="lazy"
+                    />
                   </a>
                 </div>
                 <div class="col-auto">
                   <div class="position-relative">
                     <a data-bs-toggle="modal" data-bs-target="#videoPreviewModal">
                       <img
-                        src="../resources/images/thumbnail5.jpg"
+                        src="../resources/images/thumbnail2.png"
                         alt="thumbnail1"
                         class="img-wrapper"
                         loading="lazy"
@@ -230,7 +199,7 @@
                 </div>
               </div>
               <!-- list comment -->
-              <div id="myComment" class="row mb-4 gx-1 gx-md-3">
+              <div class="row mb-4 gx-1 gx-md-3">
                 <div class="col-auto mt-2">
                   <img
                     class="img-profile small border-profile"
@@ -242,41 +211,15 @@
                 <div class="col">
                   <div class="timeline-comment">
                     <h6 class="fs-14">Amelia Charlotte</h6>
-                    <p class="fs-12 mb-1">
+                    <p class="fs-12">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tellus molestie proin
                       sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc
                       pharetra.
                     </p>
-                    <a id="image-comment" data-bs-toggle="modal" data-bs-target="#imagePreviewModal">
-                      <img
-                        src="../resources/images/thumbnail7.jpg"
-                        alt="thumbnail"
-                        loading="lazy"
-                        class="image-comment"
-                      />
-                    </a>
                   </div>
                   <div class="row mt-1 align-items-center">
                     <div class="col">
-                      <p class="fs-12 text-secondary ms-0 ms-2">5 minutes ago (edited)</p>
-                    </div>
-                    <div class="col-auto">
-                      <button
-                        class="btn small fs-14 text-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#updateCommentModal"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <div class="col-auto">
-                      <button
-                        class="btn small fs-14 text-danger"
-                        data-bs-toggle="modal"
-                        data-bs-target="#deleteCommentModal"
-                      >
-                        Delete
-                      </button>
+                      <p class="fs-12 text-secondary ms-0 ms-2">5 minutes ago</p>
                     </div>
                   </div>
                 </div>
@@ -306,7 +249,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row mb-4 gx-1 gx-md-3">
+              <div id="myComment" class="row mb-4 gx-1 gx-md-3">
                 <div class="col-auto mt-2">
                   <img
                     class="img-profile small border-profile"
@@ -318,15 +261,36 @@
                 <div class="col">
                   <div class="timeline-comment">
                     <h6 class="fs-14">Jack William</h6>
-                    <p class="fs-12">
+                    <p class="fs-12 mb-1">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tellus molestie proin
                       sapien varius interdum sit. Diam viverra porta ut risus. Ut tristique risus imperdiet nunc
                       pharetra.
                     </p>
+                    <a id="image-comment" data-bs-target="#imagePreviewModal" data-bs-toggle="modal">
+                      <img src="../resources/images/thumbnail3.jpg" alt="" class="image-comment" />
+                    </a>
                   </div>
                   <div class="row mt-1 align-items-center">
                     <div class="col">
-                      <p class="fs-12 text-secondary ms-0 ms-2">1 day ago</p>
+                      <p class="fs-12 text-secondary ms-0 ms-2">1 day ago (edited)</p>
+                    </div>
+                    <div class="col-auto">
+                      <button
+                        class="btn small fs-14 text-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#updateCommentModal"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <div class="col-auto">
+                      <button
+                        class="btn small fs-14 text-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteCommentModal"
+                      >
+                        Delete
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -351,7 +315,7 @@
                   </div>
                   <div class="row mt-1 align-items-center">
                     <div class="col">
-                      <p class="fs-12 text-secondary ms-0 ms-2">10 minutes ago</p>
+                      <p class="fs-12 text-secondary ms-0 ms-2">2 days ago</p>
                     </div>
                   </div>
                 </div>
@@ -361,14 +325,18 @@
                 <div class="col-auto mt-2">
                   <img
                     class="img-profile small border-profile"
-                    src="../resources/images/profile2.jpg"
+                    src="../resources/images/profile3.jpg"
                     alt="profile"
                     loading="lazy"
                   />
                 </div>
                 <div class="col">
                   <form>
-                    <textarea class="form-control px-2 fs-12" placeholder="Write your comment..."></textarea>
+                    <textarea
+                      name="comment"
+                      class="form-control px-2 fs-12"
+                      placeholder="Write your comment..."
+                    ></textarea>
                     <div class="d-flex mt-3">
                       <button class="btn btn-primary-style btn-post col col-md-auto me-3 fs-14" type="submit">
                         Post Comment
@@ -414,14 +382,14 @@
           <div class="modal-body text-start">
             <div class="row gx-3 align-items-center mb-3">
               <img
-                src="../resources/images/profile2.jpg"
+                src="../resources/images/profile3.jpg"
                 alt="image profile"
                 class="col-auto rounded-circle"
                 height="30px"
                 width="30px"
                 loading="lazy"
               />
-              <h6 class="col fs-14 mb-0">Amelia Charlotte</h6>
+              <h6 class="col fs-14 mb-0">Jack William</h6>
             </div>
             <form>
               <textarea
@@ -434,7 +402,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
               <div class="row g-3">
                 <div class="col-auto">
                   <div class="card card-thumbnail">
-                    <img src="../resources/images/thumbnail7.jpg" alt="images" class="img-thumbnails" loading="lazy" />
+                    <img src="../resources/images/thumbnail3.jpg" alt="images" class="img-thumbnails" loading="lazy" />
                     <button class="btn small btn-secondary-style border-0 fs-12 p-1 mb-1">Remove File</button>
                   </div>
                 </div>
@@ -480,9 +448,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
           <div class="modal-body text-start">
             <p class="mb-3">
               Are you sure you want to delete comment from
-              <span class="fw-bold">Amelia Charlotte</span>
+              <span class="fw-bold">Jack William</span>
               on
-              <span class="fw-bold">5 minutes ago</span>?
+              <span class="fw-bold">1 day ago</span>
+              ?
             </p>
             <div class="row gx-3">
               <div class="col-6 col-md-auto">
@@ -516,11 +485,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
             aria-label="Close"
           ></button>
           <img
-            id="pictures"
             src="../resources/images/thumbnail1-big.jpg"
             alt="images"
             loading="lazy"
             class="fullview-wrapper"
+            id="pictures"
           />
         </div>
       </div>
@@ -534,7 +503,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
       aria-labelledby="videoPreviewModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered fit-content">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content position-relative">
           <button
             type="button"
@@ -542,7 +511,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
-          <video class="fullview-wrapper" src="../resources/videos/sample.mp4" controls loading="lazy"></video>
+          <div class="row p-3">
+            <video src="../resources/videos/sample.mp4" controls loading="lazy"></video>
+          </div>
         </div>
       </div>
     </div>
@@ -564,10 +535,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate faucibus tell
     ></script>
     <script>
       $(document).ready(function () {
+        $("#picture1").click(function () {
+          $("#pictures").attr("src", "../resources/images/thumbnail1-big.jpg");
+        });
         $("#image-comment").click(function () {
           $("#pictures").attr("src", "../resources/images/thumbnail3.jpg");
         });
-
         $("#deleteComment").click(function () {
           $("#myComment").remove();
         });
