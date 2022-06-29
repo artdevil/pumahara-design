@@ -1425,7 +1425,10 @@ textarea:focus-visible {
     min-height: 100vh;
     box-sizing: border-box;
   }
+  
   .sign-sect .sign-sect-inner {
+    display: flex;
+    align-items: center;
     position: relative;
     z-index: 1;
     top: 0;
@@ -1435,16 +1438,9 @@ textarea:focus-visible {
   }
   .sign-sect .sign-sect-inner .img-logo {
     max-width: 380px;
-    padding: 3rem 2rem 2rem;
+    padding: 2rem 2rem 5rem;
   }
 
-  .sign-sect .sign-sect-inner .sign-banner {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-  }
 }
 
 /* 
@@ -1461,8 +1457,7 @@ textarea:focus-visible {
 
 @media (min-width: 1200px) {
   .sign-sect .sign-sect-inner .img-logo {
-    max-width: 400px;
-    padding: 4rem 2rem 2rem;
+    max-width: 660px;
   }
 }
 
