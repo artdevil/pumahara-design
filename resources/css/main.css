@@ -24,6 +24,7 @@
   --green-600: #2d6245;
   --gray-100: #f9f9f9;
   --gray-200: #f1f1f1;
+  --gray-300: #ececec;
   --gray-400: #e0e0e0;
   --gray-500: #CED4DA;
   --gray-600: #6f757e;
@@ -269,7 +270,7 @@ a:hover {
 }
 
 .bg-secondary {
-  background-color: var(--gray-600) !important;
+  background-color: var(--gray-300) !important;
 }
 
 .border-active {
@@ -1114,7 +1115,7 @@ label.item-list {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  color: var(--darkbrown-100);
+  color: var(--gray-600);
 }
 
 .profile-notifications {
