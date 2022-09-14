@@ -1007,6 +1007,7 @@ label.item-list {
 .nav-link:focus,
 .nav-link:hover {
   color: var(--primary);
+  font-weight: 500;
 }
 
 .nav-link {
