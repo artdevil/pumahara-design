@@ -1065,7 +1065,7 @@ label.item-list {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--gray-600);
   font-size: 24px;
   display: flex;
   align-items: center;
