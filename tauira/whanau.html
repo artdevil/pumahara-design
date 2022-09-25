@@ -57,12 +57,12 @@
         <div class="offcanvas offcanvas-start bd-sidebar" id="offcanvasSidebar" tabindex="-1">
           <div class="bd-links offcanvas-body">
             <div class="img-profile d-lg-none">
-              <img src="../resources/images/profile.jpg" alt="image profile" />
+              <img src="../resources/images/profile2.jpg" alt="image profile" />
             </div>
             <p class="profile-name mb-1">Amelia Charlotte</p>
             <p class="profile-classes mb-3">Puriri - Y7</p>
             <nav class="nav flex-column nav-style">
-              <a href="/pumahara-design/tauira" class="nav-link border-bottom">
+              <a href="index.html" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-home"></i>
                 </div>
@@ -71,7 +71,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/evaluation.html" class="nav-link border-bottom">
+              <a href="evaluation.html" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-evaluation"></i>
                 </div>
@@ -80,7 +80,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/journal.html" class="nav-link border-bottom">
+              <a href="journal.html" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-journal"></i>
                 </div>
@@ -89,7 +89,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/roopu.html" class="nav-link border-bottom">
+              <a href="roopu.html" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-ropu"></i>
                 </div>
@@ -98,7 +98,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/whanau.html" class="nav-link border-bottom active">
+              <a href="whanau.html" class="nav-link border-bottom active">
                 <div class="nav-icon">
                   <i class="demo-icon icon-whanau"></i>
                 </div>
@@ -107,7 +107,7 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
-              <a href="/pumahara-design/tauira/account-setting.html" class="nav-link border-bottom">
+              <a href="account-setting.html" class="nav-link border-bottom">
                 <div class="nav-icon">
                   <i class="demo-icon icon-setting"></i>
                 </div>
@@ -149,20 +149,6 @@
             </div>
             <input class="form-control me-2" type="search" placeholder="Search by name" aria-label="Search" />
           </form>
-
-          <div class="col-auto d-none d-md-block">
-            <button class="btn btn-add btn-primary-style" data-bs-target="#inviteModal" data-bs-toggle="modal">
-              <i class="fa fa-circle-plus me-2"></i>
-              Add Whānau
-            </button>
-          </div>
-          <button
-            class="btn btn-add btn-circle btn-primary-style d-inline-flex d-md-none"
-            data-bs-target="#inviteModal"
-            data-bs-toggle="modal"
-          >
-            <i class="fas fa-plus"></i>
-          </button>
         </div>
         <!-- list whanau -->
         <div class="card-list row gy-3">
@@ -178,46 +164,10 @@
                   <i class="fa-solid fa-phone"></i>
                   <p>+64 1234 5678</p>
                 </div>
+                <div class="bg-inactive d-inline-block">Inactive</div>
               </div>
-              <div class="card-footer">
-                <div class="bg-inactive">Inactive</div>
-                <div class="ms-auto dropup">
-                  <a
-                    class="menu-option"
-                    id="dropdownMenuButton4"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    href="#"
-                    data-bs-offset="0,-25"
-                  >
-                    <i class="fa-solid fa-ellipsis-v"></i>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                    <li>
-                      <a class="dropdown-item" href="/pumahara-design/tauira/whanau-update-inactive.html">
-                        <i class="fa-solid fa-edit"></i>
-                        Edit
-                      </a>
-                    </li>
-                    <li>
-                      <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#resendModal">
-                        <i class="fa-solid fa-sync"></i>
-                        Resend
-                      </button>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item text-danger"
-                        data-bs-toggle="modal"
-                        data-bs-target="#deleteModal"
-                        href="#"
-                      >
-                        <i class="fa-solid fa-trash-alt"></i>
-                        Delete
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <div class="card-footer">                
+                <a href="#detailModal" role="button" class="d-flex justify-content-between w-100" data-bs-toggle="modal">See Detail <i class="fa-solid fa-chevron-right ms-auto"></i></a>
               </div>
             </div>
           </div>
@@ -233,41 +183,10 @@
                   <i class="fa-solid fa-phone"></i>
                   <p>+64 1234 5678</p>
                 </div>
+                <div class="bg-active d-inline-block">Active</div>
               </div>
               <div class="card-footer">
-                <div class="bg-active">Active</div>
-                <div class="ms-auto dropup">
-                  <a
-                    class="menu-option"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    href="#"
-                    data-bs-offset="0,-25"
-                  >
-                    <i class="fa-solid fa-ellipsis-v"></i>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                    <li>
-                      <a class="dropdown-item" href="/pumahara-design/tauira/whanau-update-active.html">
-                        <i class="fa-solid fa-edit"></i>
-                        Edit
-                      </a>
-                    </li>
-                    <li>
-                      <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#detailModal">
-                        <i class="fa-solid fa-info-circle"></i>
-                        Detail
-                      </button>
-                    </li>
-                    <li>
-                      <button class="dropdown-item text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                        <i class="fa-solid fa-trash-alt"></i>
-                        Delete
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+                <a href="#detailModal" role="button" class="d-flex justify-content-between w-100" data-bs-toggle="modal">See Detail <i class="fa-solid fa-chevron-right ms-auto"></i></a>
               </div>
             </div>
           </div>
@@ -275,96 +194,6 @@
       </main>
     </div>
 
-    <!-- Invite Modal -->
-    <div class="modal fade" id="inviteModal" tabindex="-1" aria-labelledby="inviteLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h6 class="modal-title" id="inviteLabel">Send Invitation</h6>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-start">
-            <label class="form-label" for="email">
-              Email
-              <span class="text-danger">*</span>
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              class="form-control mb-3 mb-md-4"
-              placeholder="Eg. jack.william@gmail.com"
-            />
-            <label class="form-label" for="phone">Phone Number</label>
-            <input
-              id="phone"
-              name="phone"
-              type="text"
-              class="form-control mb-3 mb-md-4"
-              placeholder="Eg. +64 1234 5678"
-            />
-            <div class="row gx-3">
-              <div class="col-6 col-md-auto">
-                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Send</button>
-              </div>
-              <div class="col-6 col-md-auto">
-                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Resend Invite Modal -->
-    <div class="modal fade" id="resendModal" tabindex="-1" aria-labelledby="resendModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h6 class="modal-title" id="resendModalLabel">Resend Invitation Confirmation</h6>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-start">
-            <p class="mb-3 mb-md-4">
-              Are you sure to resend invitation to
-              <span class="fw-bold">velove.vexia@gmail.com</span>?
-            </p>
-            <div class="row gx-3">
-              <div class="col-6 col-md-auto">
-                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Yes, Resend</button>
-              </div>
-              <div class="col-6 col-md-auto">
-                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Delete Modal -->
-    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h6 class="modal-title" id="deleteModalLabel">Delete Confirmation</h6>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-start">
-            <p class="mb-3 mb-md-4">
-              Are you sure you want to delete -
-              <span class="fw-bold">velove.vexia@gmail.com</span>?
-            </p>
-            <div class="row gx-3">
-              <div class="col-6 col-md-auto">
-                <button type="button" class="btn btn-primary-style w-100" data-bs-dismiss="modal">Yes, Delete</button>
-              </div>
-              <div class="col-6 col-md-auto">
-                <button type="button" class="btn btn-secondary-style w-100" data-bs-dismiss="modal">Cancel</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Detail Modal -->
     <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
