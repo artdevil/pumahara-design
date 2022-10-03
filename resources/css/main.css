@@ -253,6 +253,10 @@ a:hover {
   background-color: var(--gray-100) !important;
 }
 
+.bg-gray-600 {
+  background-color: var(--gray-600);
+}
+
 .bg-inactive {
   background-color: var(--gray-400);
   color: var(--gray-600);
@@ -272,6 +276,7 @@ a:hover {
 .bg-secondary {
   background-color: var(--gray-300) !important;
 }
+
 
 .border-active {
   border: 1px solid var(--primary) !important;
