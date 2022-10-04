@@ -182,23 +182,9 @@
         </div>
         <div class="card card-body mb-3 mb-md-4">
           <div class="mb-3">
-            <input
-              class="form-control"
-              type="text"
-              name="tauira"
-              id=""
-              placeholder="Select Tauira"
-            />
-            <select
-              class="form-control"
-              name="choices-custom-templates"
-              id="choices-custom-templates"
-            >
-              <option>Jane Cooper</option>
-              <option>Annette Black</option>
-              <option>Arlene McCoy</option>
-              <option>Bessie Cooper</option>
-            </select>
+            <select class="js-choice">
+              <option value="">Select Tauira</option>
+            </select>            
           </div>
           <input id="hear" type="hidden" name="hear" required />
           <trix-editor
@@ -258,5 +244,21 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script>
+      const element = document.querySelector(".js-choice");
+      // Calling a method directly
+      const choices = new Choices(element);
+      choices.setChoices(
+        [
+          { value: "1", label: "Jane Cooper" },
+          { value: "2", label: "Annette Black" },
+          { value: "3", label: "Arlene McCoy" },
+          { value: "4", label: "Bessie Cooper" },
+        ],
+        "value",
+        "label",
+        false
+      );
+    </script>
   </body>
 </html>

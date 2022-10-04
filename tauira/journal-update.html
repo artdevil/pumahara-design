@@ -261,7 +261,7 @@
             <trix-editor
               input="kapa"
               placeholder="add kapa"
-              class="border fs-14"
+              class="form-control fs-14"
             ></trix-editor>
           </div>
           <div class="mb-3 mb-md-4">
@@ -275,7 +275,7 @@
             <trix-editor
               input="hear"
               placeholder="Describe what you hear, see, and feel"
-              class="border fs-14"
+              class="form-control fs-14"
             ></trix-editor>
           </div>
           <div class="mb-3 mb-md-4">
@@ -289,6 +289,7 @@
             <trix-editor
               input="favorite"
               placeholder="Describe your favorite part"
+              class="form-control fs-14"
             ></trix-editor>
           </div>
           <div class="mb-3 mb-md-4">
@@ -302,6 +303,7 @@
             <trix-editor
               input="learn"
               placeholder="Describe what you learned from yourself"
+              class="form-control fs-14"
             ></trix-editor>
           </div>
           <div class="mb-3 mb-md-4">
@@ -317,6 +319,7 @@
             <trix-editor
               input="features"
               placeholder="Describe features, the sea or lakes"
+              class="form-control fs-14"
             ></trix-editor>
           </div>
           <div class="mb-3 mb-md-4 bg-gray rounded p-2 p-md-3">
@@ -474,16 +477,13 @@
       const choices = new Choices(element);
       choices.setChoices(
         [
-          { value: "One", label: "Tamatekapua" },
-          { value: "Two", label: "Frederick Bennett" },
-          { value: "Three", label: "Tamatekapua <br> hasdhaks" },
+          { value: "Two", label: "<h6>Frederick Bennett <br> <span class='fw-light fs-14 text-secondary'>Successful Māori students understand core Māori values</span></h6>" },
+          { value: "Three", label: "<h6>Tamatekapua <br> <span class='fw-light fs-14 text-secondary'>Successful Māori students understand core Māori values</span></h6>" },
         ],
         "value",
         "label",
         false
       );
-
-      // choices.setValue(["Tamatekapua", "Frederick Bennett"]);
     </script>
   </body>
 </html>

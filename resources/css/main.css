@@ -323,6 +323,8 @@ a:hover {
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12),
     0px 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 99;
+  padding-top: 16px;
+  text-align: center;
 }
 
 .btn-download {
@@ -571,6 +573,15 @@ a:hover {
   width: 92px;
   border: 1px solid var(--gray-400);
   border-radius: 8px;
+}
+
+.choices__placeholder {
+  opacity: 1 !important;
+}
+
+.choices__inner {
+  background-color: white !important;
+  border-radius: 4px !important;
 }
 
 .col-md-6 > .card {
