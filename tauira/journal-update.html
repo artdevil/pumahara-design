@@ -152,7 +152,7 @@
                     id="location"
                     name="location"
                     placeholder="Eg. Rotorua"
-                    value="Rotorua"
+                    value="In Kaituna River"
                   />
                   <label for="location" class="col-auto icon">
                     <i class="fas fa-map-marker-alt"></i>
@@ -197,6 +197,20 @@
             </div>
           </div>
           <div class="mb-3 mb-md-4">
+            <label class="form-label">Add Kapa</label>
+            <select class="form-select mb-3 fs-14">
+              <option value="">Tamatekapua</option>
+              <option value="">Tamatekapua</option>
+            </select>
+            <input
+              id="kapa"
+              type="hidden"
+              name="kapa"
+              value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit."
+            />
+            <trix-editor input="kapa" placeholder="add kapa" class="border fs-14"></trix-editor>
+          </div>
+          <div class="mb-3 mb-md-4">
             <label class="form-label">What did I hear, see, and feel?</label>
             <input
               id="hear"
@@ -204,7 +218,7 @@
               name="hear"
               value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit."
             />
-            <trix-editor input="hear" placeholder="Describe what you hear, see, and feel" class="border"></trix-editor>
+            <trix-editor input="hear" placeholder="Describe what you hear, see, and feel" class="border fs-14"></trix-editor>
           </div>
           <div class="mb-3 mb-md-4">
             <label class="form-label">What was my favourite part?</label>
@@ -238,20 +252,20 @@
           </div>
           <div class="mb-3 mb-md-4 bg-gray rounded p-2 p-md-3">
             <div class="row g-3 gy-md-0 align-items-center">
-              <div class="col-12 col-md">
+              <div class="col">
                 <p class="text-normal">Add photo or video documentation</p>
               </div>
-              <div class="col-6 col-md-auto">
-                <label class="form-label primary-style py-2 px-md-4 d-flex justify-content-center" for="photoFile">
-                  <i class="fas fa-images me-2"></i>
-                  Photo
+              <div class="col-auto">
+                <label class="btn btn-outline-dark small" for="photoFile">
+                  <i class="fas fa-images me-md-2"></i>
+                  <span class="d-none d-md-inline">Photo</span>
                 </label>
                 <input class="form-control d-none" type="file" name="photo" id="photoFile" accept="image/*" />
               </div>
-              <div class="col-6 col-md-auto">
-                <label class="form-label primary-style py-2 px-md-4 d-flex justify-content-center" for="videoFile">
-                  <i class="fas fa-video me-2"></i>
-                  Video
+              <div class="col-auto">
+                <label class="btn btn-outline-dark small" for="videoFile">
+                  <i class="fas fa-video me-md-2"></i>
+                  <span class="d-none d-md-inline">Video</span>
                 </label>
                 <input class="form-control d-none" type="file" name="video" id="videoFile" accept="video/*" />
               </div>

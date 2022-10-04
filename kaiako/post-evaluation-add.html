@@ -181,53 +181,60 @@
           <hr class="d-none d-md-block my-4" />
         </div>
         <div class="card card-body mb-3 mb-md-4">
-          <label class="form-label">What did I hear, see, and feel?</label>
+          <div class="mb-3">
+            <input
+              class="form-control"
+              type="text"
+              name="tauira"
+              id=""
+              placeholder="Select Tauira"
+            />
+            <select
+              class="form-control"
+              name="choices-custom-templates"
+              id="choices-custom-templates"
+            >
+              <option>Jane Cooper</option>
+              <option>Annette Black</option>
+              <option>Arlene McCoy</option>
+              <option>Bessie Cooper</option>
+            </select>
+          </div>
           <input id="hear" type="hidden" name="hear" required />
           <trix-editor
             input="hear"
             placeholder="Describe what you hear, see, and feel"
             class="border"
           ></trix-editor>
-          <div class="container mt-3">
-            <div class="row">
-              <button
-                class="btn btn-primary-style col-12 col-md-auto me-auto"
-                type="submit"
-              >
-                Post
-              </button>
-              <div class="col-6 col-md-auto">
-                <label
-                  class="form-label primary-style px-md-3"
-                  for="photoFile"
-                >
-                  <i class="fas fa-images me-2" aria-hidden="true"></i>
-                  Photo
-                </label>
-                <input
-                  class="form-control d-none"
-                  type="file"
-                  name="photo"
-                  id="photoFile"
-                  accept="image/*"
-                />
-              </div>
-              <div class="col-6 col-md-auto">
-                <label
-                  class="form-label primary-style px-md-3"
-                  for="videoFile"
-                >
-                  <i class="fas fa-video me-2" aria-hidden="true"></i>
-                  Video
-                </label>
-                <input
-                  class="form-control d-none"
-                  type="file"
-                  name="video"
-                  id="videoFile"
-                  accept="video/*"
-                />
-              </div>
+          <div class="row g-3 gy-md-0 mt-1 mt-md-3">
+            <div class="col col-md-auto me-auto">
+              <button class="btn btn-dark" type="submit">Post</button>
+            </div>
+            <div class="col-auto">
+              <label class="btn btn-outline-dark small" for="photoFile">
+                <i class="fas fa-images me-md-2" aria-hidden="true"></i>
+                <span class="d-none d-md-inline-block">Photo</span>
+              </label>
+              <input
+                class="form-control d-none"
+                type="file"
+                name="photo"
+                id="photoFile"
+                accept="image/*"
+              />
+            </div>
+            <div class="col-auto">
+              <label class="btn btn-outline-dark small" for="videoFile">
+                <i class="fas fa-video me-md-2" aria-hidden="true"></i>
+                <span class="d-none d-md-inline-block">Video</span>
+              </label>
+              <input
+                class="form-control d-none"
+                type="file"
+                name="video"
+                id="videoFile"
+                accept="video/*"
+              />
             </div>
           </div>
         </div>

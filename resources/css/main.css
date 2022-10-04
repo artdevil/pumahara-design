@@ -690,7 +690,7 @@ a:hover {
 }
 
 .form-label {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
   color: #000;
 }
@@ -960,10 +960,10 @@ label.item-list {
   margin: 0;
 }
 
-.modal-header {
+/* .modal-header {
   padding: 0 0 15px 0;
   margin: 15px 15px 0;
-}
+} */
 
 .modal-md {
   max-width: 626px;
