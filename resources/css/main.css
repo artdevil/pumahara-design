@@ -691,7 +691,7 @@ a:hover {
   border-color: var(--gray-400);
 }
 
-.form-control::placeholder {
+.form-control::placeholder, trix-editor:empty:not(:focus)::before {
   color: var(--gray-400);
 }
 
