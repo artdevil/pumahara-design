@@ -6,7 +6,10 @@
     <meta name="description" content="WELCOME TO PŪMAHARA" />
     <meta name="keywords" content="WELCOME TO PŪMAHARA" />
     <meta name="author" content="@shallness" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
 
@@ -16,17 +19,32 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" type="text/css" href="../resources/css/main.css" />
     <link rel="stylesheet" type="text/css" href="../resources/trix/trix.css" />
-    <link rel="stylesheet" type="text/css" href="../resources/icon-dev-handoff/css/fontello.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../resources/icon-dev-handoff/css/fontello.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/afe7e62084.js" crossorigin="anonymous"></script>
+    <!-- Include Choices CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/afe7e62084.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../resources/trix/trix.js"></script>
   </head>
   <body>
@@ -34,8 +52,19 @@
       <!-- Navbar Section-->
       <div class="sidebar">
         <div class="navbar-small">
-          <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
-            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button
+            class="btn-menu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasSidebar"
+          >
+            <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <line y1="0.5" x2="20" y2="0.5" stroke="#3E332B" />
               <line y1="10.5" x2="13.3333" y2="10.5" stroke="#3E332B" />
               <line y1="20.5" x2="20" y2="20.5" stroke="#3E332B" />
@@ -44,7 +73,10 @@
           </button>
           <div class="brand">
             <picture>
-              <source media="(min-width:992px)" srcset="../resources/images/logo3.svg" />
+              <source
+                media="(min-width:992px)"
+                srcset="../resources/images/logo3.svg"
+              />
               <img src="../resources/images/logo4.svg" alt="brand images" />
             </picture>
           </div>
@@ -56,7 +88,11 @@
             <img src="../resources/images/profile2.jpg" alt="image profile" />
           </div>
         </div>
-        <div class="offcanvas offcanvas-start bd-sidebar" id="offcanvasSidebar" tabindex="-1">
+        <div
+          class="offcanvas offcanvas-start bd-sidebar"
+          id="offcanvasSidebar"
+          tabindex="-1"
+        >
           <div class="bd-links offcanvas-body">
             <div class="img-profile d-lg-none">
               <img src="../resources/images/profile2.jpg" alt="image profile" />
@@ -151,17 +187,36 @@
           <div class="mb-3 mb-md-4">
             <div class="row gy-3 gy-md-4">
               <div class="col-md-6">
-                <label for="location" class="form-label">Location</label>
-                <div class="form-control d-flex">
-                  <input type="text" class="col no-border" id="location" placeholder="Eg. Rotorua" value="Rotorua" />
-                  <label for="location" class="col-auto icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </label>
+                <label for="location" class="form-label">
+                  Learning Location
+                </label>
+                <div class="mt-1">
+                  <a
+                    class="btn btn-dark btn-location"
+                    data-bs-toggle="modal"
+                    href="#addLocationModal"
+                  >
+                    Add Location
+                  </a>
+                  <div class="location-wrapper d-none">
+                    <i class="fas fa-map-marker-alt me-1"></i>
+                    In Kaituna River
+                    <a
+                      class="link-primary ms-2"
+                      data-bs-toggle="modal"
+                      href="#editLocationModal"
+                      >Edit</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <label class="form-label">Date time</label>
-                <input id="textDate" class="form-control" type="datetime-local" />
+                <input
+                  id="textDate"
+                  class="form-control"
+                  type="datetime-local"
+                />
               </div>
             </div>
           </div>
@@ -169,7 +224,11 @@
             <div class="row align-items-center">
               <div class="col-12 col-md-6">
                 <div class="d-flex align-items-center">
-                  <img src="../resources/images/icon-moonphase.svg" alt="moon phase" class="moonphase-wrapper" />
+                  <img
+                    src="../resources/images/icon-moonphase.svg"
+                    alt="moon phase"
+                    class="moonphase-wrapper"
+                  />
                   <p class="text-normal fw-bold ms-2">Ōeunuku - Paengawhāwhā</p>
                 </div>
               </div>
@@ -186,9 +245,13 @@
                     <p class="text-normal mb-1">Building / Loading - Inland</p>
                     <p class="text-normal">
                       <span class="text-normal fw-bold">Tane</span>
-                      <i class="fas fa-arrow-up-long text-energy-building ms-1"></i>
+                      <i
+                        class="fas fa-arrow-up-long text-energy-building ms-1"
+                      ></i>
                       08:27am
-                      <i class="fas fa-arrow-down-long text-energy-active ms-1"></i>
+                      <i
+                        class="fas fa-arrow-down-long text-energy-active ms-1"
+                      ></i>
                       03:48pm
                     </p>
                   </div>
@@ -197,24 +260,59 @@
             </div>
           </div>
           <div class="mb-3 mb-md-4">
+            <label class="form-label">Add Kapa</label>
+            <select class="js-choice">
+              <option value="">Select Pūmanawa</option>
+            </select>
+            <input
+              id="kapa"
+              type="hidden"
+              name="kapa"
+              value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare iaculis donec tortor risus lectus. Faucibus vitae elementum viverra arcu, eu. Urna proin tortor nibh id eu posuere elit."
+            />
+            <trix-editor
+              input="kapa"
+              placeholder="add kapa"
+              class="form-control fs-14"
+            ></trix-editor>
+          </div>
+          <div class="mb-3 mb-md-4">
             <label class="form-label">What did I hear, see, and feel?</label>
             <input id="hear" type="hidden" name="hear" required />
-            <trix-editor input="hear" placeholder="Describe what you hear, see, and feel" class="border"></trix-editor>
+            <trix-editor
+              input="hear"
+              placeholder="Describe what you hear, see, and feel"
+              class="form-control fs-14"
+            ></trix-editor>
           </div>
           <div class="mb-3 mb-md-4">
             <label class="form-label">What was my favourite part?</label>
             <input id="favorite" type="hidden" name="favorite" required />
-            <trix-editor input="favorite" placeholder="Describe your favorite part"></trix-editor>
+            <trix-editor
+              input="favorite"
+              placeholder="Describe your favorite part"
+              class="form-control fs-14"
+            ></trix-editor>
           </div>
           <div class="mb-3 mb-md-4">
             <label class="form-label">What did I learn about my self?</label>
             <input id="learn" type="hidden" name="learn" required />
-            <trix-editor input="learn" placeholder="Describe what you learned from yourself"></trix-editor>
+            <trix-editor
+              input="learn"
+              placeholder="Describe what you learned from yourself"
+              class="form-control fs-14"
+            ></trix-editor>
           </div>
           <div class="mb-3 mb-md-4">
-            <label class="form-label">Environment features, the sea or lakes</label>
+            <label class="form-label"
+              >Environment features, the sea or lakes</label
+            >
             <input id="features" type="hidden" name="features" required />
-            <trix-editor input="features" placeholder="Describe features, the sea or lakes"></trix-editor>
+            <trix-editor
+              input="features"
+              placeholder="Describe features, the sea or lakes"
+              class="form-control fs-14"
+            ></trix-editor>
           </div>
           <div class="mb-3 mb-md-4 bg-gray rounded p-2 p-md-3">
             <div class="row g-3 gy-md-0 align-items-center">
@@ -222,25 +320,148 @@
                 <p class="text-normal">Add photo or video documentation</p>
               </div>
               <div class="col-6 col-md-auto">
-                <label class="form-label primary-style py-2 px-md-4 d-flex justify-content-center" for="photoFile">
+                <label
+                  class="form-label primary-style py-2 px-md-4 d-flex justify-content-center"
+                  for="photoFile"
+                >
                   <i class="fas fa-images me-2"></i>
                   Photo
                 </label>
-                <input class="form-control d-none" type="file" name="photo" id="photoFile" accept="image/*" />
+                <input
+                  class="form-control d-none"
+                  type="file"
+                  name="photo"
+                  id="photoFile"
+                  accept="image/*"
+                />
               </div>
               <div class="col-6 col-md-auto">
-                <label class="form-label primary-style py-2 px-md-4 d-flex justify-content-center" for="videoFile">
+                <label
+                  class="form-label primary-style py-2 px-md-4 d-flex justify-content-center"
+                  for="videoFile"
+                >
                   <i class="fas fa-video me-2"></i>
                   Video
                 </label>
-                <input class="form-control d-none" type="file" name="video" id="videoFile" accept="video/*" />
+                <input
+                  class="form-control d-none"
+                  type="file"
+                  name="video"
+                  id="videoFile"
+                  accept="video/*"
+                />
               </div>
             </div>
           </div>
-          <button class="btn btn-primary-style col-12 col-md-auto" type="submit">Save</button>
+          <button
+            class="btn btn-primary-style col-12 col-md-auto"
+            type="submit"
+          >
+            Save
+          </button>
         </form>
       </main>
     </div>
+
+    <!-- Modal Add Location -->
+    <div class="modal fade" id="addLocationModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              <h5>Add Location</h5>
+              <p class="text-secondary mt-1">Where is your study location</p>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start">
+            <div class="mb-3">
+              <label for="" class="form-label">Add Home</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="write home"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Add Kura</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="write kura"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Add Location</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="eg.Rotorua"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-dark small btn-ok" data-bs-dismiss="modal">Ok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Edit Location -->
+    <div class="modal fade" id="editLocationModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              <h5>Add Location</h5>
+              <p class="text-secondary mt-1">Where is your study location</p>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start">
+            <div class="mb-3">
+              <label for="" class="form-label">Add Home</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="write home"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Add Kura</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="write kura"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Add Location</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="eg.Rotorua"
+                value="In Kaituna River"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-dark small btn-ok" data-bs-dismiss="modal">Ok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -256,6 +477,35 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script>
+      const element = document.querySelector(".js-choice");
+      // Calling a method directly
+      const choices = new Choices(element);
+      choices.setChoices(
+        [
+          {
+            value: "Two",
+            label:
+              "<h6>Frederick Bennett <br> <span class='fw-light fs-14 text-secondary'>Successful Māori students understand core Māori values</span></h6>",
+          },
+          {
+            value: "Three",
+            label:
+              "<h6>Tamatekapua <br> <span class='fw-light fs-14 text-secondary'>Successful Māori students understand core Māori values</span></h6>",
+          },
+        ],
+        "value",
+        "label",
+        false
+      );
+
+      $(document).ready(function () {
+        $(".btn-ok").click(function () {
+          $(".btn-location").addClass("d-none");
+          $(".location-wrapper").removeClass("d-none");
+        });
+      });
+    </script>
   </body>
 </html>
