@@ -187,12 +187,17 @@
                 </label>
                 <div class="mt-1">
                   <a
-                    class="btn btn-dark"
+                    class="btn btn-dark btn-location"
                     data-bs-toggle="modal"
-                    href="#addLocationModal"
+                    href="#addLocationModal"                    
                   >
                     Add Location
                   </a>
+                  <div class="location-wrapper d-none">
+                    <i class="fas fa-map-marker-alt me-1"></i>
+                    In Kaituna River
+                    <a class="link-primary ms-2" data-bs-toggle="modal" href="#editLocationModal">Edit</a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -359,7 +364,44 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a href="" class="btn btn-dark small">Ok</a>
+            <a class="btn btn-dark small btn-ok" data-bs-dismiss="modal">Ok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Edit Location -->
+    <div class="modal fade" id="editLocationModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              <h5>Add Location</h5>
+              <p class="text-secondary mt-1">Where is your study location</p>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start">
+            <div class="mb-3">
+              <label for="" class="form-label">Add Home</label>
+              <input type="text" class="form-control" placeholder="write home">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Add Kura</label>
+              <input type="text" class="form-control" placeholder="write kura">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Add Location</label>
+              <input type="text" class="form-control" placeholder="eg.Rotorua" value="In Kaituna River">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-dark small btn-ok" data-bs-dismiss="modal">Ok</a>
           </div>
         </div>
       </div>
@@ -380,6 +422,13 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    <script></script>
+    <script>
+      $(document).ready(function () {
+        $('.btn-ok').click(function() {
+          $('.btn-location').addClass('d-none');
+          $('.location-wrapper').removeClass('d-none');
+        })
+      })
+    </script>
   </body>
 </html>
